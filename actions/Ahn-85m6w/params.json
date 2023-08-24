@@ -1,0 +1,47 @@
+{
+    "category": "plugins",
+    "display": "Authenticate with Microsoft (outlook/365)",
+    "fields": {
+        "Ahl": {
+            "caption": "Client ID",
+            "default_val": "",
+            "editor": "DynamicValue",
+            "name": "clientid",
+            "rank": 0,
+            "value": "text"
+        },
+        "Ahm": {
+            "caption": "Redirect URL",
+            "default_val": "",
+            "editor": "DynamicValue",
+            "name": "redirecturi",
+            "rank": 1,
+            "value": "text"
+        },
+        "Aht": {
+            "caption": "tentant",
+            "default_val": "common",
+            "editor": "DynamicValue",
+            "name": "tenant",
+            "rank": 2,
+            "value": "text"
+        },
+        "Ahu": {
+            "caption": "scope",
+            "default_val": "https%3A%2F%2Fgraph.microsoft.com%2F.default%20offline_access",
+            "editor": "DynamicValue",
+            "name": "scope",
+            "rank": 3,
+            "value": "text"
+        },
+        "Ahv": {
+            "caption": "scopestate",
+            "default_val": "passAStateValueYHere.MustBeURLEncodedSoKeepItAStringBuddy",
+            "editor": "DynamicValue",
+            "name": "scopestate",
+            "rank": 4,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

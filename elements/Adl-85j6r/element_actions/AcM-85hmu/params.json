@@ -1,0 +1,15 @@
+{
+    "caption": "set date",
+    "doc": "Sets the picker to the provided date",
+    "fields": {
+        "AcN": {
+            "caption": "Date to set picker to",
+            "doc": "Date to set the picker to. Leave empty to clear the picker of any selection. That is if empty the picker will have no value",
+            "editor": "DynamicValue",
+            "name": "thedate",
+            "optional": true,
+            "rank": 0,
+            "value": "date"
+        }
+    }
+}

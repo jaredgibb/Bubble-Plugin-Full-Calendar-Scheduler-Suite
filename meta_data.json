@@ -1,0 +1,16 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "customer support",
+        "2": "productivity",
+        "3": "social network",
+        "4": "small business"
+    },
+    "demo_page": "http://poop123.bubbleapps.io/version-test/index?debug_mode=true",
+    "description": "This plugin is used to display calendar events. You can drag-n-drop and resize events with a simple workflow to save changes to your backend plus Display your business hours too! \n\n\n\n",
+    "image": "//s3.amazonaws.com/appforest_uf/f1617315350386x297485175374669000/341EE4C4-212F-4032-8B17-F2D435A7454A.jpeg",
+    "license": "open_source",
+    "link": "https://bubble.io/page?name=index&id=poop123&tab=tabs-1",
+    "name": "Full Calendar Scheduler Suite ",
+    "plugin_instructions": "Full Documentation and instructions can be found here: https://jared-gibb.gitbook.io/fullcalendar-plugin-suite/\n\nHere is the demo's editor! Check it out and start using it today! \n\nhttps://bit.ly/FullCalendarSchedulerSuiteEditor\n\nExamples of \n\n****For google cal API calls, you should put some form of error handling in place. "
+}

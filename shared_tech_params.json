@@ -1,0 +1,72 @@
+{
+    "assets": {
+        "ABS": {
+            "name": "main.min.css",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324739116x438865594683584900/main1.min.css"
+        },
+        "ABT": {
+            "name": "main2css",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324758932x162830783744176480/main2.min.css"
+        },
+        "ABU": {
+            "name": "main3css",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324773672x116778606061427980/main3.min.css"
+        },
+        "ABV": {
+            "name": "main1js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324784485x205180935557942370/main1.min.js"
+        },
+        "ABW": {
+            "name": "main2js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324792673x110482446828325650/main2.min.js"
+        },
+        "ABX": {
+            "name": "main3js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324808823x486313214243645700/main3.min.js"
+        },
+        "ABY": {
+            "name": "main4js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324818315x609364960487759100/main4.min.js"
+        },
+        "ABZ": {
+            "name": "locales",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1615324828304x419743662359522100/locales-all.min.js"
+        },
+        "AUC": {
+            "name": "rules",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1620757466419x409204242340798000/rrule.js"
+        },
+        "AVL": {
+            "name": "rulesgood.js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1621271510632x376259064193442050/rulesgood.js"
+        },
+        "AVM": {
+            "name": "rulesgood.css",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1621272189831x174324777938542180/rulesgood.css"
+        },
+        "Aai": {
+            "name": "popper.js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1625598732624x591507712911834600/popper.js"
+        },
+        "Aaj": {
+            "name": "bootstrap.min.js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1625598955796x824048050719101800/bootstrap.min.js"
+        },
+        "Aak": {
+            "name": "FCJS - interaction plugin ",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1625599070344x931000775150196400/interaction.js"
+        },
+        "Ado": {
+            "name": "small calendar preview image",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1626801774833x628978706226266900/Screen%20Shot%202021-07-20%20at%201.22.38%20PM.png"
+        },
+        "Adw": {
+            "name": "timeline",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1627062040148x614477792104656000/timeline-4.4.2.js"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": 2,
+        "use_jquery": true
+    }
+}

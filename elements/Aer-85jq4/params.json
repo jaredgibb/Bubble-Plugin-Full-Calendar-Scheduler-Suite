@@ -1,0 +1,328 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 25,
+        "width": 25
+    },
+    "display": "BAFC - Time Slot Generator",
+    "fields": {
+        "AeF": {
+            "caption": "Point of Origin TZID",
+            "doc": "timezone to calibrate datetimes",
+            "editor": "DynamicValue",
+            "name": "timezoneid",
+            "rank": 3,
+            "value": "text"
+        },
+        "AeG": {
+            "caption": "Days of Week",
+            "doc": "an optional list of day names you'd want the events to occur during",
+            "editor": "DynamicValue",
+            "name": "byweekday",
+            "optional": true,
+            "rank": 10,
+            "value": "text"
+        },
+        "AeH": {
+            "caption": "Starting Minute",
+            "editor": "DynamicValue",
+            "name": "minuteoffset",
+            "optional": true,
+            "rank": 11,
+            "value": "number"
+        },
+        "AeI": {
+            "caption": "Starting Hour",
+            "editor": "DynamicValue",
+            "name": "houroffset",
+            "optional": true,
+            "rank": 12,
+            "value": "number"
+        },
+        "AeJ": {
+            "caption": "How Many Events",
+            "default_val": 500,
+            "editor": "DynamicValue",
+            "name": "count",
+            "rank": 8,
+            "value": "number"
+        },
+        "AeK": {
+            "caption": "Time Slot Duration",
+            "default_val": 25,
+            "editor": "DynamicValue",
+            "name": "eventduration",
+            "rank": 9,
+            "value": "number"
+        },
+        "AeL": {
+            "caption": "Starting Offset",
+            "default_val": 5,
+            "doc": "how far from the start of the timeslot do you want the meeting to occur. ",
+            "editor": "DynamicValue",
+            "name": "beginingbuffer",
+            "rank": 13,
+            "value": "number"
+        },
+        "AeM": {
+            "caption": "Recurrence Frequency",
+            "default_val": "week",
+            "doc": "minute, hour, day, week, month",
+            "editor": "DynamicValue",
+            "name": "repetitions",
+            "rank": 6,
+            "value": "text"
+        },
+        "AeN": {
+            "caption": "Monday",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "mondayAvail",
+            "optional": true,
+            "rank": 16,
+            "value": "number_range"
+        },
+        "AeO": {
+            "caption": "Tuesday",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "tuesdayAvail",
+            "optional": true,
+            "rank": 17,
+            "value": "number_range"
+        },
+        "AeP": {
+            "caption": "Wednesday",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "wednesdayAvail",
+            "optional": true,
+            "rank": 18,
+            "value": "number_range"
+        },
+        "AeQ": {
+            "caption": "Thursday",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "thurdayAvail",
+            "optional": true,
+            "rank": 19,
+            "value": "number_range"
+        },
+        "AeR": {
+            "caption": "Friday",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "fridayAvail",
+            "optional": true,
+            "rank": 20,
+            "value": "number_range"
+        },
+        "AeS": {
+            "caption": "Saturday",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "saturdayAvail",
+            "optional": true,
+            "rank": 21,
+            "value": "number_range"
+        },
+        "AeT": {
+            "caption": "Sunday",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "sundayAvail",
+            "optional": true,
+            "rank": 15,
+            "value": "number_range"
+        },
+        "AeU": {
+            "caption": "Recurrence Interval",
+            "default_val": 1,
+            "doc": "This is based on the frequency. So a freqeuency of 1 and interval of 1 means 1 event is created for every minute.  a frequency of weekly and interval of 1 means the event wiill be created once weekly but with an interval of two, every other week. ",
+            "editor": "DynamicValue",
+            "name": "interval",
+            "rank": 7,
+            "value": "number"
+        },
+        "AeV": {
+            "caption": "Ranges",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "blocked_date_time_ranges",
+            "optional": true,
+            "rank": 23,
+            "value": "date_range"
+        },
+        "AeW": {
+            "caption": "TSG - Filtered Time Slots",
+            "doc": "Should be set to : TSG - Filtered Time Slots",
+            "editor": "custom_type",
+            "name": "return_time_slot_format",
+            "rank": 25
+        },
+        "AeX": {
+            "caption": "Start Date/Time",
+            "editor": "DynamicValue",
+            "name": "start_date",
+            "rank": 1,
+            "value": "date"
+        },
+        "AeY": {
+            "caption": "End Date/Time",
+            "editor": "DynamicValue",
+            "name": "end_date",
+            "rank": 2,
+            "value": "date"
+        },
+        "AeZ": {
+            "caption": "------- Start and End Date --------",
+            "editor": "Label",
+            "name": "-------_start_and_end_date_--------",
+            "rank": 0
+        },
+        "Aea": {
+            "caption": "Point of View TZID",
+            "editor": "DynamicValue",
+            "name": "format_to",
+            "rank": 4,
+            "value": "text"
+        },
+        "Aeb": {
+            "caption": "TSG - List All Slots",
+            "editor": "custom_type",
+            "name": "list_of_dates_datatype",
+            "rank": 26
+        },
+        "Aec": {
+            "caption": "_____________________________________________________ TimeSlotted Event Info Out _____________________________________________________ ",
+            "editor": "Label",
+            "name": "______________________________________________________event_location_______________________________________________________timeslotted_event_info_out_______________________________________________________event_location______________________________________________________",
+            "rank": 27
+        },
+        "Aed": {
+            "caption": "Event Title",
+            "default_val": "Availabiilty",
+            "editor": "DynamicValue",
+            "name": "time_slot_title",
+            "rank": 28,
+            "value": "text"
+        },
+        "Aee": {
+            "caption": "Event Resource",
+            "default_val": "No Resource",
+            "editor": "DynamicValue",
+            "name": "events_resource_title",
+            "rank": 29,
+            "value": "text"
+        },
+        "Aef": {
+            "caption": "Event Color",
+            "default_val": "rgba(69, 224, 211, 1)",
+            "editor": "Color",
+            "name": "colorizer",
+            "rank": 30
+        },
+        "Aeg": {
+            "caption": "_____________________________________________________ Recurrence Rules _____________________________________________________",
+            "editor": "Label",
+            "name": "______________________________________________________recurrence_rules______________________________________________________",
+            "rank": 5
+        },
+        "Aeh": {
+            "caption": "_____________________________________________________ Daily Timeslot Availability Hours _____________________________________________________",
+            "editor": "Label",
+            "name": "______________________________________________________daily_timeslot_hours______________________________________________________",
+            "rank": 14
+        },
+        "Aei": {
+            "caption": "_____________________________________________________  Blocked TImeslots Event Input _____________________________________________________",
+            "editor": "Label",
+            "name": "_______________________________________________________blocked_timeslots_event_input______________________________________________________",
+            "rank": 22
+        },
+        "Aej": {
+            "caption": "_____________________________________________________ Set Exposed Data Types _____________________________________________________",
+            "editor": "Label",
+            "name": "______________________________________________________set_exposed_data_types______________________________________________________",
+            "rank": 24
+        }
+    },
+    "icon": "ion-android-alarm-clock",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "Aek": {
+            "caption": "List of Dates",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "list_of_dates",
+            "value": "date"
+        },
+        "Ael": {
+            "caption": "List of Date Intervals",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "list_of_date_intervals",
+            "value": "date_range"
+        },
+        "Aem": {
+            "caption": "Time Slotted Events",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "time_slotted_events",
+            "value": "date_range"
+        },
+        "Aen": {
+            "caption": "Filtered Time Slots",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "availabletimeslots",
+            "value": "custom_data_AeW"
+        },
+        "Aeo": {
+            "caption": "the recurring event rule string",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "the_recurring_event_rule_string",
+            "value": "text"
+        },
+        "Aep": {
+            "caption": "the rule in english",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "the_rule_in_english",
+            "value": "text"
+        },
+        "Aeq": {
+            "caption": "listOfDates",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "listOfDates",
+            "value": "custom_data_Aeb"
+        },
+        "AoX": {
+            "caption": "List of Date Intervals - Cumulative Count List For Orchestra",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "cumulative_count_list_for_orchestra_1",
+            "value": "number"
+        }
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "caption": "go to next view",
+    "doc": "Renders next month, year or decade, depending on current view."
+}

@@ -1,0 +1,4 @@
+{
+    "caption": "toggle the element",
+    "doc": "this is really useful when you want to use a custom date display. this timepicker is nice but on mobile it forces certain stylings that you or your users may not appreciate. if that's the case, make the element 0 px tall and as wide as your desired trigger eleemtn. place the trigger and this element in a group together with this element at the very bottom of the group. voila! "
+}

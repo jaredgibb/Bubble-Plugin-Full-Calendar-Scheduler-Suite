@@ -1,0 +1,48 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 30,
+        "width": 30
+    },
+    "display": "BAFC - Calendar Date Generator",
+    "fields": {
+        "AeB": {
+            "caption": "TimeZone ID",
+            "editor": "DynamicValue",
+            "name": "time_zone",
+            "rank": 0,
+            "value": "text"
+        },
+        "AeC": {
+            "caption": "Month Offset",
+            "editor": "DynamicValue",
+            "name": "offset",
+            "rank": 1,
+            "value": "number"
+        },
+        "AeD": {
+            "caption": "start_on",
+            "default_val": "Sunday",
+            "editor": "Dropdown",
+            "name": "start_on",
+            "options": "Sunday,Monday",
+            "rank": 2
+        }
+    },
+    "icon": "ion-android-calendar",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AeA": {
+            "caption": "month_dates",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "month_dates",
+            "value": "date"
+        }
+    }
+}

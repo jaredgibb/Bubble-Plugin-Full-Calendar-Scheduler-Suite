@@ -1,0 +1,13 @@
+{
+    "caption": "BAFC - Jump to Date",
+    "doc": "",
+    "fields": {
+        "AVb": {
+            "caption": "date",
+            "editor": "DynamicValue",
+            "name": "date",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

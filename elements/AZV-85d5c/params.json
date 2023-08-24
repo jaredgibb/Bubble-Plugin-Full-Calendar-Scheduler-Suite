@@ -1,0 +1,105 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 50,
+        "width": 50
+    },
+    "display": "BAFC - Schedule Coordinator",
+    "fields": {
+        "AZW": {
+            "caption": "P1 Start Times",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "timeslots1",
+            "rank": 0,
+            "value": "date"
+        },
+        "AZX": {
+            "caption": "P2 Start Times",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "timeslots2",
+            "rank": 3,
+            "value": "date"
+        },
+        "AZY": {
+            "caption": "Minimum Time",
+            "default_val": 10,
+            "doc": "If you only want to see 30 minute meetings, make both of these 30",
+            "editor": "DynamicValue",
+            "name": "minimum_meeting_time",
+            "rank": 6,
+            "value": "number"
+        },
+        "AZa": {
+            "caption": "P1 TimeZone ID",
+            "editor": "DynamicValue",
+            "name": "tzid_1",
+            "rank": 2,
+            "value": "text"
+        },
+        "AZb": {
+            "caption": "P2 TimeZone ID",
+            "editor": "DynamicValue",
+            "name": "tzid_2",
+            "rank": 5,
+            "value": "text"
+        },
+        "AZc": {
+            "caption": "P1 End Times",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "timeslots1_end",
+            "rank": 1,
+            "value": "date"
+        },
+        "AZd": {
+            "caption": "P2 End Times",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "timeslots2_end",
+            "rank": 4,
+            "value": "date"
+        },
+        "AZf": {
+            "caption": "Max Time",
+            "default_val": 15,
+            "doc": ", this must be larger than the previous entry. If you only want to see 30 minute meetings, make both of these 30",
+            "editor": "DynamicValue",
+            "name": "meeting_length",
+            "rank": 7,
+            "value": "number"
+        }
+    },
+    "icon": "ion-code-working",
+    "states": {
+        "AZZ": {
+            "caption": "Suggested Available Matching Timeslots",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "workingtimes",
+            "value": "date_range"
+        },
+        "AZe": {
+            "caption": "Merged Times",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "merged_times",
+            "value": "date_range"
+        },
+        "AZg": {
+            "caption": "Partioned Merged Times",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "split_(by_time)_merged_times",
+            "value": "date_range"
+        }
+    }
+}

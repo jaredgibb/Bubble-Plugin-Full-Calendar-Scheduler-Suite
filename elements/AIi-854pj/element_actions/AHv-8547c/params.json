@@ -1,0 +1,27 @@
+{
+    "caption": "BAFC - Position Event Popup to event",
+    "fields": {
+        "AHw": {
+            "caption": "Popup Element ID",
+            "editor": "StaticText",
+            "name": "id",
+            "rank": 0
+        },
+        "AHx": {
+            "caption": "x",
+            "doc": "use the calendars XCoord output",
+            "editor": "DynamicValue",
+            "name": "x",
+            "rank": 1,
+            "value": "number"
+        },
+        "AHy": {
+            "caption": "y",
+            "doc": "use the calendars XCoord output",
+            "editor": "DynamicValue",
+            "name": "y",
+            "rank": 2,
+            "value": "number"
+        }
+    }
+}

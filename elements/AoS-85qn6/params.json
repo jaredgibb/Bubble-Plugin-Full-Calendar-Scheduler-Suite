@@ -1,0 +1,39 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "2 lists to 1 date range list",
+    "fields": {
+        "AoU": {
+            "caption": "Start Times",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "starts",
+            "rank": 0,
+            "value": "date"
+        },
+        "AoV": {
+            "caption": "End Times",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "ends",
+            "rank": 1,
+            "value": "date"
+        }
+    },
+    "icon": "ion-android-checkbox-blank",
+    "states": {
+        "AoT": {
+            "caption": "ranges out",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "ranges_out",
+            "value": "date_range"
+        }
+    }
+}

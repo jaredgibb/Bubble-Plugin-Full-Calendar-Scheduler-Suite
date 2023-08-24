@@ -1,0 +1,55 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 25,
+        "width": 25
+    },
+    "display": "BAFC - Calendar Helper Element",
+    "icon": "ion-help-circled",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "ARk": {
+            "caption": "Calendar Start Date",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    var apple \nfunction daysInMonth(month, year) {\n  return new Date(year, month, 0).getDate();\n}\n\nfunction GFG_Fun() {\n  var date = new Date();\n  var firstDay = new Date(date.getFullYear(),\n    date.getMonth(), 1);\n\n  var lastDay = new Date(date.getFullYear(),\n    date.getMonth(), daysInMonth(date.getMonth() + 1,\n      date.getFullYear()));\n\nreturn firstDay\n}\n\n    return GFG_Fun\n\n\n}"
+            },
+            "name": "startdatesout",
+            "value": "date"
+        },
+        "ARl": {
+            "caption": "Calendar End Date",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    var apple \nfunction daysInMonth(month, year) {\n  return new Date(year, month, 0).getDate();\n}\n\nfunction GFG_Fun() {\n  var date = new Date();\n  var firstDay = new Date(date.getFullYear(),\n    date.getMonth(), 1);\n\n  var lastDay = new Date(date.getFullYear(),\n    date.getMonth(), daysInMonth(date.getMonth() + 1,\n      date.getFullYear()));\n\nreturn lastDay\n}\n\n    return GFG_Fun\n\n\n\n}"
+            },
+            "name": "enddatesout",
+            "value": "date"
+        },
+        "AVc": {
+            "caption": "Browser Locale",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "browser_locale",
+            "value": "text"
+        },
+        "AVd": {
+            "caption": "Browser Time Zone",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "browser_time_zone",
+            "value": "text"
+        },
+        "AWN": {
+            "caption": "Tab Visibility",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "visibility",
+            "value": "text"
+        }
+    }
+}

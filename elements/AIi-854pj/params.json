@@ -1,0 +1,1477 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 150,
+        "width": 300
+    },
+    "display": "BAFC - Calendar Element",
+    "events": {
+        "AIA": {
+            "caption": "a time frame has been selected",
+            "name": "select"
+        },
+        "AIB": {
+            "caption": "an event has been clicked",
+            "name": "click"
+        },
+        "AIC": {
+            "caption": "an event's start or end time has been modified",
+            "doc": "",
+            "name": "timeschanged"
+        },
+        "AIE": {
+            "caption": "calendar prev button clicked",
+            "name": "calendar_prev_button_clicked"
+        },
+        "AIF": {
+            "caption": "calendar next button clicked",
+            "name": "calendar_next_button_clicked"
+        },
+        "ARi": {
+            "caption": "Body clicked outside of moveable group",
+            "name": "body_clicked_outside_of_moveable_group"
+        },
+        "ARt": {
+            "caption": "Fullcalendar Event was Deleted",
+            "name": "event_deleted"
+        },
+        "AYb": {
+            "caption": "a day has been clicked",
+            "doc": "good for picking a date to show times",
+            "name": "dayclicked"
+        },
+        "AfX": {
+            "caption": "A Calendar Skeleton Has Been Rendered",
+            "name": "skeleton_rendered"
+        },
+        "AfY": {
+            "caption": "Calendar Dates/Times Have been Rendered",
+            "name": "events_rendered"
+        },
+        "Afa": {
+            "caption": "Calendar's JS has finished being ran",
+            "name": "calendarready"
+        }
+    },
+    "fields": {
+        "AIG": {
+            "caption": "Event Start Times",
+            "doc": "dates should be formatted using the extended ISO format",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "start_list",
+            "rank": 9,
+            "value": "text"
+        },
+        "AIH": {
+            "caption": "Event End Times",
+            "doc": "dates should be formatted using the extended ISO format",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "end_list",
+            "rank": 10,
+            "value": "text"
+        },
+        "AII": {
+            "caption": "Event Titles",
+            "default_val": "",
+            "doc": "Be mindful of titles with commas and change the delimiter accordingly.  IF YOUR TITLE HAS A COMMA, YOU BETTER WELL CHANGE the delimiter below TO AVOID BREAKING THE APP## is always a nice option for delimiter as it is incredibly unlikely to occur in everyday texts..                       _________________________________________________________                                  When you have to change the dlimiter, you do it by using the operator :format as text. then for each item for the list you would use 'this word' as the item and then set your delimiter. whatever you set as the delimiter here you need to copy into the box below. check out the videos on this plugins notion page to see more about this feature. access the notion by going to the plugin page and clicking through. ",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "title_list",
+            "optional": false,
+            "rank": 8,
+            "value": "text"
+        },
+        "AIJ": {
+            "caption": "Event ID's",
+            "doc": "If events are coming from the DB, you will use the uniqueID from the DB.  the google calendar events also have their own eventID's be sure to use these if you have any chance in hell of completing CRUD actions on your events instead of just READING them only",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "unique_id_list",
+            "rank": 11,
+            "value": "text"
+        },
+        "AIK": {
+            "caption": "Event Color List",
+            "default_val": "",
+            "doc": "now, this following field is totally optional. but odds are you want to use discrete colors for events based on who they're with or what they're related to.  so, the only caveat pain in the ass is that you will need to :format as text each list you want to use without option. each list will need to use the tilde ~ as the delimiter. this allows you to not worry about hex vs RGB formatting for event colors which will allow you to accept colors from most any data source. sorry, but it works better this way. :)what color should the event be? All event color lists should be \":format as text\" with context to show per item as the bubble choice \"This text\" and the delimiter as a tilde \"~\" . join each data source list with a tilde '~'. this allows you to not worry about hex vs rgb for your event colors. heck, you can even use rgba color codes. _______________________________________________ remeber. you dont HAVE to use this, but you'd be a lot cooler if you did!",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "color_list",
+            "optional": true,
+            "rank": 17,
+            "value": "text"
+        },
+        "AIL": {
+            "caption": "Event Editable List",
+            "doc": "this applies to discrete events. do you want this to be able to be dragged/resized easily. requires a manual data modification. see the popup in the plugin example. takes lists of true false values separated by commas",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "editable",
+            "optional": true,
+            "rank": 15,
+            "value": "text"
+        },
+        "AIM": {
+            "caption": "Event Identifier List",
+            "doc": "Additional property to give the event. can be used to control workflows",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "whatami",
+            "optional": true,
+            "rank": 23,
+            "value": "text"
+        },
+        "AIN": {
+            "caption": "All fields below should be lists of equal length. You can add additional lists of events by separating the data sources with the appropriate delimiter. be mindful that many lists use a comma as a delimiter. That's fine until the content of your list also has a comma such as in a long text or this text you are reading. If that is the case, you will want to :format as text your list, and simply use a tilde as the delimiter. ",
+            "editor": "Label",
+            "name": "all_fields_below_should_be_lists_of_equal_length._you_can_add_additional_lists_of_events_by_separating_the_data_sources_with_a_comma",
+            "rank": 5
+        },
+        "AIO": {
+            "caption": "Clicked Event Data",
+            "doc": "must be set to this: Clicked Event Data ",
+            "editor": "custom_type",
+            "name": "event_data",
+            "rank": 2
+        },
+        "AIQ": {
+            "caption": "_____________________________________________________    Exposed Event States   _____________________________________________________ Please be sure to set these correctly.You should be ableto simply click the drop down and begin to type the name ofthe property itself. When you find the matching name in the dropdown, select that item. These are used to expose various types of data from the calendar element. There's a lot you can get out of it, some of it redundant, so be sure to check out the gitbook page to see more info about these and all of the available properties. ",
+            "doc": "You must set these. The following two options are not settings or data inputs. Instead this is how you get information about events from the calendar. read the documentation for each to identify how to set them.  the first option will output data when you click on an event. ",
+            "editor": "Label",
+            "name": "_",
+            "rank": 0
+        },
+        "AQB": {
+            "caption": "Title Color - Light",
+            "default_val": "rgba(252, 249, 249, 0.99)",
+            "doc": ". This calendar element will automagically set your event text color based on the darkness of the event. So, pick a light color and a dark color and the calendar will pick which to use for you!  This allows for a wider array of event colors to be used. ",
+            "editor": "Color",
+            "name": "lightcolor",
+            "rank": 81
+        },
+        "AQC": {
+            "caption": "Title Color - Dark",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "doc": ". This calendar element will automagically set your event text color based on the darkness of the event. So, pick a light color and a dark color and the calendar will pick which to use for you!  This allows for a wider array of event colors to be used. ",
+            "editor": "Color",
+            "name": "darkcolor",
+            "rank": 82
+        },
+        "ARC": {
+            "caption": "Modified Event Data",
+            "doc": "must be set to this: Modified Event Data ",
+            "editor": "custom_type",
+            "name": "modified_event_data",
+            "rank": 1
+        },
+        "ARI": {
+            "caption": "Event Summary List",
+            "doc": "Your summaries data source",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "event_summary",
+            "optional": true,
+            "rank": 20,
+            "value": "text"
+        },
+        "ARJ": {
+            "caption": "Event Location List",
+            "doc": "include your event locations here. separate each data source with your chosen delimiter",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "event_location",
+            "optional": true,
+            "rank": 19,
+            "value": "text"
+        },
+        "ARK": {
+            "caption": "Event Prop 1 List",
+            "doc": "Any kind of extra information formatted as text. ",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "extra_property_1",
+            "optional": true,
+            "rank": 21,
+            "value": "text"
+        },
+        "ARQ": {
+            "caption": "_____________________________________________________ Required Information  _____________________________________________________",
+            "doc": "the following 6 properties are non-negotiable meaning that if you dont fill them out, you wont get events to display on your calendar. Be sure to read the documentatino for each property. ",
+            "editor": "Label",
+            "name": "-----------------------------event_times_--------------------------",
+            "rank": 7
+        },
+        "ARV": {
+            "caption": ":format as text delimiter",
+            "default_val": ",",
+            "doc": "many of your fields may have commas in their text fields. for example, color in an RGBA(0,0,0,0) format. if this is the case in ANY of your input fields, you should use the operater :format as text on the list, using whatever delimiter you choose here other than a comma. most often setting it to a double hash '##' or a single tilde '~' would work just fine   _____________________________________________________ TO BE CLEAR, IT MAY BE EASIER FOR YOU TO SIMPLY :FIND AND REPLACE ANY COMMA IN A TEXT FIELD. IF YOU MUST MODIFY THIS, YOU WOULD NEED TO ;FORMAT AS TEXT ALL YOUR LIST FIELDS TO USE THIS NEW DELIMITER. IT'S A PAIN IN THE BUT BUT IF YOU DESIRE COMMAS IN YOUR EVENT DATA, FOR NOW THIS IS HOW WE'LL DO IT. ",
+            "editor": "DynamicValue",
+            "name": "unidelim",
+            "optional": false,
+            "rank": 6,
+            "value": "text"
+        },
+        "ARW": {
+            "caption": "_____________________________________________________  setup Event Editability  _____________________________________________________",
+            "doc": "these settings allow you to control how to determine the editabiltiy of an event. this means the ability for events to be modified once they are created either through drag/dropping or stretching the time on the calendar. this can also be used in workflow  logic to prevent event deletion. ____________________________________________    You can control them by haing a true/false value associated with each event or you can control all events on the calendar together. ",
+            "editor": "Label",
+            "name": "----------_customize_the_editability_of_events_-------",
+            "rank": 12
+        },
+        "ARX": {
+            "caption": "How many events to modify",
+            "default_val": "all of them together",
+            "doc": "the default choice is to edit all events 'editability' together. Choose 1. You can either set each events editable property independently or you can set them all together.  if you choose 'all together' be mindful of the next setting. all events will be editable by default. ",
+            "editor": "Dropdown",
+            "name": "editableindividualortogether",
+            "optional": true,
+            "options": "all of them together,each discrete event",
+            "rank": 13
+        },
+        "ARY": {
+            "caption": "Allow Event Edits",
+            "default_val": true,
+            "doc": "check this box if you want events editable. leave the box unchecked for events to not be editable",
+            "editor": "Checkbox",
+            "name": "all_events_editable",
+            "rank": 14
+        },
+        "ARZ": {
+            "caption": "_____________________________________________________ Optional Event Info  _____________________________________________________",
+            "editor": "Label",
+            "name": "--------------------_event_identifier_------------",
+            "rank": 16
+        },
+        "ARg": {
+            "caption": "Event Prop 2 List",
+            "doc": "Any kind of extra information formatted as text. ",
+            "editor": "DynamicValue",
+            "name": "extra_property_2",
+            "optional": true,
+            "rank": 22,
+            "value": "text"
+        },
+        "ASf": {
+            "caption": "Event Resource List",
+            "doc": "this list needs to be the same length as all other event input fields. ",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "eventresources",
+            "optional": true,
+            "rank": 18,
+            "value": "text"
+        },
+        "ASk": {
+            "caption": "_____________________________________________________ Extra Options  _____________________________________________________",
+            "doc": "",
+            "editor": "Label",
+            "name": "-----------------------_extra_calendar_data_-----------",
+            "rank": 75
+        },
+        "ASl": {
+            "caption": "Data Out",
+            "default_val": false,
+            "doc": "fringe use case. if you ever get a circular error while referencing the calendars dates to produce data for the calendar you may need this. more data out will get added over time. ",
+            "editor": "Checkbox",
+            "name": "check_me_if_you_want_to_use_me",
+            "rank": 76
+        },
+        "AUY": {
+            "caption": "Viewing Time Zone",
+            "default_val": "America/Detroit",
+            "doc": "use this to display dates/times appropriately! It should say America/Kalamazoo but...... If you're like me, your town wont work outta the box. you'll likely need to identify your own timezone ID. ",
+            "editor": "DynamicValue",
+            "name": "timezoneid",
+            "optional": true,
+            "rank": 40,
+            "value": "text"
+        },
+        "AUc": {
+            "caption": "Cross Day Bkgrnd Color",
+            "default_val": "rgba(153, 247, 228, 0.31)",
+            "doc": "this specifically refers to in the monthgrid view, when an event extends a 24 hour period, what color should that events background be as it will span the days it consumes. ",
+            "editor": "Color",
+            "name": "event_background_color",
+            "optional": false,
+            "rank": 84
+        },
+        "AUg": {
+            "caption": "First Day of the Week",
+            "doc": "The default value depends on the current locale.  The value must be a number that represents the day of the week.  Sunday=0, Monday=1, Tuesday=2, etc.",
+            "editor": "DynamicValue",
+            "name": "first_day_of_the_week",
+            "optional": true,
+            "rank": 41,
+            "value": "number"
+        },
+        "AUn": {
+            "caption": "Assign Color from Identifier",
+            "default_val": false,
+            "doc": "in the boxes below you should assign event names and colors. The Event Type field is directly associated with the Event Identifier field. So. if you dont use identifiers,  all colors will be the default event color chosen above. ",
+            "editor": "Checkbox",
+            "name": "useeventspecificcolors",
+            "rank": 25
+        },
+        "AUp": {
+            "caption": "Event Type 1 Color",
+            "default_val": "rgba(255, 68, 68, 1)",
+            "editor": "Color",
+            "name": "ecolor1",
+            "rank": 27
+        },
+        "AUq": {
+            "caption": "Event Type 2 Color",
+            "default_val": "rgba(255, 187, 51, 1)",
+            "editor": "Color",
+            "name": "ecolor2",
+            "rank": 29
+        },
+        "AUr": {
+            "caption": "Event Type 3 Color",
+            "default_val": "rgba(0, 200, 81, 1)",
+            "editor": "Color",
+            "name": "ecolor3",
+            "rank": 31
+        },
+        "AUs": {
+            "caption": "Event Type 4 Color",
+            "default_val": "rgba(51, 181, 229, 1)",
+            "editor": "Color",
+            "name": "ecolor4",
+            "rank": 33
+        },
+        "AUt": {
+            "caption": "Event Type 5 Color",
+            "default_val": "rgba(170, 102, 204, 1)",
+            "editor": "Color",
+            "name": "ecolor5",
+            "rank": 35
+        },
+        "AUu": {
+            "caption": "Event Type 6 Color",
+            "default_val": "rgba(252, 252, 0, 0.99)",
+            "editor": "Color",
+            "name": "ecolor6",
+            "rank": 37
+        },
+        "AVA": {
+            "caption": "Resource Label Font Size",
+            "default_val": "1em",
+            "doc": "This field  will take any appropriate CSS font size. you may find that with more than a few resources, you'd like to be able to decrease the font size a little bit.  ",
+            "editor": "DynamicValue",
+            "name": "fontsizeresources",
+            "rank": 95,
+            "value": "text"
+        },
+        "AVR": {
+            "caption": "Background Color ",
+            "default_val": "rgba(170, 102, 204, 1)",
+            "doc": "well, incase you weren't ready or didn't set up your DB for colors yet, choose your default event color here! ",
+            "editor": "Color",
+            "name": "defaulteventcolor",
+            "rank": 83
+        },
+        "AVS": {
+            "caption": "Event Type 1",
+            "default_val": " ",
+            "editor": "DynamicValue",
+            "name": "event_type_1",
+            "optional": true,
+            "rank": 26,
+            "value": "text"
+        },
+        "AVT": {
+            "caption": "Event Type 2",
+            "default_val": " ",
+            "editor": "DynamicValue",
+            "name": "event_type_2",
+            "optional": true,
+            "rank": 28,
+            "value": "text"
+        },
+        "AVU": {
+            "caption": "Event Type 3",
+            "default_val": " ",
+            "editor": "DynamicValue",
+            "name": "event_type_3",
+            "optional": true,
+            "rank": 30,
+            "value": "text"
+        },
+        "AVV": {
+            "caption": "Event Type 4",
+            "default_val": " ",
+            "editor": "DynamicValue",
+            "name": "event_type_4",
+            "optional": true,
+            "rank": 32,
+            "value": "text"
+        },
+        "AVW": {
+            "caption": "Event Type 5",
+            "default_val": " ",
+            "editor": "DynamicValue",
+            "name": "event_type_5",
+            "optional": true,
+            "rank": 34,
+            "value": "text"
+        },
+        "AVX": {
+            "caption": "Event Type 6",
+            "default_val": " ",
+            "editor": "DynamicValue",
+            "name": "event_type_6",
+            "optional": true,
+            "rank": 36,
+            "value": "text"
+        },
+        "AVZ": {
+            "caption": "Default Color",
+            "default_val": "rgba(0, 166, 255, 0.8)",
+            "doc": "yes. here's another default color box. it's for convinience. know that you need to set this if you are coloring events based on their identifiers. ",
+            "editor": "Color",
+            "name": "default_color_based_on_identifier",
+            "rank": 38
+        },
+        "AVe": {
+            "caption": "Filter Eventless Resources",
+            "default_val": false,
+            "doc": "When this setting is activated, only resources that have associated events will be displayed. When activated, please be aware that in order for resources to render, event data will need to finish being fetched. this setting only applies to the current view. ",
+            "editor": "DynamicValue",
+            "name": "filterresourceview",
+            "optional": true,
+            "rank": 94,
+            "value": "boolean"
+        },
+        "AVf": {
+            "caption": "Assign 'no Resource'",
+            "default_val": false,
+            "doc": "if you havent provided a resource name, the calendar can provide a default. this lets you create events that can then be moved on to any open resources timeslots. alternatively, you could choose not to do this and use the ability to filter events without resources. ",
+            "editor": "Checkbox",
+            "name": "assignresource",
+            "rank": 93
+        },
+        "AVg": {
+            "caption": "_____________________________________________________   Link Event Color to Event Identifier   __________________________________________________ ",
+            "doc": "using these will set color based on the event type instead of based on the list from above.  clicking in the box below will negate your list of colors above.  if there is enough need we  may be able to make the two work in harmony or be dynamic. well, it is dynamic. so at anytime you can swictch on and off the box below and this will update the event colors accordingly.  do it based on the view. ",
+            "editor": "Label",
+            "name": "based_on_event_identifier",
+            "rank": 24
+        },
+        "AWC": {
+            "caption": "Time Slot format",
+            "default_val": "h:mm ",
+            "doc": "takes any moment.js time format string (h:mm a) is my preferred format but the bosnian language (among others) doesn't like this format with the current javascript library so here you go. decide your time format and add your own signifier for before or after noon. ..... There are so many ways to format this. go here https://devhints.io/moment  . scroll down a little bit and look at the table for Time formatting. ",
+            "editor": "DynamicValue",
+            "name": "timeslotformat",
+            "rank": 43,
+            "value": "text"
+        },
+        "AWD": {
+            "caption": "Timeslot Custom AM",
+            "default_val": "am",
+            "doc": "if you want to customize the look of your AM/PM, be sure to leave the option off from the setting above. ",
+            "editor": "DynamicValue",
+            "name": "customam",
+            "optional": false,
+            "rank": 46,
+            "value": "text"
+        },
+        "AWE": {
+            "caption": "Timeslot Custom PM",
+            "default_val": "pm",
+            "doc": "you can leave these blank",
+            "editor": "DynamicValue",
+            "name": "custompm",
+            "optional": false,
+            "rank": 47,
+            "value": "text"
+        },
+        "AWF": {
+            "caption": "_____________________________________________________   Calendar Date/Time Formatting  _____________________________________________________ ",
+            "editor": "Label",
+            "name": "timeslot_formatting",
+            "rank": 39
+        },
+        "AWG": {
+            "caption": "Display All day slot?",
+            "default_val": false,
+            "doc": "check me to display the all day slot at the top of the calendar. ",
+            "editor": "DynamicValue",
+            "name": "alldayslot",
+            "rank": 48,
+            "value": "boolean"
+        },
+        "AWJ": {
+            "caption": "Custom Day name list",
+            "doc": "start with your sunday. if you include a list here, it will automatically override the standard day names. this is useful when you're language is properly supported. ",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "daynames",
+            "optional": true,
+            "rank": 44,
+            "value": "text"
+        },
+        "AWK": {
+            "caption": "Date Column format",
+            "default_val": "ddd",
+            "doc": "the day header format will accept a moment.js string here. this is only relevant when you are not customizing day names. this is any acceptable moment.js  format string for dates",
+            "editor": "DynamicValue",
+            "name": "momentjsformat",
+            "rank": 42,
+            "value": "text"
+        },
+        "AWL": {
+            "caption": "Date w/ Custom Day Name",
+            "default_val": true,
+            "doc": "when you are using a  custom day name list, you can also choose to display the date next to the day name. this follows the date column format entered above and will insert that to the right of the day name you enter. ",
+            "editor": "DynamicValue",
+            "name": "include_date_with_day",
+            "optional": false,
+            "rank": 45,
+            "value": "boolean"
+        },
+        "AWO": {
+            "caption": "Visible",
+            "doc": "This can be used with the output of visibiity from the Data Helper welement. if you dont load the calendar visibliy on the screen there's a chance events dont show. this fixes that.  Essentially if you use the visible property, when you return to the tab it forces a reload of the calendar on the screen but since it's unlikely no data changed, the DB isnt called. ",
+            "editor": "DynamicValue",
+            "name": "visible",
+            "optional": true,
+            "rank": 77,
+            "value": "text"
+        },
+        "AWc": {
+            "caption": "Calendar Language",
+            "default_val": "en",
+            "doc": "this field accepts any valid locale code. jaredgibb.bubbleapps.io/timeslottester has a list of most accepted locale codes. ",
+            "editor": "DynamicValue",
+            "name": "locale",
+            "optional": false,
+            "rank": 49,
+            "value": "text"
+        },
+        "AZh": {
+            "caption": "Restrict Selectability",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "restrict_selection_to_business_hours_only",
+            "rank": 52,
+            "value": "boolean"
+        },
+        "AZi": {
+            "caption": "Restrict Event Drag-and-Dropping",
+            "default_val": false,
+            "doc": "Restrict Event Drag-and-Dropping. Limits event dragging and resizing to certain windows of time",
+            "editor": "DynamicValue",
+            "name": "restrict_dragresizing_to_business_hours_only",
+            "rank": 57,
+            "value": "boolean"
+        },
+        "AZj": {
+            "caption": "Daily Start Time",
+            "default_val": "09:00",
+            "doc": "takes time in a 24:00 hour format   ",
+            "editor": "DynamicValue",
+            "name": "restricted_selection_start_time",
+            "optional": true,
+            "rank": 53,
+            "value": "text"
+        },
+        "AZk": {
+            "caption": "Daily End Time",
+            "default_val": "17:00",
+            "doc": "takes time in a 24:00 hour format   ",
+            "editor": "DynamicValue",
+            "name": "restricted_selection_end_time",
+            "optional": true,
+            "rank": 54,
+            "value": "text"
+        },
+        "AZl": {
+            "caption": "Applicable Days",
+            "default_val": "1,2,3,4,5",
+            "doc": "days of week. a list of zero-based day of week integers (0=Sunday).  ",
+            "editor": "DynamicValue",
+            "name": "restricted_selection_days_of_week",
+            "optional": true,
+            "rank": 55,
+            "value": "text"
+        },
+        "AZm": {
+            "caption": "_____________________________________________________   Restrict When Events Can Be Created _____________________________________________________",
+            "editor": "Label",
+            "name": "-------------------___restrict_selection_------------",
+            "rank": 51
+        },
+        "AZn": {
+            "caption": "_____________________________________________________   Restrict when Events can Be Drag/Dropped _____________________________________________________",
+            "editor": "Label",
+            "name": "-------------------___restrict_drag/drop_------------",
+            "rank": 56
+        },
+        "AZo": {
+            "caption": "Daily Start Time",
+            "default_val": "09:00",
+            "editor": "DynamicValue",
+            "name": "restricted_dragresizing_start_time",
+            "optional": true,
+            "rank": 58,
+            "value": "text"
+        },
+        "AZp": {
+            "caption": "Daily End time",
+            "default_val": "17:00",
+            "editor": "DynamicValue",
+            "name": "restricted_dragresizing_end_time",
+            "optional": true,
+            "rank": 59,
+            "value": "text"
+        },
+        "AZq": {
+            "caption": "_____________________________________________________ Business Hours _____________________________________________________",
+            "editor": "Label",
+            "name": "-------------------business_hours?_------------",
+            "rank": 61
+        },
+        "AZr": {
+            "caption": "Display Business Hrs",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "use_business_hours",
+            "rank": 62,
+            "value": "boolean"
+        },
+        "AZs": {
+            "caption": "Daily Start Time",
+            "default_val": "09:00",
+            "editor": "DynamicValue",
+            "name": "bhours_start",
+            "optional": true,
+            "rank": 63,
+            "value": "text"
+        },
+        "AZt": {
+            "caption": "Daily End Time",
+            "default_val": "17:00",
+            "editor": "DynamicValue",
+            "name": "bhours_end",
+            "optional": true,
+            "rank": 64,
+            "value": "text"
+        },
+        "AZu": {
+            "caption": "Inactive Color",
+            "default_val": "rgba(181, 179, 179, 1)",
+            "editor": "Color",
+            "name": "nonbhours_color",
+            "rank": 66
+        },
+        "AZv": {
+            "caption": "Applicable Days",
+            "default_val": "1,2,3,4,5",
+            "doc": "this field takes a list of numbers 0-6",
+            "editor": "DynamicValue",
+            "name": "bdays_of_the_week",
+            "optional": true,
+            "rank": 65,
+            "value": "text"
+        },
+        "AZw": {
+            "caption": "Applicable Days",
+            "default_val": "1,2,3,4,5",
+            "editor": "DynamicValue",
+            "name": "restricted_dragresizing_days_of_week",
+            "optional": true,
+            "rank": 60,
+            "value": "text"
+        },
+        "AZx": {
+            "caption": "_____________________________________________________ Toggle Event Creation Through Clicking and Dragging _____________________________________________________",
+            "editor": "Label",
+            "name": "should_times_be_selectable_outside_of_events_created_on_your_calendar???",
+            "rank": 67
+        },
+        "AZy": {
+            "caption": "Allow Time Selection",
+            "default_val": true,
+            "doc": "This blocks the selection of any timefram on the calendar. good to use if you only want users to be able to select events. can be used to remove confusion in these cases as a user WONT wonder why they are able to select a time frame",
+            "editor": "DynamicValue",
+            "name": "allow_free_selection",
+            "rank": 68,
+            "value": "boolean"
+        },
+        "AaA": {
+            "caption": "Title Date Format",
+            "default_val": "dddd, MMMM",
+            "doc": "Use any momentJS format string. https://momentjs.com/docs/#/displaying/",
+            "editor": "DynamicValue",
+            "name": "titleformatmomentjs",
+            "optional": false,
+            "rank": 71,
+            "value": "text"
+        },
+        "AaB": {
+            "caption": "Left Nav Button",
+            "default_val": "timeGridDay",
+            "doc": "should probably be any of the following: timeGridDay,timelineDay,resourceTimelineDay,resourceDayGridDay,resourceTimeGridDay                 The reality is that you can use any of the button texts in any of these three slots. it just makes sense to keep a little standardization but not always! ",
+            "editor": "DynamicValue",
+            "name": "leftbutton",
+            "options": "timeGridDay,timelineDay,resourceTimelineDay,resourceDayGridDay, resourceTimeGridDay",
+            "rank": 72,
+            "value": "text"
+        },
+        "AaC": {
+            "caption": "Middle Nav Button",
+            "default_val": "timeGridWeek",
+            "doc": "should be any of the following: resourceDayGridWeek,timeGridWeek,timelineWeek,resourceTimeGridWeek,resourceTimelineWeek,dayGridWeek,listDay,listWeek,",
+            "editor": "DynamicValue",
+            "name": "middlebutton",
+            "options": "resourceDayGridWeek,timeGridWeek,timelineWeek,resourceTimeGridWeek,resourceTimelineWeek,dayGridWeek,listDay,listWeek,",
+            "rank": 73,
+            "value": "text"
+        },
+        "AaD": {
+            "caption": "Right Nav Button",
+            "default_val": "dayGridMonth",
+            "doc": "should be any of the following: resourceTimelineMonth,dayGridMonth,resourceDayGridMonth, dayGridDaylistMonth, listYear",
+            "editor": "DynamicValue",
+            "name": "rightbutton",
+            "options": "resourceTimelineMonth,dayGridMonth,resourceDayGridMonth, dayGridDaylistMonth",
+            "rank": 74,
+            "value": "text"
+        },
+        "AaE": {
+            "caption": "_____________________________________________________ Calendar Header Formatting  _____________________________________________________",
+            "editor": "Label",
+            "name": "---------_day/week/month_buttons_-------",
+            "rank": 69
+        },
+        "AaH": {
+            "caption": "Font Size",
+            "default_val": ".85em",
+            "doc": "Change the event font size here. You can use any appropriate css value herer",
+            "editor": "DynamicValue",
+            "name": "eventfontsize",
+            "rank": 80,
+            "value": "text"
+        },
+        "AaN": {
+            "caption": "Show Header",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "show_header",
+            "rank": 70,
+            "value": "boolean"
+        },
+        "AaQ": {
+            "caption": "Selected TimeFrame",
+            "doc": "must be set to this: Selected TimeFrame Data ",
+            "editor": "custom_type",
+            "name": "selected_timeframe",
+            "rank": 4
+        },
+        "AaS": {
+            "caption": "Display Weekends",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "weekends",
+            "rank": 50,
+            "value": "boolean"
+        },
+        "Aae": {
+            "caption": "Calendar Data",
+            "doc": "mustbe set to this: Calendar Data",
+            "editor": "custom_type",
+            "name": "calendar_data",
+            "rank": 3
+        },
+        "AbG": {
+            "caption": "autoheight",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "autoheight",
+            "rank": 78,
+            "value": "boolean"
+        },
+        "Ads": {
+            "caption": "Border Color",
+            "default_val": "#18191A",
+            "doc": "guess what. this can be a list or a singular color if you really want it to be! just try.  BUT if you use a list, be sure to separate with  a tilde the exact same at the Event Colors LIst!  leave this blank to make sure that your events are a solid color (no border)",
+            "editor": "DynamicValue",
+            "name": "bordercolorlist",
+            "optional": true,
+            "rank": 85,
+            "value": "text"
+        },
+        "Afe": {
+            "caption": "_____________________________________________________ Event Format Settings  _____________________________________________________",
+            "editor": "Label",
+            "name": "______________________________________________________event_time_format______________________________________________________",
+            "rank": 79
+        },
+        "Aff": {
+            "caption": "Hour Format",
+            "default_val": "numeric",
+            "doc": "If the time were 6:05 'numeric' would produce something like 6 '2-digit' would produce something like 06",
+            "editor": "DynamicValue",
+            "name": "event_hour",
+            "rank": 86,
+            "value": "text"
+        },
+        "Afg": {
+            "caption": "Minute Format",
+            "default_val": "2-digit",
+            "doc": "If the time were 6:05 'numeric' would produce something like 5 '2-digit' would produce something like 05",
+            "editor": "DynamicValue",
+            "name": "event_minute",
+            "rank": 87,
+            "value": "text"
+        },
+        "Afh": {
+            "caption": "Omit 0-Minute",
+            "default_val": true,
+            "doc": "if true, times like 6:00 will display as 6",
+            "editor": "DynamicValue",
+            "name": "omit0minute",
+            "rank": 88,
+            "value": "boolean"
+        },
+        "Afi": {
+            "caption": "Meridiem",
+            "default_val": "narrow",
+            "doc": "Normally with a 12-hour clock the meridiem displays as A.M./P.M. 'lowercase' will force it to display like a.m./p.m. 'short' will force it to display like am/pm 'narrow' will force it to display like a/p false will prevent it from displaying altogether",
+            "editor": "DynamicValue",
+            "name": "meridiem",
+            "rank": 89,
+            "value": "text"
+        },
+        "Afj": {
+            "caption": "12 or 24 hr format",
+            "default_val": true,
+            "doc": "true for a 12-hour clock, false for a 24-hour clock",
+            "editor": "DynamicValue",
+            "name": "hour12",
+            "rank": 90,
+            "value": "boolean"
+        },
+        "Afk": {
+            "caption": "Minimum Snap Duration",
+            "default_val": "00:05",
+            "doc": "The time interval at which a dragged event will snap to the time axis. Also affects the granularity at which selections can be made.             a string in the format hh:mm:ss.sss, hh:mm:sss or hh:mm. For example, '05:00' signifies 5 hours. a total number of milliseconds",
+            "editor": "DynamicValue",
+            "name": "snapduration",
+            "rank": 91,
+            "value": "text"
+        },
+        "AgJ": {
+            "caption": "_____________________________________________________ Resource Settings  _____________________________________________________",
+            "editor": "Label",
+            "name": "______________________________________________________testing______________________________________________________",
+            "rank": 92
+        },
+        "AgK": {
+            "caption": "Resource Order",
+            "default_val": "-title",
+            "doc": "Can be a single Resource property name. The resources will be ordered ascendingly by the value of this property.  If prefixed with a minus sign like '-propertyName', the ordering will be descending.  Compound ordering criteria can be specified as a single string separated by commas. (your options are title,prop1,prop2 )",
+            "editor": "DynamicValue",
+            "name": "resourceorder",
+            "optional": true,
+            "rank": 98,
+            "value": "text"
+        },
+        "AgL": {
+            "caption": "Resource Group List",
+            "doc": "these are properties of the resources listed in the 'specific resource list' wayyyyyy above. this should be a list of groupings specific the resource. if the resource does not belong group, it's entry should be blank.  this value should come from the same list of values you used to set the specific resource list. NOT THE EVENT RESOURCE LISTB entry that your ",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "resourcegroups",
+            "optional": true,
+            "rank": 100,
+            "value": "text"
+        },
+        "AgM": {
+            "caption": "Resource  Prop 1 List",
+            "doc": "this should be a list of properties specific the resource. if the resource does not belong group, it's entry should be blank",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "resource_grp__prop_1",
+            "optional": true,
+            "rank": 102,
+            "value": "text"
+        },
+        "AgN": {
+            "caption": "Resource  Prop 2 List",
+            "doc": "this should be a list of properties specific the resource. if the resource does not belong group, it's entry should be blank",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "resource_grp__prop_2",
+            "optional": true,
+            "rank": 103,
+            "value": "text"
+        },
+        "AgO": {
+            "caption": "Resource Column Label",
+            "default_val": "Resources",
+            "doc": "What text do you want displayed across the top of the resource column",
+            "editor": "DynamicValue",
+            "name": "resourcelabeltext",
+            "optional": true,
+            "rank": 96,
+            "value": "text"
+        },
+        "AgP": {
+            "caption": "the No Group Name",
+            "default_val": "No Group",
+            "doc": "A standard grouping for resources that dont have a group",
+            "editor": "DynamicValue",
+            "name": "nogroupname",
+            "rank": 104,
+            "value": "text"
+        },
+        "AgQ": {
+            "caption": "Use Grouping",
+            "default_val": false,
+            "doc": "Awesome. you've made it this far. this means you want to group resources by some common value. set this to YES to make sure you can group. know some things first.  SO >->->->->->->->->->->->->->    first things first. know that The 3 columns should correlate exactly with your Specific resource list. in fact, these next three fields shouuld come from your resource itself. in fact, if you got your resrouce name from some object in the DB, the group that it belongs to should be found in the same resource object. same for propr 1 and prop 2.   think about it this way. you are simly grabbing another piece of data from the rows you got your specific resources. so if they are filtered/ordered, etc, the same must be done here for the following 3 inputs. ",
+            "editor": "DynamicValue",
+            "name": "usegroups",
+            "rank": 105,
+            "value": "boolean"
+        },
+        "AgS": {
+            "caption": "Resource Divider Color",
+            "default_val": "rgba(51, 181, 229, 1)",
+            "editor": "Color",
+            "name": "dividercolor",
+            "rank": 97
+        },
+        "AgT": {
+            "caption": "Resource Image List",
+            "doc": "",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "resource_image_list",
+            "optional": true,
+            "rank": 101,
+            "value": "image"
+        },
+        "AgU": {
+            "caption": "Calendar Resource List",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "specificresourcelist",
+            "optional": true,
+            "rank": 99,
+            "value": "text"
+        },
+        "AiM": {
+            "caption": "_____________________________________________________ New Event Colors _____________________________________________________ ",
+            "editor": "Label",
+            "name": "______________________________________________________new_event_colors_______________________________________________________",
+            "rank": 107
+        },
+        "AiN": {
+            "caption": "______________________________________________________ Initialize _______________________________________________________",
+            "editor": "Label",
+            "name": "_______________________________________________________initialize________________________________________________________",
+            "rank": 106
+        },
+        "AiO": {
+            "caption": "Background Color",
+            "default_val": "rgba(51, 181, 229, 1)",
+            "editor": "Color",
+            "name": "initeventbackgroundcolor",
+            "rank": 108
+        },
+        "AiP": {
+            "caption": "Border Color",
+            "default_val": "rgba(199, 199, 199, 1)",
+            "editor": "Color",
+            "name": "initeventbordercolor",
+            "rank": 109
+        },
+        "AiQ": {
+            "caption": "Text Color",
+            "default_val": "rgba(230, 55, 55, 1)",
+            "editor": "Color",
+            "name": "initeventtextcolor",
+            "rank": 110
+        },
+        "AiR": {
+            "caption": " _____________________________________________________ Time Slot Display _____________________________________________________ ",
+            "editor": "Label",
+            "name": "_______________________________________________________time_slot_display_______________________________________________________",
+            "rank": 111
+        },
+        "AiS": {
+            "caption": "Calendar Min Time",
+            "default_val": "05:00",
+            "doc": "The default \"00:00:00\" means the start time will be at the very beginning of the day (midnight).  Determines the first time slot, even when the scrollbars have been scrolled all the way back.",
+            "editor": "DynamicValue",
+            "name": "initstarttime",
+            "rank": 112,
+            "value": "text"
+        },
+        "AiT": {
+            "caption": "Calendar Max Time",
+            "default_val": "24:00",
+            "doc": "The default \"24:00:00\" means the end time will be at the very end of the day (midnight).  Determines the last slot, even when the scrollbars have been scrolled all the way back.",
+            "editor": "DynamicValue",
+            "name": "initendtime",
+            "rank": 113,
+            "value": "text"
+        },
+        "AiU": {
+            "caption": "Tme Slot Duration",
+            "default_val": "00:30",
+            "editor": "DynamicValue",
+            "name": "inittimeslotduration",
+            "rank": 114,
+            "value": "text"
+        },
+        "AiV": {
+            "caption": "Initial Scroll Time",
+            "default_val": "09:00",
+            "doc": "Determines how far forward the scroll pane is initially scrolled.  Duration, default: '06:00:00' (6am) The user will be able to scroll back to see events before this time. If you want to prevent users from doing this, use the minTime option instead.",
+            "editor": "DynamicValue",
+            "name": "initscrolltime",
+            "rank": 115,
+            "value": "text"
+        },
+        "AiW": {
+            "caption": "  _____________________________________________________ Calendar View Settings _____________________________________________________ ",
+            "editor": "Label",
+            "name": "________________________________________________________calendar_view_settings_______________________________________________________",
+            "rank": 116
+        },
+        "AiX": {
+            "caption": "Default Date",
+            "editor": "DynamicValue",
+            "name": "initdefaultdate",
+            "rank": 117,
+            "value": "date"
+        },
+        "AiY": {
+            "caption": "Initial Calendar View",
+            "default_val": "timeGridWeek",
+            "doc": "you can use any of the following for this. timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,customView1,customView2,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth. if you try to initialize a calendar without this being loaded which could happen if you load the calendar and load this value from the db, it will likely cause issues. make  sure this value is availabel before loading the calendar, not after. so, you probably wouldnt load the calendar on page load, you'd want to keep it hidden until the state holding this value is available. . ",
+            "editor": "DynamicValue",
+            "name": "initcalendar_view",
+            "options": "timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,customView1,customView2,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth",
+            "rank": 118,
+            "value": "text"
+        },
+        "AiZ": {
+            "caption": " _____________________________________________________ Calendar Styles Settings _____________________________________________________ ",
+            "editor": "Label",
+            "name": "_______________________________________________________calendar_styles_settings_______________________________________________________",
+            "rank": 119
+        },
+        "Aia": {
+            "caption": "Font Family",
+            "default_val": "Georgia, 'Times New Roman', Times, serif",
+            "editor": "DynamicValue",
+            "name": "initfont_famaly",
+            "rank": 120,
+            "value": "text"
+        },
+        "Aib": {
+            "caption": "Border Color",
+            "default_val": "rgba(199, 199, 199, 0.29)",
+            "editor": "Color",
+            "name": "initborder_color",
+            "rank": 121
+        },
+        "Aic": {
+            "caption": "Border Style",
+            "default_val": "solid",
+            "editor": "Dropdown",
+            "name": "initborder_style",
+            "options": "none,solid,dotted,dashed,double,groove,ridge,inset,outset",
+            "rank": 122
+        },
+        "Aid": {
+            "caption": "Border Width",
+            "default_val": "1px",
+            "editor": "Dropdown",
+            "name": "initborder_width",
+            "options": "1px,2px,3px,4px,5px,6px,7px,8px,9px,10px",
+            "rank": 123
+        },
+        "Aie": {
+            "caption": "Color of Calendar Text",
+            "default_val": "rgba(69, 69, 69, 1)",
+            "editor": "Color",
+            "name": "initnum_color",
+            "rank": 124
+        },
+        "Aih": {
+            "caption": " _____________________________________________________ Header Styling _____________________________________________________ ",
+            "editor": "Label",
+            "name": "_______________________________________________________header_styling_______________________________________________________",
+            "rank": 125
+        },
+        "Aii": {
+            "caption": "initheaders",
+            "default_val": true,
+            "doc": "If this is unchecked, you will need to use bubble  elements to create navigation buttons and a month text Display",
+            "editor": "Checkbox",
+            "name": "initheaders",
+            "rank": 126
+        },
+        "Aij": {
+            "caption": "Button Icons",
+            "default_val": true,
+            "doc": "Do you want icons for your navigation buttons?",
+            "editor": "DynamicValue",
+            "name": "initbuttonicons",
+            "rank": 127,
+            "value": "boolean"
+        },
+        "Aik": {
+            "caption": "Header Text Color",
+            "default_val": "rgba(102, 102, 102, 1)",
+            "editor": "Color",
+            "name": "inithed_color",
+            "rank": 128
+        },
+        "Ail": {
+            "caption": " _____________________________________________________ Button Styles _____________________________________________________ ",
+            "editor": "Label",
+            "name": "_______________________________________________________button_styles_______________________________________________________",
+            "rank": 129
+        },
+        "Aim": {
+            "caption": "#1 Primary Button ",
+            "editor": "Label",
+            "name": "#1_primary_button_",
+            "rank": 130
+        },
+        "Ain": {
+            "caption": "Font Color",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "editor": "Color",
+            "name": "initcolor",
+            "rank": 131
+        },
+        "Aio": {
+            "caption": "Background Color",
+            "default_val": "rgba(51, 181, 229, 1)",
+            "editor": "Color",
+            "name": "initbackground_color",
+            "rank": 132
+        },
+        "Aip": {
+            "caption": "Border Color",
+            "default_val": "rgba(43, 154, 194, 1)",
+            "editor": "Color",
+            "name": "initborder_color1",
+            "rank": 133
+        },
+        "Aiq": {
+            "caption": "#2 Hovered Button ",
+            "editor": "Label",
+            "name": "#2_hovered_button_",
+            "rank": 134
+        },
+        "Air": {
+            "caption": "Font Color",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "editor": "Color",
+            "name": "inithovered_color",
+            "rank": 135
+        },
+        "Ais": {
+            "caption": "Background Color",
+            "default_val": "rgba(170, 102, 204, 1)",
+            "editor": "Color",
+            "name": "inithover_background_color",
+            "rank": 136
+        },
+        "Ait": {
+            "caption": "Border Color",
+            "default_val": "rgba(140, 84, 168, 1)",
+            "editor": "Color",
+            "name": "inithovered_border_color",
+            "rank": 137
+        },
+        "Aiu": {
+            "caption": "#3 Inactive Button Color ",
+            "editor": "Label",
+            "name": "#3_inactive_button_color_",
+            "rank": 138
+        },
+        "Aiv": {
+            "caption": "Text Color",
+            "default_val": "rgba(0, 0, 0, 1)",
+            "editor": "Color",
+            "name": "initdisabed_color",
+            "rank": 139
+        },
+        "Aiw": {
+            "caption": "Background Color",
+            "default_val": "rgba(158, 158, 158, 1)",
+            "editor": "Color",
+            "name": "initdisabled_background_color",
+            "rank": 140
+        },
+        "Aix": {
+            "caption": "Border Color",
+            "default_val": "rgba(170, 102, 204, 1)",
+            "editor": "Color",
+            "name": "initdisabled_border_color",
+            "rank": 141
+        },
+        "Aiy": {
+            "caption": "Opacity",
+            "default_val": 0.8,
+            "editor": "DynamicValue",
+            "name": "initdisabled_opacity",
+            "rank": 142,
+            "value": "number"
+        },
+        "Aiz": {
+            "caption": "#4 Active Display Button",
+            "editor": "Label",
+            "name": "#4_active_display_button",
+            "rank": 143
+        },
+        "AjA": {
+            "caption": "Text Color",
+            "default_val": "rgba(179, 93, 93, 1)",
+            "editor": "Color",
+            "name": "initactive_color",
+            "rank": 144
+        },
+        "AjB": {
+            "caption": "Background Color",
+            "default_val": "rgba(222, 209, 209, 1)",
+            "editor": "Color",
+            "name": "initactive_background_color",
+            "rank": 145
+        },
+        "AjC": {
+            "caption": "Border Color",
+            "default_val": "rgba(54, 173, 115, 1)",
+            "editor": "Color",
+            "name": "initactive_border_color",
+            "rank": 146
+        },
+        "AjE": {
+            "caption": " _____________________________________________________ Extras _____________________________________________________ ",
+            "editor": "Label",
+            "name": "_______________________________________________________extras_______________________________________________________",
+            "rank": 147
+        },
+        "AjF": {
+            "caption": "Resource Font Size",
+            "default_val": ".85em",
+            "editor": "DynamicValue",
+            "name": "initresourcefontsize",
+            "rank": 148,
+            "value": "text"
+        },
+        "AjG": {
+            "caption": "Resource Area Size",
+            "default_val": 100,
+            "doc": "Enter a number of pixels you want the resource area to be. this can always be updated by click/dragging the bar tot he right of the reesource names. this only applies to timeline resource view. ",
+            "editor": "DynamicValue",
+            "name": "initresourceareasize",
+            "rank": 150,
+            "value": "number"
+        },
+        "AjH": {
+            "caption": "Calendar Date Format",
+            "default_val": "ddd",
+            "doc": "Determines the text that will be displayed on the calendar’s column headings.  Takes any momentjs day formatting such as d, dd, ddd, dddd, ddd dd/yy",
+            "editor": "DynamicValue",
+            "name": "initcolumnheaderformat",
+            "rank": 151,
+            "value": "text"
+        },
+        "AjI": {
+            "caption": "Date Dots",
+            "default_val": true,
+            "doc": "When this box is checked, the following settings will override the calendars default current day display. Instead what will appear is a colored dot behind the date  ",
+            "editor": "Checkbox",
+            "name": "initdatedots",
+            "rank": 152
+        },
+        "AjJ": {
+            "caption": "Date Dot Color",
+            "default_val": "rgba(51, 182, 230, 0.54)",
+            "editor": "Color",
+            "name": "initdatedottextcolor",
+            "rank": 153
+        },
+        "AjK": {
+            "caption": "Long Event Background Color",
+            "default_val": "rgba(145, 204, 145, 1)",
+            "editor": "Color",
+            "name": "initdatedotcolor",
+            "rank": 154
+        },
+        "AjL": {
+            "caption": "Click to Enter Day",
+            "default_val": true,
+            "doc": "checking thisbox will make it so that when you click on a date, you enter that day. ",
+            "editor": "Checkbox",
+            "name": "initdayclickenterday",
+            "rank": 155
+        },
+        "AjM": {
+            "caption": "Verify Event Drops",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "initverifyeventdrop",
+            "rank": 156
+        },
+        "AjN": {
+            "caption": "_____________________________________________________ Event Tooltips  _____________________________________________________",
+            "editor": "Label",
+            "name": "______________________________________________________event_tooltips_______________________________________________________",
+            "rank": 157
+        },
+        "AjO": {
+            "caption": "Use Tooltips",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "initusetooltips",
+            "rank": 158
+        },
+        "AjP": {
+            "caption": "ToolTip Field",
+            "default_val": "title",
+            "editor": "Dropdown",
+            "name": "inittooltipfield",
+            "options": "title,extraProperty1,extraProperty2,eventLocation,eventSummary",
+            "rank": 159
+        },
+        "AjQ": {
+            "caption": "_____________________________________________________ Calendar Border Style _____________________________________________________",
+            "editor": "Label",
+            "name": "______________________________________________________calendar_border_style______________________________________________________",
+            "rank": 160
+        },
+        "AjR": {
+            "caption": "Border Width",
+            "default_val": 1,
+            "editor": "StaticNumber",
+            "name": "inittableborderwidth",
+            "rank": 161
+        },
+        "AjS": {
+            "caption": "Border Color",
+            "default_val": "rgba(105, 105, 105, 1)",
+            "editor": "Color",
+            "name": "inittablebordercolor",
+            "rank": 162
+        },
+        "AqZ": {
+            "caption": "allowoverlap",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "allowoverlap",
+            "rank": 163,
+            "value": "boolean"
+        },
+        "Aqb": {
+            "caption": "move_events_between_resources",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "move_events_between_resources",
+            "rank": 149,
+            "value": "boolean"
+        }
+    },
+    "icon": "ion-android-calendar",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "Font": false,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AIh": {
+            "caption": "Clicked Event Data",
+            "doc": "This is an object containing Chosen Event Data",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "event_data",
+            "value": "custom_data_AIO"
+        },
+        "ARD": {
+            "caption": "Modified Event Data",
+            "doc": "This is an object containing Modified Event Data",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "modifiedeventdata",
+            "value": "custom_data_ARC"
+        },
+        "AaR": {
+            "caption": "Selected TimeFrame Data",
+            "doc": "This is an object containing Selected Time Frame Data",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "selected_timeframe_data",
+            "value": "custom_data_AaQ"
+        },
+        "Aad": {
+            "caption": "Calendar Data",
+            "doc": "This is an object containing Calendar Data",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "calendar_data",
+            "value": "custom_data_Aae"
+        },
+        "Aag": {
+            "caption": "Clicked EVent X Coordinate",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "xcoord",
+            "value": "number"
+        },
+        "Aah": {
+            "caption": "Clicked Event Y Coordinate",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "ycoord",
+            "value": "number"
+        },
+        "Aal": {
+            "caption": "Clicked Day Date",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "clicked_day_date",
+            "value": "date"
+        },
+        "AfZ": {
+            "caption": "Calendar Rendered",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "calendar_rendered",
+            "value": "boolean"
+        },
+        "Afl": {
+            "caption": "Clicked Day Resource",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "clicked_day_resource",
+            "value": "text"
+        }
+    }
+}

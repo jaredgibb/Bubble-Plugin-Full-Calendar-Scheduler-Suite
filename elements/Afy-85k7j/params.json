@@ -1,0 +1,88 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 40,
+        "width": 120
+    },
+    "display": "BACF Better Time + (date)  PikR  ",
+    "fields": {
+        "Afq": {
+            "caption": "Initial Date",
+            "doc": "d\tDay of the month, 2 digits with leading zeros\t01 to 31 D\tA textual representation of a day\tMon through Sun l (lowercase 'L')\tA full textual representation of the day of the week\tSunday through Saturday j\tDay of the month without leading zeros\t1 to 31 J\tDay of the month without leading zeros and ordinal suffix\t1st, 2nd, to 31st w\tNumeric representation of the day of the week\t0 (for Sunday) through 6 (for Saturday) W\tNumeric representation of the week\t0 (first week of the year) through 52 (last week of the year) F\tA full textual representation of a month\tJanuary through December m\tNumeric representation of a month, with leading zero\t01 through 12 n\tNumeric representation of a month, without leading zeros\t1 through 12 M\tA short textual representation of a month\tJan through Dec U\tThe number of seconds since the Unix Epoch\t1413704993 y\tA two digit representation of a year\t99 or 03 Y\tA full numeric representation of a year, 4 digits\t1999 or 2003 Z\tISO Date format\t2017-03-04T01:23:43.000Z",
+            "editor": "DynamicValue",
+            "name": "date",
+            "rank": 0,
+            "value": "date"
+        },
+        "Afr": {
+            "caption": "Display Format",
+            "default_val": "h:i K",
+            "doc": "See all formatting here  https://flatpickr.js.org/formatting/",
+            "editor": "DynamicValue",
+            "name": "display_format",
+            "rank": 1,
+            "value": "text"
+        },
+        "Afs": {
+            "caption": "Display Calendar Inline",
+            "default_val": false,
+            "doc": "show calendar inline. no need to click on the input or toggle to display to see the cal",
+            "editor": "Checkbox",
+            "name": "inline",
+            "rank": 3
+        },
+        "Aft": {
+            "caption": "Editor Placeholder",
+            "default_val": "Jan 10th 2021",
+            "doc": "Jan 10th 2021",
+            "editor": "DynamicValue",
+            "name": "placeholder",
+            "rank": 5,
+            "value": "text"
+        },
+        "Afu": {
+            "caption": "Minute Increment",
+            "default_val": 5,
+            "doc": "",
+            "editor": "StaticText",
+            "name": "minuteincrement",
+            "rank": 4,
+            "value": "number"
+        },
+        "Afv": {
+            "caption": "Only Show Time",
+            "default_val": false,
+            "doc": "check this box to only display the time. if this is unchecked the calendar will also display. ",
+            "editor": "Checkbox",
+            "name": "also_use_calendar",
+            "rank": 2
+        }
+    },
+    "icon": "ion-android-checkbox-blank",
+    "property_applications": {
+        "Border": true,
+        "BoxShadow": true,
+        "Font": true,
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "Afw": {
+            "caption": "Selected Time",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "selected_date",
+            "value": "date"
+        },
+        "Afx": {
+            "caption": "date",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "date",
+            "value": "text"
+        }
+    }
+}

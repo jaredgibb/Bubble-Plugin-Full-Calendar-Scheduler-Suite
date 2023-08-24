@@ -1,0 +1,110 @@
+{
+    "caption": "BAFC - Update Single Event",
+    "fields": {
+        "AGg": {
+            "caption": "Event ID",
+            "editor": "DynamicValue",
+            "name": "id",
+            "rank": 0,
+            "value": "text"
+        },
+        "AGh": {
+            "caption": "Event Start TIme",
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "start",
+            "rank": 2,
+            "value": "text"
+        },
+        "AGi": {
+            "caption": "Event End Time",
+            "editor": "DynamicValue",
+            "name": "end",
+            "rank": 3,
+            "value": "text"
+        },
+        "AGj": {
+            "caption": "Event Title",
+            "editor": "DynamicValue",
+            "name": "title",
+            "rank": 4,
+            "value": "text"
+        },
+        "AGk": {
+            "caption": "Event Color",
+            "editor": "DynamicValue",
+            "name": "color",
+            "rank": 5,
+            "value": "text"
+        },
+        "AGl": {
+            "caption": "Event time must be custom formatted as such:   extended ISO",
+            "editor": "Label",
+            "name": "events_must_have_the_format_of:____yyyy-mm-dd't'hh:mm:ss",
+            "rank": 1
+        },
+        "ATW": {
+            "caption": "Event Editable Property",
+            "editor": "DynamicValue",
+            "name": "editable",
+            "rank": 6,
+            "value": "boolean"
+        },
+        "ATX": {
+            "caption": "Event Identifier",
+            "editor": "DynamicValue",
+            "name": "whatami",
+            "rank": 7,
+            "value": "text"
+        },
+        "ATY": {
+            "caption": "Extra Property 1",
+            "editor": "DynamicValue",
+            "name": "propone",
+            "rank": 8,
+            "value": "text"
+        },
+        "ATZ": {
+            "caption": "Extra Property 2",
+            "editor": "DynamicValue",
+            "name": "proptwo",
+            "rank": 9,
+            "value": "text"
+        },
+        "ATa": {
+            "caption": "Resource ID",
+            "editor": "DynamicValue",
+            "name": "resourceid",
+            "rank": 10,
+            "value": "text"
+        },
+        "ATb": {
+            "caption": "Event Location",
+            "editor": "DynamicValue",
+            "name": "location",
+            "rank": 11,
+            "value": "text"
+        },
+        "ATc": {
+            "caption": "Event Summary",
+            "editor": "DynamicValue",
+            "name": "summary",
+            "rank": 12,
+            "value": "text"
+        },
+        "ATd": {
+            "caption": "Event Duration in Hours",
+            "editor": "DynamicValue",
+            "name": "hours",
+            "rank": 13,
+            "value": "number"
+        },
+        "ATe": {
+            "caption": "Event Duration in Minutes",
+            "editor": "DynamicValue",
+            "name": "minutes",
+            "rank": 14,
+            "value": "number"
+        }
+    }
+}

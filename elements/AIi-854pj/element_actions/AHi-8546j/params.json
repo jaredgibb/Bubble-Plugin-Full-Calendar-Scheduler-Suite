@@ -1,0 +1,127 @@
+{
+    "caption": "BAFC - Create Single Event",
+    "fields": {
+        "AHj": {
+            "caption": "Event Title",
+            "default_val": "Event Title",
+            "editor": "DynamicValue",
+            "name": "title",
+            "rank": 0,
+            "value": "text"
+        },
+        "AHk": {
+            "caption": "Event Start Time",
+            "doc": ":format as Simplified Extended ISO",
+            "editor": "DynamicValue",
+            "name": "start",
+            "rank": 1,
+            "value": "date"
+        },
+        "AHl": {
+            "caption": "Event End Time",
+            "editor": "DynamicValue",
+            "name": "end",
+            "rank": 2,
+            "value": "date"
+        },
+        "AHm": {
+            "caption": "Event Database ID",
+            "editor": "DynamicValue",
+            "name": "id",
+            "rank": 3,
+            "value": "text"
+        },
+        "AHn": {
+            "caption": "Event BG Color",
+            "default_val": "rgba(83, 137, 230, 1)",
+            "editor": "Color",
+            "name": "bgcolor",
+            "rank": 4
+        },
+        "AHo": {
+            "caption": "Event Editability",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "editable",
+            "rank": 6,
+            "value": "boolean"
+        },
+        "AHp": {
+            "caption": "Type Of Event",
+            "default_val": "Calendar Event",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "identifier",
+            "rank": 7,
+            "value": "text"
+        },
+        "AaT": {
+            "caption": "Event Text Color",
+            "default_val": "rgba(252, 249, 249, 1)",
+            "editor": "Color",
+            "name": "textcolor",
+            "rank": 5,
+            "value": "text"
+        },
+        "AaU": {
+            "caption": "Summary",
+            "default_val": "Extra Information can be stored here",
+            "doc": "This is an event summary. A nice place to store information related to the event",
+            "editor": "DynamicValue",
+            "name": "summary",
+            "rank": 8,
+            "value": "text"
+        },
+        "AaV": {
+            "caption": "Location",
+            "default_val": "Kalamazoo, MI",
+            "doc": "This is an event location.  Also, it's a nice place to store information related to the event",
+            "editor": "DynamicValue",
+            "name": "location",
+            "rank": 9,
+            "value": "text"
+        },
+        "AaW": {
+            "caption": "Duration Minutes",
+            "default_val": 0,
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "durationmin",
+            "rank": 10,
+            "value": "number"
+        },
+        "AaX": {
+            "caption": "Duration Hours",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "durationhour",
+            "rank": 11,
+            "value": "number"
+        },
+        "AaY": {
+            "caption": "Extra Property 1",
+            "default_val": "Extra Information can be stored here",
+            "editor": "DynamicValue",
+            "name": "prop1",
+            "rank": 12,
+            "value": "text"
+        },
+        "AaZ": {
+            "caption": "Extra Property 2",
+            "default_val": "Extra Information can be stored here",
+            "doc": "Extra Information can be stored here",
+            "editor": "DynamicValue",
+            "name": "prop2",
+            "rank": 13,
+            "value": "text"
+        },
+        "Aaa": {
+            "caption": "Resource ID",
+            "default_val": "No Resource",
+            "editor": "DynamicValue",
+            "name": "resource",
+            "rank": 14,
+            "value": "text"
+        }
+    }
+}

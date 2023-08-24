@@ -1,0 +1,77 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 25,
+        "width": 25
+    },
+    "display": "BAFC - Google Event Fixer",
+    "fields": {
+        "AQG": {
+            "caption": "Google API color data",
+            "editor": "custom_type",
+            "is_list": false,
+            "long_text": false,
+            "name": "input_color_data",
+            "rank": 0,
+            "value": "text"
+        },
+        "AQH": {
+            "caption": "Colors API",
+            "editor": "DynamicValue",
+            "field_type_restriction": "text_image_file",
+            "name": "colors",
+            "rank": 1,
+            "value": "custom_data_AQG"
+        },
+        "AQI": {
+            "caption": "List Event's Items colorID",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "calendar_events",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AQJ": {
+            "caption": "color if none came from googs",
+            "default_val": "rgba(242, 222, 121, 1)",
+            "editor": "Color",
+            "name": "color_if_none_came_from_googs",
+            "rank": 3
+        },
+        "AQw": {
+            "caption": "Do you want to be able to modify past events?",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "truthy",
+            "options": "",
+            "rank": 4,
+            "value": "boolean"
+        }
+    },
+    "icon": "ion-help-circled",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AQK": {
+            "caption": "Event Colors List",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "color_list_out",
+            "value": "text"
+        },
+        "AQx": {
+            "caption": "Event Editable Llist",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "editable_list",
+            "value": "boolean"
+        }
+    }
+}

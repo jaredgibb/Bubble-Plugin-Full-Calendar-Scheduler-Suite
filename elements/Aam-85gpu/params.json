@@ -1,0 +1,215 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 300,
+        "width": 250
+    },
+    "display": "BAFC - Small Calendar",
+    "events": {
+        "AbH": {
+            "caption": "DatePicker Date Selected",
+            "name": "datepicker_date_selected"
+        }
+    },
+    "fields": {
+        "Aao": {
+            "caption": "Event Type",
+            "editor": "custom_type",
+            "name": "eventstype",
+            "optional": true,
+            "rank": 1
+        },
+        "Aap": {
+            "caption": "Date Ranges",
+            "editor": "custom_field_Aao",
+            "field_list": false,
+            "field_type_restriction": "date_range",
+            "name": "start",
+            "optional": true,
+            "rank": 3
+        },
+        "Aar": {
+            "caption": "Title",
+            "editor": "custom_field_Aao",
+            "field_list": false,
+            "field_type_restriction": "text_image_file",
+            "name": "title",
+            "optional": true,
+            "rank": 4
+        },
+        "Aas": {
+            "caption": "Events Source",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "events",
+            "optional": true,
+            "rank": 2,
+            "value": "custom_data_Aao"
+        },
+        "Aat": {
+            "caption": "Now Date / Event Dot",
+            "default_val": "rgba(51, 181, 229, 1)",
+            "doc": "Now Date / Event Dot",
+            "editor": "Color",
+            "name": "now_date__event_dot",
+            "rank": 12
+        },
+        "Aau": {
+            "caption": "__________________________________________________________  Colors __________________________________________________________",
+            "editor": "Label",
+            "name": "________________________________colors",
+            "rank": 11
+        },
+        "Aav": {
+            "caption": "Title Text / Button Accent",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "doc": "Title Text / Button Accent",
+            "editor": "Color",
+            "name": "headercolor",
+            "rank": 13
+        },
+        "Aaw": {
+            "caption": "Header Color / Border Color",
+            "default_val": "rgba(0, 200, 81, 1)",
+            "doc": "Header Color / Border Color",
+            "editor": "Color",
+            "name": "headerbackgroundcolor",
+            "rank": 14
+        },
+        "Aax": {
+            "caption": "Date Color",
+            "default_val": "rgba(51, 51, 51, 1)",
+            "editor": "Color",
+            "name": "weekdayscolor",
+            "rank": 15
+        },
+        "AbA": {
+            "caption": "DatePicker Event Info",
+            "editor": "custom_type",
+            "name": "clicked__days_event_info",
+            "rank": 17
+        },
+        "AbE": {
+            "caption": "__________________________________________________________ Exposed Data Field __________________________________________________________",
+            "editor": "Label",
+            "name": "___________________________________________________________data_out___________________________________________________________",
+            "rank": 16
+        },
+        "AbF": {
+            "caption": "__________________________________________________________ Event Data Info __________________________________________________________",
+            "editor": "Label",
+            "name": "___________________________________________________________event_data_info___________________________________________________________",
+            "rank": 0
+        },
+        "AbI": {
+            "caption": "Summary",
+            "editor": "custom_field_Aao",
+            "field_type_restriction": "text_image_file",
+            "name": "summary",
+            "optional": true,
+            "rank": 5
+        },
+        "AbJ": {
+            "caption": "Location",
+            "editor": "custom_field_Aao",
+            "field_type_restriction": "geographic_address",
+            "name": "location",
+            "optional": true,
+            "rank": 6
+        },
+        "AbK": {
+            "caption": "Identifier",
+            "editor": "custom_field_Aao",
+            "field_type_restriction": "text_image_file",
+            "name": "identifier",
+            "optional": true,
+            "rank": 7
+        },
+        "AbL": {
+            "caption": "Resource",
+            "editor": "custom_field_Aao",
+            "field_type_restriction": "text_image_file",
+            "name": "resource",
+            "optional": true,
+            "rank": 8
+        },
+        "AbM": {
+            "caption": "Extra Data 1",
+            "editor": "custom_field_Aao",
+            "field_type_restriction": "text_image_file",
+            "name": "extra_data_1",
+            "optional": true,
+            "rank": 9
+        },
+        "AbN": {
+            "caption": "Extra Data 2",
+            "editor": "custom_field_Aao",
+            "field_type_restriction": "text_image_file",
+            "name": "extra_data_2",
+            "optional": true,
+            "rank": 10
+        },
+        "AbQ": {
+            "caption": "size",
+            "default_val": "small",
+            "editor": "Dropdown",
+            "name": "size",
+            "options": "small,extrasmall",
+            "rank": 18
+        },
+        "Adm": {
+            "caption": "startlist",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "startlist",
+            "optional": true,
+            "rank": 19,
+            "value": "date"
+        },
+        "Adn": {
+            "caption": "endlist",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "endlist",
+            "optional": true,
+            "rank": 20,
+            "value": "date"
+        }
+    },
+    "icon": "ion-android-calendar",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "MinWidth": true,
+        "resizable": false
+    },
+    "states": {
+        "Aan": {
+            "caption": "Clicked Date",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "date",
+            "value": "date"
+        },
+        "AbB": {
+            "caption": "Clicked Days Event Info",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "clicked_days_event_info",
+            "value": "custom_data_AbA"
+        },
+        "AbD": {
+            "caption": "this_months_events",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "this_months_events",
+            "value": "custom_data_AbA"
+        }
+    }
+}

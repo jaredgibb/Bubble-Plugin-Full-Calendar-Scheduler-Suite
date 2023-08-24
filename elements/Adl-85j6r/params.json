@@ -1,0 +1,605 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "autobinding_value": "date",
+    "category": "input forms",
+    "default_dim": {
+        "height": 45,
+        "width": 250
+    },
+    "display": "BAFC - Date/Time Picker ",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1497184623922x516973375342786300/pluginlogo.png",
+    "events": {
+        "AcV": {
+            "caption": "value is changed",
+            "doc": "Triggered when the picker date changes",
+            "name": "date_selected"
+        },
+        "AcW": {
+            "caption": "invalid range selected",
+            "doc": "Triggered when a range containing blocked dates is selected.",
+            "name": "invalid_range"
+        },
+        "AcX": {
+            "caption": "picker is shown",
+            "doc": "Triggered when the datepicker is shown",
+            "name": "on_show"
+        },
+        "AcY": {
+            "caption": "picker is hidden",
+            "doc": "Triggered when the datepicker is hiddden",
+            "name": "on_hide"
+        },
+        "AcZ": {
+            "caption": "view changed",
+            "doc": "Triggered when datepicker's view is changed",
+            "name": "view_changed"
+        },
+        "Aca": {
+            "caption": "OK button is clicked (beta)",
+            "doc": "Triggered when the pickers OK button is clicked",
+            "name": "on_ok"
+        }
+    },
+    "fields": {
+        "Acb": {
+            "caption": "Show time (disabled for inline mode)",
+            "default_val": false,
+            "doc": "Choose to show date only or both date and time",
+            "editor": "Checkbox",
+            "in_style": false,
+            "name": "showtime",
+            "optional": false,
+            "options": "Date, Date & Time",
+            "rank": 3
+        },
+        "Acc": {
+            "caption": "Vertical position",
+            "default_val": "bottom",
+            "doc": "Vertical position of the date/time picker",
+            "editor": "Dropdown",
+            "name": "verticalposition",
+            "optional": false,
+            "options": "top,bottom",
+            "rank": 7
+        },
+        "Acd": {
+            "caption": "Horizontal position",
+            "default_val": "left",
+            "doc": "Horizontal position of the date/time picker",
+            "editor": "Dropdown",
+            "name": "horizontalposition",
+            "options": "left,center,right",
+            "rank": 8
+        },
+        "Ace": {
+            "caption": "Initial date",
+            "doc": "This field defines the input before the user modifies it or when reset. It can take dynamic values. For example \"Current date/time\" or \"Current User's birthdate\". ",
+            "editor": "DynamicValue",
+            "name": "startdate",
+            "optional": true,
+            "rank": 5,
+            "value": "date"
+        },
+        "Acf": {
+            "caption": "Show Today button",
+            "default_val": true,
+            "doc": "If checked, then button \"Today\" will be visible. Clicking on the button will select today's date.",
+            "editor": "Checkbox",
+            "name": "todaybutton",
+            "rank": 11
+        },
+        "Acg": {
+            "caption": "Auto close",
+            "default_val": true,
+            "doc": "If true, then after date selection, datepicker will be closed.",
+            "editor": "Checkbox",
+            "name": "autoclose",
+            "rank": 10
+        },
+        "Ach": {
+            "caption": "Show Clear button",
+            "default_val": false,
+            "doc": "If true, then button \"Clear\" will be visible.",
+            "editor": "Checkbox",
+            "name": "clearbutton",
+            "rank": 12
+        },
+        "Aci": {
+            "caption": "Date format",
+            "default_val": "22/6/1983",
+            "doc": "The format of the date",
+            "editor": "Dropdown",
+            "name": "dateformat",
+            "options": "22/6/1983,6/22/1983,22 June 1983,Wednesday 22 June 1983,22-Jun-1983",
+            "rank": 6
+        },
+        "Acj": {
+            "caption": "Language",
+            "default_val": "English",
+            "doc": "Select language for the date picker",
+            "editor": "Dropdown",
+            "name": "language",
+            "options": "English,French,Spanish,German,Russian,Italian,Catalan",
+            "rank": 51
+        },
+        "Ack": {
+            "caption": "Only Timepicker (some date options below will not be applicable as expected)",
+            "default_val": false,
+            "doc": "Show only time picker.",
+            "editor": "Checkbox",
+            "name": "onlytimepicker",
+            "rank": 4
+        },
+        "Acl": {
+            "caption": "Automatically position date/time picker",
+            "default_val": false,
+            "doc": "If selected the date/time picker will be automatically position if the specified position goes outside the screen area.",
+            "editor": "Checkbox",
+            "name": "autoposition",
+            "rank": 9
+        },
+        "Acm": {
+            "caption": "Minimum date",
+            "doc": "Use this field to prevent users from choosing a day before a certain date. This field can be dynamic, in which case the expression defined should be of type date.",
+            "editor": "DynamicValue",
+            "name": "mindate",
+            "optional": true,
+            "rank": 31,
+            "value": "date"
+        },
+        "Acn": {
+            "caption": "Maximum date",
+            "doc": "Use this field to prevent users from choosing a day after a certain date. This field can be dynamic, in which case the expression defined should be of type date",
+            "editor": "DynamicValue",
+            "name": "maxdate",
+            "optional": true,
+            "rank": 32,
+            "value": "date"
+        },
+        "Aco": {
+            "caption": "First day of week (if nothing is selected value is taken from current localization)",
+            "doc": "By default value is taken from current localization, but if it passed here then it will have higher priority.",
+            "editor": "Dropdown",
+            "name": "firstday",
+            "optional": true,
+            "options": "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+            "rank": 13
+        },
+        "Acp": {
+            "caption": "Block Sundays",
+            "default_val": false,
+            "doc": "Block Sundays",
+            "editor": "Checkbox",
+            "name": "blocksundays",
+            "rank": 14
+        },
+        "Acq": {
+            "caption": "Block Mondays",
+            "default_val": false,
+            "doc": "Block Mondays",
+            "editor": "Checkbox",
+            "name": "blockmondays",
+            "rank": 15
+        },
+        "Acr": {
+            "caption": "Block Tuesdays",
+            "default_val": false,
+            "doc": "Block Tuesdays",
+            "editor": "Checkbox",
+            "name": "blocktuesdays",
+            "rank": 16
+        },
+        "Acs": {
+            "caption": "Block Wednesdays",
+            "default_val": false,
+            "doc": "Block Wednesdays",
+            "editor": "Checkbox",
+            "name": "blockwednesdays",
+            "rank": 17
+        },
+        "Act": {
+            "caption": "Block Thursdays",
+            "default_val": false,
+            "doc": "Block Thursdays",
+            "editor": "Checkbox",
+            "name": "blockthursdays",
+            "rank": 18
+        },
+        "Acu": {
+            "caption": "Block Fridays",
+            "default_val": false,
+            "doc": "Block Fridays",
+            "editor": "Checkbox",
+            "name": "blockfridays",
+            "rank": 19
+        },
+        "Acv": {
+            "caption": "Block Saturdays",
+            "default_val": false,
+            "doc": "Block Saturdays",
+            "editor": "Checkbox",
+            "name": "blocksaturdays",
+            "rank": 20
+        },
+        "Acw": {
+            "caption": "Enable keyboard navigation",
+            "default_val": false,
+            "doc": "If checked, then users can navigate through calendar by keyboard. Use Ctrl + arrow keys to move one month forward or backward. Shift + arrow keys to move one year forward or backward. Alt + arrow keys to move 10 years forward or backward. Ctrl + Shift + arrow up to move next view. Esc to hide datepicker.",
+            "editor": "Checkbox",
+            "name": "enablekeyboardnav",
+            "rank": 40
+        },
+        "Acx": {
+            "caption": "Multiple dates (unlimited)",
+            "default_val": false,
+            "doc": "If checked, then users can select unlimited dates. ",
+            "editor": "Checkbox",
+            "name": "multipledates",
+            "rank": 23
+        },
+        "Acy": {
+            "caption": "Multiple dates (max number) - overrides Multiple dates (unlimited)",
+            "doc": "Allow multiple dates up to the specified number.",
+            "editor": "StaticNumber",
+            "name": "multipledatesmax",
+            "optional": true,
+            "rank": 25
+        },
+        "Acz": {
+            "caption": "Enable date range? - overrides Multiple dates properties above",
+            "default_val": false,
+            "doc": "If checked, users can select date ranges",
+            "editor": "Checkbox",
+            "name": "enable_range",
+            "rank": 26,
+            "value": "date_range"
+        },
+        "AdA": {
+            "caption": "Multiple Dates Separator",
+            "default_val": " , ",
+            "doc": "String to use to separate multiple dates when displayed as text",
+            "editor": "StaticText",
+            "name": "dateseparator",
+            "optional": true,
+            "rank": 29
+        },
+        "AdB": {
+            "caption": "Initial range start date",
+            "doc": "Initial start date when date range is selected",
+            "editor": "DynamicValue",
+            "name": "rangestart",
+            "optional": true,
+            "rank": 27,
+            "value": "date"
+        },
+        "AdC": {
+            "caption": "Initial range end date",
+            "doc": "Initial end date when date range is selected",
+            "editor": "DynamicValue",
+            "name": "rangeend",
+            "optional": true,
+            "rank": 28,
+            "value": "date"
+        },
+        "AdD": {
+            "caption": "Minimum minutes (0 to 59)",
+            "default_val": 0,
+            "doc": "Minimal minutes value, must be between 0 and 59. You will not be able to choose value lower than this.Default is 0",
+            "editor": "DynamicValue",
+            "name": "minminutes",
+            "optional": false,
+            "rank": 36,
+            "value": "number"
+        },
+        "AdE": {
+            "caption": "Maximum minute  (0 to 59)",
+            "default_val": 59,
+            "doc": "Maximum minutes value, must be between 0 and 59. You will not be able to choose value higher than this.Default is 59",
+            "editor": "DynamicValue",
+            "name": "maxminutes",
+            "optional": false,
+            "rank": 37,
+            "value": "number"
+        },
+        "AdF": {
+            "caption": "Hours step",
+            "default_val": 1,
+            "doc": "Hours step in slider.Default is 1.",
+            "editor": "DynamicValue",
+            "name": "hoursstep",
+            "optional": false,
+            "rank": 35,
+            "value": "number"
+        },
+        "AdG": {
+            "caption": "Minutes step",
+            "default_val": 1,
+            "doc": "Minutes step in slider.Default is 1.",
+            "editor": "DynamicValue",
+            "name": "minutesstep",
+            "optional": false,
+            "rank": 38,
+            "value": "number"
+        },
+        "AdH": {
+            "caption": "Time format",
+            "default_val": "12 hour",
+            "doc": "Desirable time format.",
+            "editor": "Dropdown",
+            "name": "timeformat",
+            "optional": false,
+            "options": "12 hour,24 hour",
+            "rank": 30
+        },
+        "AdI": {
+            "caption": "Maximum hours (0 to 23)",
+            "default_val": 23,
+            "doc": "Maximum hours (0 to 23)",
+            "editor": "DynamicValue",
+            "name": "maxhrs",
+            "rank": 34,
+            "value": "number"
+        },
+        "AdJ": {
+            "caption": "Minimum hours value (0 to 23)",
+            "default_val": 0,
+            "doc": "Minimum hours value (0 to 23)",
+            "editor": "DynamicValue",
+            "name": "minhrs",
+            "rank": 33,
+            "value": "number"
+        },
+        "AdK": {
+            "caption": "Start view",
+            "default_val": "days",
+            "doc": "The initial view to show when datepicker opens. ",
+            "editor": "Dropdown",
+            "name": "view",
+            "options": "days,months,years",
+            "rank": 39
+        },
+        "AdL": {
+            "caption": "Block days (list of numbers, 0-Sun, 6-Sat)",
+            "doc": "Block days",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "blockeddays",
+            "optional": true,
+            "rank": 21,
+            "value": "number"
+        },
+        "AdM": {
+            "caption": "Block dates",
+            "doc": "Block dates",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "blockeddates",
+            "optional": true,
+            "rank": 22,
+            "value": "date"
+        },
+        "AdN": {
+            "caption": "Use custom date format",
+            "default_val": false,
+            "doc": "Check this box if you want to specify your own format. You must specify your format in the Custom format field",
+            "editor": "Checkbox",
+            "name": "use_custom",
+            "rank": 41
+        },
+        "AdO": {
+            "caption": "Custom date format (e.g. D. M d, yyyy for Wed. Jun 22, 1983) See docs for formats",
+            "default_val": "D. M d, yyyy",
+            "doc": "Specify the date format here. Options are: d-date number; dd-date with leading zero; D-short day name; DD-full day name; m-month number; mm-month number with leading zero; M-short month name; MM-full month name; yy-two digit year number; yyyy-four digit year number",
+            "editor": "StaticText",
+            "name": "custom_format",
+            "optional": true,
+            "rank": 42
+        },
+        "AdP": {
+            "caption": "Disable picker",
+            "default_val": false,
+            "doc": "Check to disable the datepicker",
+            "editor": "Checkbox",
+            "name": "disable",
+            "rank": 45
+        },
+        "AdQ": {
+            "caption": "Day name color",
+            "default_val": "rgba(255, 154, 25, 1)",
+            "doc": "Day name color",
+            "editor": "Color",
+            "name": "daycolor",
+            "rank": 43
+        },
+        "AdR": {
+            "caption": "Highlight color",
+            "default_val": "rgba(92, 196, 239, 1)",
+            "doc": "Color to use for highlights like selected day, month, year and today button text",
+            "editor": "Color",
+            "name": "highlight",
+            "rank": 44
+        },
+        "AdS": {
+            "caption": "Initial multiple dates",
+            "doc": "Initial content for multiple dates.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "initialdates",
+            "optional": true,
+            "rank": 24,
+            "value": "date"
+        },
+        "AdT": {
+            "caption": "Placeholder text",
+            "default_val": "",
+            "doc": "Enter the text to display if the element is empty. If no text is entered the current date or a time of 12:00pm will be displayed depending on whether only a date or time or both is being shown. The format will be the same format as chosen except for custom formats.",
+            "editor": "StaticText",
+            "name": "placeholder",
+            "optional": true,
+            "rank": 1
+        },
+        "AdU": {
+            "caption": "Use auto binding",
+            "default_val": false,
+            "doc": "Check this box and Enable auto binding to use autobinding feature",
+            "editor": "Checkbox",
+            "name": "use_auto_binding",
+            "rank": 0
+        },
+        "AdV": {
+            "caption": "Placeholder color",
+            "default_val": "rgba(0, 0, 0, 0.47)",
+            "doc": "Color of placeholder",
+            "editor": "Color",
+            "name": "placeholder_color",
+            "optional": true,
+            "rank": 2
+        },
+        "AdW": {
+            "caption": "Toggle selected",
+            "default_val": true,
+            "doc": "Allows you to toggle selected date. Uncheck this for possibility to select same date two times for range selector",
+            "editor": "Checkbox",
+            "name": "toggle_selected",
+            "rank": 46
+        },
+        "AdX": {
+            "caption": "Show cursor",
+            "default_val": false,
+            "doc": "Show cursor in the input",
+            "editor": "Checkbox",
+            "name": "cursor",
+            "options": "gray background, strike out",
+            "rank": 47
+        },
+        "AdY": {
+            "caption": "Disabled cells style",
+            "default_val": "gray background",
+            "doc": "The style for disabled/blocked dates",
+            "editor": "Dropdown",
+            "name": "disabled_cells_style",
+            "options": "gray background,strike through,gray text ",
+            "rank": 48
+        },
+        "AdZ": {
+            "caption": "Inline (always visible)",
+            "default_val": false,
+            "doc": "Check this if you want the calendar to be always visible. Note that some options, actions and events will not longer be applicable.",
+            "editor": "Checkbox",
+            "name": "inline",
+            "rank": 50
+        },
+        "Ada": {
+            "caption": "Use custom language",
+            "default_val": false,
+            "doc": "Check this box to define your own language. Specify the language definition using exactly the template below. Make sure you do exactly as the template else it will break the plugin.",
+            "editor": "Checkbox",
+            "name": "use_custom_lang",
+            "rank": 52
+        },
+        "Adb": {
+            "caption": "Language definition",
+            "default_val": "{     \"days\": [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"],     \"daysShort\": [\"Sun\", \"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\"],     \"daysMin\": [\"Su\", \"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\"],     \"months\": [\"January\",\"February\",\"March\",\"April\",\"May\",\"June\", \"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],     \"monthsShort\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"],     \"today\": \"Today\",     \"clear\": \"Clear\",     \"dateFormat\": \"mm/dd/yyyy\",     \"timeFormat\": \"hh:ii aa\",     \"firstDay\": 0 }",
+            "doc": "Language definition as a json string. The format should be exactly like as specified. If there is any error parsing, English language would be used.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "lang_definition",
+            "optional": true,
+            "rank": 54,
+            "value": "text"
+        },
+        "Adc": {
+            "caption": "Ensure that your language definition is exactly as specified. Verify with a json checker for any syntax errors.",
+            "editor": "Label",
+            "name": "lang_info",
+            "rank": 53
+        },
+        "Add": {
+            "caption": "If using inline note that \"value changed\" event triggers for single dates and range (after selecting start and end) but never triggers for multiple dates option. ",
+            "editor": "Label",
+            "name": "inline_info",
+            "rank": 49
+        },
+        "Ade": {
+            "caption": "Minimum view",
+            "default_val": "days",
+            "doc": "Minimal datepicker's view, on that view selecting cells will not trigger rendering next view, instead it will activate it. Use this to restrict the calendar to only one or two views. For example if you want to use the picker as only a month picker, set the Start view to months, and Minimum view to months. ",
+            "editor": "Dropdown",
+            "name": "minview",
+            "optional": true,
+            "options": "days,months,years",
+            "rank": 55
+        },
+        "Adf": {
+            "caption": "Show OK button (beta)",
+            "default_val": false,
+            "doc": "If checked an OK button will be shown. Note that this feature is in beta so ensure you have tested its functionality very well before going live with it.",
+            "editor": "Checkbox",
+            "name": "okbutton",
+            "rank": 56,
+            "value": "boolean"
+        },
+        "Adg": {
+            "caption": "Inline update on click",
+            "default_val": true,
+            "doc": "The property only applies to the inline. If checked the value of the picker will be update on click. If unchecked enable the OK button to update the picker value.",
+            "editor": "Checkbox",
+            "name": "inline_updateonselect",
+            "rank": 57
+        }
+    },
+    "has_reset_fn": true,
+    "icon": "ion-clock",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "Font": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "Adh": {
+            "caption": "value",
+            "doc": "Selected date value. ",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\treturn properties.startdate;   \n}"
+            },
+            "is_list": false,
+            "name": "value",
+            "value": "date"
+        },
+        "Adi": {
+            "caption": "value list",
+            "doc": "Selected list of dates.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    if(properties.initialdates){\n        return properties.initialdates.get(0, 1000000);\n    }\n}"
+            },
+            "is_list": true,
+            "name": "valuelist",
+            "value": "date"
+        },
+        "Adj": {
+            "caption": "range",
+            "doc": "Range of dates",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return [properties.rangestart,properties.rangeend];\t\n}"
+            },
+            "is_list": false,
+            "name": "range",
+            "value": "date_range"
+        },
+        "Adk": {
+            "caption": "current view",
+            "doc": "The current view of the picker.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\treturn properties.view;\n}"
+            },
+            "name": "view",
+            "value": "text"
+        }
+    },
+    "support_autobinding": true
+}

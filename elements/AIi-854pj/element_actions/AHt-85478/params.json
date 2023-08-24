@@ -1,0 +1,31 @@
+{
+    "caption": "BAFC - Change Calendar View",
+    "fields": {
+        "AHu": {
+            "caption": "Static Options",
+            "default_val": "timeGridDay",
+            "doc": "here are all the options: timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,customView1,customView2,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth",
+            "editor": "Dropdown",
+            "name": "calendar_view",
+            "optional": true,
+            "options": "timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,customView1,customView2,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth",
+            "rank": 0
+        },
+        "ARq": {
+            "caption": "Use Dynamic View",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "dont",
+            "rank": 1
+        },
+        "ARr": {
+            "caption": "Dynamic View Name",
+            "doc": "here are all the options: timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth",
+            "editor": "DynamicValue",
+            "name": "dynamic",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        }
+    }
+}

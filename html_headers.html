@@ -1,0 +1,30 @@
+<script>
+    jQuery.event.special.touchstart = {
+  setup: function( _, ns, handle ) {
+      this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+  }
+};
+    
+    jQuery.event.special.touchmove = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener('touchmove', handle, { passive: !ns.includes('noPreventDefault') });
+    }
+};
+    
+        jQuery.event.special.touchmove = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener('contextmenu', handle, { passive: !ns.includes('noPreventDefault') });
+    }
+};
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.26.0/luxon.min.js"></script>
+<script src='https://dd7tel2830j4w.cloudfront.net/f1620757466419x409204242340798000/rrule.js'></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js" integrity="sha512-+ruHlyki4CepPr07VklkX/KM5NXdD16K1xVwSva5VqOVbsotyCQVKEwdQ1tAeo3UkHCXfSMtKU/mZpKjYqkxZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css" integrity="sha512-OtwMKauYE8gmoXusoKzA/wzQoh7WThXJcJVkA29fHP58hBF7osfY0WLCIZbwkeL9OgRCxtAfy17Pn3mndQ4PZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/themes/dark.min.css" integrity="sha512-9ILigk7+SdhDDU3AxNcp/jz8KYo8hj6l9v5iIPQj127U/zy7kqE518HUKXjWgfZsRyZc7glx/Lw4V10ESjkOKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+

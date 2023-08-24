@@ -1,0 +1,21 @@
+{
+    "caption": "change view",
+    "doc": "Sets new view for datepicker.",
+    "fields": {
+        "AcT": {
+            "caption": "view",
+            "default_val": "days",
+            "doc": "The new view name.",
+            "editor": "DynamicValue",
+            "name": "view_name",
+            "rank": 1,
+            "value": "text"
+        },
+        "AcU": {
+            "caption": "The options are days, months, years",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        }
+    }
+}

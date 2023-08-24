@@ -1,0 +1,30 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 34,
+        "width": 133
+    },
+    "display": "BAFC - Time Picker",
+    "fields": {
+        "Afc": {
+            "caption": "Start Time",
+            "doc": "should be expressed as the desired hour/minute",
+            "editor": "DynamicValue",
+            "name": "start_time",
+            "rank": 0,
+            "value": "date"
+        }
+    },
+    "icon": "ion-android-time",
+    "states": {
+        "Afd": {
+            "caption": "TimePicker Time out",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "time",
+            "value": "date"
+        }
+    }
+}

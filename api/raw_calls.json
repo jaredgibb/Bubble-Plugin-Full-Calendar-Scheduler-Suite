@@ -1,0 +1,803 @@
+{
+    "add_basic_authentication": false,
+    "add_offline": true,
+    "add_to_header": true,
+    "auth": "none",
+    "authentication_url": "https://accounts.google.com/o/oauth2/v2/auth",
+    "calls": {
+        "APu": {
+            "initialized": true,
+            "method": "get",
+            "name": "FulCal - Clicked Event Data",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.APu",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.APu\":{\"caption\":\"Clicked Event Data\",\"fields\":{\"_p_Start Time\":{\"ret_value\":\"date\",\"caption\":\"Start Time\",\"sample_value\":2424,\"path\":[\"Start Time\"]},\"_p_End Time\":{\"ret_value\":\"date\",\"caption\":\"End Time\",\"sample_value\":234234,\"path\":[\"End Time\"]},\"_p_Duration Minutes\":{\"ret_value\":\"number\",\"caption\":\"Duration Minutes\",\"sample_value\":24234,\"path\":[\"Duration Minutes\"]},\"_p_Duration Hours\":{\"ret_value\":\"number\",\"caption\":\"Duration Hours\",\"sample_value\":234,\"path\":[\"Duration Hours\"]},\"_p_Event Location\":{\"ret_value\":\"text\",\"caption\":\"Event Location\",\"sample_value\":\"info.event.extendedProps.eventLocation\",\"path\":[\"Event Location\"]},\"_p_Event Summary\":{\"ret_value\":\"text\",\"caption\":\"Event Summary\",\"sample_value\":\"info.event.extendedProps.eventSummary\",\"path\":[\"Event Summary\"]},\"_p_Extra Property 1\":{\"ret_value\":\"text\",\"caption\":\"Extra Property 1\",\"sample_value\":\"\",\"path\":[\"Extra Property 1\"]},\"_p_Extra Property 2\":{\"ret_value\":\"text\",\"caption\":\"Extra Property 2\",\"sample_value\":\"\",\"path\":[\"Extra Property 2\"]},\"_p_Event Title\":{\"ret_value\":\"text\",\"caption\":\"Event Title\",\"sample_value\":\"info.event.title\",\"path\":[\"Event Title\"]},\"_p_Event id\":{\"ret_value\":\"text\",\"caption\":\"Event id\",\"sample_value\":\"info.event.id\",\"path\":[\"Event id\"]},\"_p_Event Color\":{\"ret_value\":\"text\",\"caption\":\"Event Color\",\"sample_value\":\"info.event.backgroundColor\",\"path\":[\"Event Color\"]},\"_p_Event Editable\":{\"ret_value\":\"boolean\",\"caption\":\"Event Editable\",\"sample_value\":true,\"path\":[\"Event Editable\"]},\"_p_Event Type\":{\"ret_value\":\"text\",\"caption\":\"Event Type\",\"sample_value\":\"info.event.extendedProps.whatAmI\",\"path\":[\"Event Type\"]},\"_p_Event Resource\":{\"ret_value\":\"text\",\"caption\":\"Event Resource\",\"sample_value\":\"info.event.resourceId\",\"path\":[\"Event Resource\"]}}}}",
+            "url": "https://jus4tests.bubbleapps.io/version-test/api/1.1/obj/Record"
+        },
+        "AQb": {
+            "body": "{\n  \"summary\": \"<summary>\",\n  \"location\": \"<location>\",\n  \"description\": \"<description>\",\n  \"start\": {\n    \"dateTime\": \"<start_date>\",\n    \"timeZone\": \"<time_zone>\"\n  },\n  \"end\": {\n    \"dateTime\": \"<end_date>\",\n    \"timeZone\": \"<time_zone>\"\n  },\n  \"attendees\": [<attendees>]\n}",
+            "body_params": {
+                "AQd": {
+                    "key": "summary",
+                    "private": true,
+                    "value": ""
+                },
+                "AQe": {
+                    "key": "location",
+                    "private": true,
+                    "value": ""
+                },
+                "AQf": {
+                    "key": "description",
+                    "private": true,
+                    "value": ""
+                },
+                "AQg": {
+                    "doc": "2021-06-03T10:00:00.000-07:00",
+                    "key": "start_date",
+                    "private": true,
+                    "value": "2021-07-03T10:00:00.000"
+                },
+                "AQh": {
+                    "doc": "e.g. America/Detroit",
+                    "key": "time_zone",
+                    "private": true,
+                    "value": "America/Detroit"
+                },
+                "AQi": {
+                    "doc": "2021-06-03T10:30:00.000-07:00",
+                    "key": "end_date",
+                    "private": true,
+                    "value": "2021-07-03T10:30:00.000"
+                },
+                "AQj": {
+                    "key": "attendees",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "doc_link": "",
+            "get_headers": false,
+            "headers": {
+                "AXt": {
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer ya29.a0AfH6SMBwxbhlAca12y4JcgLxDgDFLbp34EPZoIcHcCSRhZaSVRI1y3Mtr8jk7-okyrQN_FGjUHC-u5PM_vu8gZpD4mmk3hWKSDFT0PxWGC08PSYq8nQzhkSMKvZjFyjgeIrXmr9i64T7tLMnx6B5ql9Xoo1D"
+                }
+            },
+            "initialized": true,
+            "method": "patch",
+            "name": "GOOGL - Update Google Calendar Events",
+            "publish_as": "action",
+            "rank": 18,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AQb",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AQb\":{\"caption\":\"Update Google Calendar Event\",\"fields\":{\"_p_body.kind\":{\"ret_value\":\"text\",\"caption\":\"body kind\",\"sample_value\":\"calendar#event\",\"path\":[\"body\",\"kind\"]},\"_p_body.etag\":{\"ret_value\":\"text\",\"caption\":\"body etag\",\"sample_value\":\"\\\"3244868416408000\\\"\",\"path\":[\"body\",\"etag\"]},\"_p_body.id\":{\"ret_value\":\"text\",\"caption\":\"body id\",\"sample_value\":\"ms5paas6rqbh165pbevnal0gcg\",\"path\":[\"body\",\"id\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"confirmed\",\"path\":[\"body\",\"status\"]},\"_p_body.htmlLink\":{\"ret_value\":\"text\",\"caption\":\"body htmlLink\",\"sample_value\":\"https://www.google.com/calendar/event?eid=bXM1cGFhczZycWJoMTY1cGJldm5hbDBnY2cgamFyZWQuZ2liYkBt\",\"path\":[\"body\",\"htmlLink\"]},\"_p_body.created\":{\"ret_value\":\"text\",\"caption\":\"body created\",\"sample_value\":\"2021-05-31T04:09:04.000Z\",\"path\":[\"body\",\"created\"]},\"_p_body.updated\":{\"ret_value\":\"text\",\"caption\":\"body updated\",\"sample_value\":\"2021-05-31T04:10:08.204Z\",\"path\":[\"body\",\"updated\"]},\"_p_body.summary\":{\"ret_value\":\"text\",\"caption\":\"body summary\",\"sample_value\":\"null\",\"path\":[\"body\",\"summary\"]},\"_p_body.description\":{\"ret_value\":\"text\",\"caption\":\"body description\",\"sample_value\":\"null\",\"path\":[\"body\",\"description\"]},\"_p_body.location\":{\"ret_value\":\"text\",\"caption\":\"body location\",\"sample_value\":\"null\",\"path\":[\"body\",\"location\"]},\"_p_body.creator.email\":{\"ret_value\":\"text\",\"caption\":\"body creator email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"creator\",\"email\"]},\"_p_body.creator.self\":{\"ret_value\":\"boolean\",\"caption\":\"body creator self\",\"sample_value\":true,\"path\":[\"body\",\"creator\",\"self\"]},\"_p_body.organizer.email\":{\"ret_value\":\"text\",\"caption\":\"body organizer email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"organizer\",\"email\"]},\"_p_body.organizer.self\":{\"ret_value\":\"boolean\",\"caption\":\"body organizer self\",\"sample_value\":true,\"path\":[\"body\",\"organizer\",\"self\"]},\"_p_body.start.dateTime\":{\"ret_value\":\"text\",\"caption\":\"body start dateTime\",\"sample_value\":\"2021-07-03T10:00:00-04:00\",\"path\":[\"body\",\"start\",\"dateTime\"]},\"_p_body.start.timeZone\":{\"ret_value\":\"text\",\"caption\":\"body start timeZone\",\"sample_value\":\"America/Detroit\",\"path\":[\"body\",\"start\",\"timeZone\"]},\"_p_body.end.dateTime\":{\"ret_value\":\"text\",\"caption\":\"body end dateTime\",\"sample_value\":\"2021-07-03T10:30:00-04:00\",\"path\":[\"body\",\"end\",\"dateTime\"]},\"_p_body.end.timeZone\":{\"ret_value\":\"text\",\"caption\":\"body end timeZone\",\"sample_value\":\"America/Detroit\",\"path\":[\"body\",\"end\",\"timeZone\"]},\"_p_body.iCalUID\":{\"ret_value\":\"text\",\"caption\":\"body iCalUID\",\"sample_value\":\"ms5paas6rqbh165pbevnal0gcg@google.com\",\"path\":[\"body\",\"iCalUID\"]},\"_p_body.sequence\":{\"ret_value\":\"number\",\"caption\":\"body sequence\",\"sample_value\":1,\"path\":[\"body\",\"sequence\"]},\"_p_body.reminders.useDefault\":{\"ret_value\":\"boolean\",\"caption\":\"body reminders useDefault\",\"sample_value\":true,\"path\":[\"body\",\"reminders\",\"useDefault\"]},\"_p_body.eventType\":{\"ret_value\":\"text\",\"caption\":\"body eventType\",\"sample_value\":\"default\",\"path\":[\"body\",\"eventType\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n \\\\\\\"kind\\\\\\\": \\\\\\\"calendar#event\\\\\\\",\\\\n \\\\\\\"etag\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"3244868416408000\\\\\\\\\\\\\\\"\\\\\\\",\\\\n \\\\\\\"id\\\\\\\": \\\\\\\"ms5paas6rqbh165pbevnal0gcg\\\\\\\",\\\\n \\\\\\\"status\\\\\\\": \\\\\\\"confirmed\\\\\\\",\\\\n \\\\\\\"htmlLink\\\\\\\": \\\\\\\"https://www.google.com/calendar/event?eid=bXM1cGFhczZycWJoMTY1cGJldm5hbDBnY2cgamFyZWQuZ2liYkBt\\\\\\\",\\\\n \\\\\\\"created\\\\\\\": \\\\\\\"2021-05-31T04:09:04.000Z\\\\\\\",\\\\n \\\\\\\"updated\\\\\\\": \\\\\\\"2021-05-31T04:10:08.204Z\\\\\\\",\\\\n \\\\\\\"summary\\\\\\\": \\\\\\\"null\\\\\\\",\\\\n \\\\\\\"description\\\\\\\": \\\\\\\"null\\\\\\\",\\\\n \\\\\\\"location\\\\\\\": \\\\\\\"null\\\\\\\",\\\\n \\\\\\\"creator\\\\\\\": {\\\\n  \\\\\\\"email\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n  \\\\\\\"self\\\\\\\": true\\\\n },\\\\n \\\\\\\"organizer\\\\\\\": {\\\\n  \\\\\\\"email\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n  \\\\\\\"self\\\\\\\": true\\\\n },\\\\n \\\\\\\"start\\\\\\\": {\\\\n  \\\\\\\"dateTime\\\\\\\": \\\\\\\"2021-07-03T10:00:00-04:00\\\\\\\",\\\\n  \\\\\\\"timeZone\\\\\\\": \\\\\\\"America/Detroit\\\\\\\"\\\\n },\\\\n \\\\\\\"end\\\\\\\": {\\\\n  \\\\\\\"dateTime\\\\\\\": \\\\\\\"2021-07-03T10:30:00-04:00\\\\\\\",\\\\n  \\\\\\\"timeZone\\\\\\\": \\\\\\\"America/Detroit\\\\\\\"\\\\n },\\\\n \\\\\\\"iCalUID\\\\\\\": \\\\\\\"ms5paas6rqbh165pbevnal0gcg@google.com\\\\\\\",\\\\n \\\\\\\"sequence\\\\\\\": 1,\\\\n \\\\\\\"reminders\\\\\\\": {\\\\n  \\\\\\\"useDefault\\\\\\\": true\\\\n },\\\\n \\\\\\\"eventType\\\\\\\": \\\\\\\"default\\\\\\\"\\\\n}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/calendar/v3/calendars/primary/events/[eventId]",
+            "url_params": {
+                "AQc": {
+                    "doc": "what is the event ID. you will get this from the Plugin Event Data option",
+                    "key": "eventId",
+                    "private": true,
+                    "value": "ms5paas6rqbh165pbevnal0gcg"
+                }
+            },
+            "wrap_error": true
+        },
+        "ARF": {
+            "0": "A",
+            "1": "R",
+            "2": "E",
+            "initialized": true,
+            "method": "get",
+            "name": "FulCal - Modified Event Data",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.ARF",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ARF\":{\"caption\":\"Modified Event Data\",\"fields\":{\"_p_new Start Time\":{\"ret_value\":\"date\",\"caption\":\"new Start Time\",\"sample_value\":23423,\"path\":[\"new Start Time\"]},\"_p_new End Time\":{\"ret_value\":\"date\",\"caption\":\"new End Time\",\"sample_value\":2423423,\"path\":[\"new End Time\"]},\"_p_event Title\":{\"ret_value\":\"text\",\"caption\":\"event Title\",\"sample_value\":\"info.event.title\",\"path\":[\"event Title\"]},\"_p_event ID\":{\"ret_value\":\"text\",\"caption\":\"event ID\",\"sample_value\":\"info.event.id\",\"path\":[\"event ID\"]},\"_p_event Color\":{\"ret_value\":\"text\",\"caption\":\"event Color\",\"sample_value\":\"info.event.backgroundColor\",\"path\":[\"event Color\"]},\"_p_event Editable\":{\"ret_value\":\"boolean\",\"caption\":\"event Editable\",\"sample_value\":true,\"path\":[\"event Editable\"]},\"_p_event Type\":{\"ret_value\":\"text\",\"caption\":\"event Type\",\"sample_value\":\"info.event.extendedProps.whatAmI\",\"path\":[\"event Type\"]},\"_p_old Start Time\":{\"ret_value\":\"date\",\"caption\":\"old Start Time\",\"sample_value\":234234,\"path\":[\"old Start Time\"]},\"_p_old End Time\":{\"ret_value\":\"date\",\"caption\":\"old End Time\",\"sample_value\":234234,\"path\":[\"old End Time\"]},\"_p_Duration Minutes\":{\"ret_value\":\"number\",\"caption\":\"Duration Minutes\",\"sample_value\":234234,\"path\":[\"Duration Minutes\"]},\"_p_Duration Hours\":{\"ret_value\":\"number\",\"caption\":\"Duration Hours\",\"sample_value\":234,\"path\":[\"Duration Hours\"]},\"_p_Event Location\":{\"ret_value\":\"text\",\"caption\":\"Event Location\",\"sample_value\":\"info.event.extendedProps.eventLocation\",\"path\":[\"Event Location\"]},\"_p_Event Summary\":{\"ret_value\":\"text\",\"caption\":\"Event Summary\",\"sample_value\":\"info.event.extendedProps.eventSummary\",\"path\":[\"Event Summary\"]},\"_p_Extra Property 1\":{\"ret_value\":\"text\",\"caption\":\"Extra Property 1\",\"sample_value\":\"\",\"path\":[\"Extra Property 1\"]},\"_p_Extra Property 2\":{\"ret_value\":\"text\",\"caption\":\"Extra Property 2\",\"sample_value\":\"\",\"path\":[\"Extra Property 2\"]},\"_p_Event Resource\":{\"ret_value\":\"text\",\"caption\":\"Event Resource\",\"sample_value\":\"info.event.resourceId\",\"path\":[\"Event Resource\"]}}}}",
+            "url": "https://api.thecatapi.com/v1/images/search"
+        },
+        "AUD": {
+            "initialized": true,
+            "method": "get",
+            "name": "TSG - Filtered Time Slots",
+            "publish_as": "data",
+            "rank": 5,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AUD",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AUD\":{\"caption\":\"TSG - Filtered Time Slot\",\"fields\":{\"_p_Event Start Time\":{\"ret_value\":\"date\",\"caption\":\"Event Start Time\",\"sample_value\":234234234,\"path\":[\"Event Start Time\"]},\"_p_Event End Time\":{\"ret_value\":\"date\",\"caption\":\"Event End Time\",\"sample_value\":234234234,\"path\":[\"Event End Time\"]},\"_p_Event Title\":{\"ret_value\":\"text\",\"caption\":\"Event Title\",\"sample_value\":\"properties.time_slot_title\",\"path\":[\"Event Title\"]},\"_p_Calendar Editability\":{\"ret_value\":\"boolean\",\"caption\":\"Calendar Editability\",\"sample_value\":false,\"path\":[\"Calendar Editability\"]},\"_p_Recurrence Color\":{\"ret_value\":\"text\",\"caption\":\"Recurrence Color\",\"sample_value\":\"properties.colorizer\",\"path\":[\"Recurrence Color\"]},\"_p_ID\":{\"ret_value\":\"text\",\"caption\":\"ID\",\"sample_value\":\"Event\",\"path\":[\"ID\"]},\"_p_Resource Title\":{\"ret_value\":\"text\",\"caption\":\"Resource Title\",\"sample_value\":\"properties.events_resource_title\",\"path\":[\"Resource Title\"]}}}}",
+            "url": "https://api.thecatapi.com/v1/images/search"
+        },
+        "AXB": {
+            "headers": {
+                "AXC": {
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer ya29.a0AfH6SMBmp82ngx40VG8MJLysXPVu2FOqc3ysxm1MGD7RnzbfWPsVJSJr2mbPJUb70IehQU96TjmSfEp8bx1chybMil_68cU7TCSFbMj4QMLCTqW6C5i86JmqBQzE6PrAwc-oiKUpU0E5MLo-0sx0vBbes9kL"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "GOOGL - Read Calendar Events",
+            "params": {
+                "AXW": {
+                    "doc": "Maximum number of events returned on one result page. The number of events in the resulting page may be less than this value, or none at all, even if there are more events matching the query. Incomplete pages can be detected by a non-empty nextPageToken field in the response. By default the value is 250 events. The page size can never be larger than 2500 events. Optional.",
+                    "key": "maxResults",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AXX": {
+                    "key": "pageToken",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AXY": {
+                    "doc": "The order of the events returned in the result. Optional. The default is an unspecified, stable order.\n\nAcceptable values are:\n\"startTime\": Order by the start date/time (ascending). This is only available when querying single events (i.e. the parameter singleEvents is True)\n\"updated\": Order by last modification time (ascending).",
+                    "key": "orderBy",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AXZ": {
+                    "key": "singleEvents",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AXa": {
+                    "doc": "Lower bound (exclusive) for an event's end time to filter by. Optional. The default is not to filter by end time. Must be an RFC3339 timestamp with mandatory time zone offset, for example, 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but are ignored. If timeMax is set, timeMin must be smaller than timeMax.",
+                    "key": "timeMin",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AXb": {
+                    "doc": "Free text search terms to find events that match these terms in any field, except for extended properties. Optional.",
+                    "key": "q",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 17,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AXB",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AXB\":{\"caption\":\"GOOGL - Read Calendar Event\",\"fields\":{\"_p_body.kind\":{\"ret_value\":\"text\",\"caption\":\"body kind\",\"sample_value\":\"calendar#events\",\"path\":[\"body\",\"kind\"]},\"_p_body.etag\":{\"ret_value\":\"text\",\"caption\":\"body etag\",\"sample_value\":\"\\\"p324ebjnigvpv00g\\\"\",\"path\":[\"body\",\"etag\"]},\"_p_body.summary\":{\"ret_value\":\"text\",\"caption\":\"body summary\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"summary\"]},\"_p_body.updated\":{\"ret_value\":\"date\",\"caption\":\"body updated\",\"sample_value\":\"2021-05-31T04:16:45.413Z\",\"path\":[\"body\",\"updated\"]},\"_p_body.timeZone\":{\"ret_value\":\"text\",\"caption\":\"body timeZone\",\"sample_value\":\"America/New_York\",\"path\":[\"body\",\"timeZone\"]},\"_p_body.accessRole\":{\"ret_value\":\"text\",\"caption\":\"body accessRole\",\"sample_value\":\"owner\",\"path\":[\"body\",\"accessRole\"]},\"_p_body.nextSyncToken\":{\"ret_value\":\"text\",\"caption\":\"body nextSyncToken\",\"sample_value\":\"CIjlzvKH8_ACEIjlzvKH8_ACGAUgjZj_sgE=\",\"path\":[\"body\",\"nextSyncToken\"]},\"_p_body.items\":{\"ret_value\":\"list.api.1637689640773x255337177092194300.plugin_api.AXB.body.items\",\"caption\":\"body\",\"path\":[\"body\",\"items\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"(value too large to save 112800 bytes)\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}},\"plugin_api.AXB.body.items\":{\"caption\":\"GOOGL - Read Calendar Events body item\",\"fields\":{\"_p_kind\":{\"ret_value\":\"text\",\"caption\":\"kind\",\"sample_value\":\"calendar#event\",\"path\":[\"kind\"]},\"_p_etag\":{\"ret_value\":\"text\",\"caption\":\"etag\",\"sample_value\":\"\\\"2315283630388000\\\"\",\"path\":[\"etag\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"oatn6u7hodlrp6ab8nl8ngejms\",\"path\":[\"id\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"confirmed\",\"path\":[\"status\"]},\"_p_htmlLink\":{\"ret_value\":\"text\",\"caption\":\"htmlLink\",\"sample_value\":\"https://www.google.com/calendar/event?eid=b2F0bjZ1N2hvZGxycDZhYjhubDhuZ2VqbXMgamFyZWQuZ2liYkBt\",\"path\":[\"htmlLink\"]},\"_p_created\":{\"ret_value\":\"date\",\"caption\":\"created\",\"sample_value\":\"2006-09-07T15:10:15.000Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date\",\"caption\":\"updated\",\"sample_value\":\"2006-09-07T15:10:15.194Z\",\"path\":[\"updated\"]},\"_p_summary\":{\"ret_value\":\"text\",\"caption\":\"summary\",\"sample_value\":\"court pre exam\",\"path\":[\"summary\"]},\"_p_creator.email\":{\"ret_value\":\"text\",\"caption\":\"creator email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"creator\",\"email\"]},\"_p_creator.displayName\":{\"ret_value\":\"text\",\"caption\":\"creator displayName\",\"sample_value\":\"Jared Gibb\",\"path\":[\"creator\",\"displayName\"]},\"_p_creator.self\":{\"ret_value\":\"boolean\",\"caption\":\"creator self\",\"sample_value\":true,\"path\":[\"creator\",\"self\"]},\"_p_organizer.email\":{\"ret_value\":\"text\",\"caption\":\"organizer email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"organizer\",\"email\"]},\"_p_organizer.displayName\":{\"ret_value\":\"text\",\"caption\":\"organizer displayName\",\"sample_value\":\"Jared Gibb\",\"path\":[\"organizer\",\"displayName\"]},\"_p_organizer.self\":{\"ret_value\":\"boolean\",\"caption\":\"organizer self\",\"sample_value\":true,\"path\":[\"organizer\",\"self\"]},\"_p_start.dateTime\":{\"ret_value\":\"date\",\"caption\":\"start dateTime\",\"sample_value\":\"2006-09-13T08:00:00-04:00\",\"path\":[\"start\",\"dateTime\"]},\"_p_start.timeZone\":{\"ret_value\":\"text\",\"caption\":\"start timeZone\",\"sample_value\":\"America/New_York\",\"path\":[\"start\",\"timeZone\"]},\"_p_start.date\":{\"ret_value\":\"text\",\"caption\":\"start date\",\"sample_value\":\"2014-01-01\",\"path\":[\"start\",\"date\"]},\"_p_end.dateTime\":{\"ret_value\":\"date\",\"caption\":\"end dateTime\",\"sample_value\":\"2006-09-13T09:00:00-04:00\",\"path\":[\"end\",\"dateTime\"]},\"_p_end.timeZone\":{\"ret_value\":\"text\",\"caption\":\"end timeZone\",\"sample_value\":\"America/New_York\",\"path\":[\"end\",\"timeZone\"]},\"_p_end.date\":{\"ret_value\":\"text\",\"caption\":\"end date\",\"sample_value\":\"2014-01-02\",\"path\":[\"end\",\"date\"]},\"_p_iCalUID\":{\"ret_value\":\"text\",\"caption\":\"iCalUID\",\"sample_value\":\"oatn6u7hodlrp6ab8nl8ngejms@google.com\",\"path\":[\"iCalUID\"]},\"_p_sequence\":{\"ret_value\":\"number\",\"caption\":\"sequence\",\"sample_value\":0,\"path\":[\"sequence\"]},\"_p_reminders.useDefault\":{\"ret_value\":\"boolean\",\"caption\":\"reminders useDefault\",\"sample_value\":true,\"path\":[\"reminders\",\"useDefault\"]},\"_p_eventType\":{\"ret_value\":\"text\",\"caption\":\"eventType\",\"sample_value\":\"default\",\"path\":[\"eventType\"]},\"_p_attendees\":{\"ret_value\":\"list.api.1637689640773x255337177092194300.plugin_api.AXB.attendees\",\"caption\":\"attendees\",\"path\":[\"attendees\"]},\"_p_extendedProperties.shared.CalendarSyncAdapter#originalTimezone\":{\"ret_value\":\"text\",\"caption\":\"extendedProperties shared CalendarSyncAdapter#originalTimezone\",\"sample_value\":\"America/Los_Angeles\",\"path\":[\"extendedProperties\",\"shared\",\"CalendarSyncAdapter#originalTimezone\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"Spray for spider mites\",\"path\":[\"description\"]},\"_p_location\":{\"ret_value\":\"text\",\"caption\":\"location\",\"sample_value\":\"garden\",\"path\":[\"location\"]},\"_p_transparency\":{\"ret_value\":\"text\",\"caption\":\"transparency\",\"sample_value\":\"transparent\",\"path\":[\"transparency\"]},\"_p_colorId\":{\"ret_value\":\"text\",\"caption\":\"colorId\",\"sample_value\":\"10\",\"path\":[\"colorId\"]},\"_p_recurrence\":{\"ret_value\":\"list.text\",\"caption\":\"recurrence\",\"sample_value\":\"RRULE:FREQ=WEEKLY;UNTIL=20180725T035959Z;INTERVAL=2\",\"path\":[\"recurrence\"]},\"_p_guestsCanInviteOthers\":{\"ret_value\":\"boolean\",\"caption\":\"guestsCanInviteOthers\",\"sample_value\":false,\"path\":[\"guestsCanInviteOthers\"]},\"_p_hangoutLink\":{\"ret_value\":\"text\",\"caption\":\"hangoutLink\",\"sample_value\":\"https://meet.google.com/fsc-jeab-dpu\",\"path\":[\"hangoutLink\"]},\"_p_conferenceData.createRequest.requestId\":{\"ret_value\":\"text\",\"caption\":\"conferenceData createRequest requestId\",\"sample_value\":\"cpi3eo9n6phm4b9l68qm4b9k6pj36bb2coo30b9occrjgdpoccqjao9mco\",\"path\":[\"conferenceData\",\"createRequest\",\"requestId\"]},\"_p_conferenceData.createRequest.conferenceSolutionKey.type\":{\"ret_value\":\"text\",\"caption\":\"conferenceData createRequest conferenceSolutionKey type\",\"sample_value\":\"hangoutsMeet\",\"path\":[\"conferenceData\",\"createRequest\",\"conferenceSolutionKey\",\"type\"]},\"_p_conferenceData.createRequest.status.statusCode\":{\"ret_value\":\"text\",\"caption\":\"conferenceData createRequest status statusCode\",\"sample_value\":\"success\",\"path\":[\"conferenceData\",\"createRequest\",\"status\",\"statusCode\"]},\"_p_conferenceData.entryPoints\":{\"ret_value\":\"list.api.1637689640773x255337177092194300.plugin_api.AXB.conferenceData.entryPoints\",\"caption\":\"conferenceData entryPoints\",\"path\":[\"conferenceData\",\"entryPoints\"]},\"_p_conferenceData.conferenceSolution.key.type\":{\"ret_value\":\"text\",\"caption\":\"conferenceData conferenceSolution key type\",\"sample_value\":\"hangoutsMeet\",\"path\":[\"conferenceData\",\"conferenceSolution\",\"key\",\"type\"]},\"_p_conferenceData.conferenceSolution.name\":{\"ret_value\":\"text\",\"caption\":\"conferenceData conferenceSolution name\",\"sample_value\":\"Google Meet\",\"path\":[\"conferenceData\",\"conferenceSolution\",\"name\"]},\"_p_conferenceData.conferenceSolution.iconUri\":{\"ret_value\":\"text\",\"caption\":\"conferenceData conferenceSolution iconUri\",\"sample_value\":\"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png\",\"path\":[\"conferenceData\",\"conferenceSolution\",\"iconUri\"]},\"_p_conferenceData.conferenceId\":{\"ret_value\":\"text\",\"caption\":\"conferenceData conferenceId\",\"sample_value\":\"fsc-jeab-dpu\",\"path\":[\"conferenceData\",\"conferenceId\"]},\"_p_conferenceData.signature\":{\"ret_value\":\"text\",\"caption\":\"conferenceData signature\",\"sample_value\":\"ACn9hYEfUURiHfPR9tKvxUp4rM9a\",\"path\":[\"conferenceData\",\"signature\"]},\"_p_guestsCanSeeOtherGuests\":{\"ret_value\":\"boolean\",\"caption\":\"guestsCanSeeOtherGuests\",\"sample_value\":false,\"path\":[\"guestsCanSeeOtherGuests\"]}}},\"plugin_api.AXB.attendees\":{\"caption\":\"GOOGL - Read Calendar Events attendee\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"email\"]},\"_p_organizer\":{\"ret_value\":\"boolean\",\"caption\":\"organizer\",\"sample_value\":true,\"path\":[\"organizer\"]},\"_p_self\":{\"ret_value\":\"boolean\",\"caption\":\"self\",\"sample_value\":true,\"path\":[\"self\"]},\"_p_responseStatus\":{\"ret_value\":\"text\",\"caption\":\"responseStatus\",\"sample_value\":\"accepted\",\"path\":[\"responseStatus\"]},\"_p_displayName\":{\"ret_value\":\"text\",\"caption\":\"displayName\",\"sample_value\":\"Rinkoo Patel\",\"path\":[\"displayName\"]}}},\"plugin_api.AXB.conferenceData.entryPoints\":{\"caption\":\"GOOGL - Read Calendar Events conferenceData entryPoint\",\"fields\":{\"_p_entryPointType\":{\"ret_value\":\"text\",\"caption\":\"entryPointType\",\"sample_value\":\"video\",\"path\":[\"entryPointType\"]},\"_p_uri\":{\"ret_value\":\"text\",\"caption\":\"uri\",\"sample_value\":\"https://meet.google.com/fsc-jeab-dpu\",\"path\":[\"uri\"]},\"_p_label\":{\"ret_value\":\"text\",\"caption\":\"label\",\"sample_value\":\"meet.google.com/fsc-jeab-dpu\",\"path\":[\"label\"]},\"_p_pin\":{\"ret_value\":\"text\",\"caption\":\"pin\",\"sample_value\":\"5851180444990\",\"path\":[\"pin\"]},\"_p_regionCode\":{\"ret_value\":\"text\",\"caption\":\"regionCode\",\"sample_value\":\"IE\",\"path\":[\"regionCode\"]}}}}",
+            "url": "https://www.googleapis.com/calendar/v3/calendars/[calendar id]/events",
+            "url_params": {
+                "AXV": {
+                    "key": "calendar id",
+                    "private": true,
+                    "value": "jared.gibb@gmail.com"
+                }
+            },
+            "wrap_error": true
+        },
+        "AXc": {
+            "headers": {
+                "AXd": {
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer ya29.a0AfH6SMCGTQtXyAp7nRxFghE3bmt9e5ND0a6eXw9jpd6k8kqxEHbC0PEdXrCXdZ6-bHVEChvXFhGHN2w0NVw29YDqTAMqYTu1CEP0zFz8MMdHANqotMRHswl5vP79g1jGhylt1OYefY4EhtU6C1QB6jWa7mlv"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "GOOGL - List All Calendars",
+            "publish_as": "data",
+            "rank": 12,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AXc",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXc\":{\"caption\":\"GOOGL - List All Calendar\",\"fields\":{\"_p_body.kind\":{\"ret_value\":\"text\",\"caption\":\"body kind\",\"sample_value\":\"calendar#calendarList\",\"path\":[\"body\",\"kind\"]},\"_p_body.etag\":{\"ret_value\":\"text\",\"caption\":\"body etag\",\"sample_value\":\"\\\"p324ebjnigvpv00g\\\"\",\"path\":[\"body\",\"etag\"]},\"_p_body.nextSyncToken\":{\"ret_value\":\"text\",\"caption\":\"body nextSyncToken\",\"sample_value\":\"CIjlzvKH8_ACEhRqYXJlZC5naWJiQGdtYWlsLmNvbQ==\",\"path\":[\"body\",\"nextSyncToken\"]},\"_p_body.items\":{\"ret_value\":\"list.api.1637689640773x255337177092194300.plugin_api.AXc.body.items\",\"caption\":\"body\",\"path\":[\"body\",\"items\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n \\\\\\\"kind\\\\\\\": \\\\\\\"calendar#calendarList\\\\\\\",\\\\n \\\\\\\"etag\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"p324ebjnigvpv00g\\\\\\\\\\\\\\\"\\\\\\\",\\\\n \\\\\\\"nextSyncToken\\\\\\\": \\\\\\\"CIjlzvKH8_ACEhRqYXJlZC5naWJiQGdtYWlsLmNvbQ==\\\\\\\",\\\\n \\\\\\\"items\\\\\\\": [\\\\n  {\\\\n   \\\\\\\"kind\\\\\\\": \\\\\\\"calendar#calendarListEntry\\\\\\\",\\\\n   \\\\\\\"etag\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"1526819779553000\\\\\\\\\\\\\\\"\\\\\\\",\\\\n   \\\\\\\"id\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n   \\\\\\\"summary\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n   \\\\\\\"timeZone\\\\\\\": \\\\\\\"America/New_York\\\\\\\",\\\\n   \\\\\\\"colorId\\\\\\\": \\\\\\\"17\\\\\\\",\\\\n   \\\\\\\"backgroundColor\\\\\\\": \\\\\\\"#9a9cff\\\\\\\",\\\\n   \\\\\\\"foregroundColor\\\\\\\": \\\\\\\"#000000\\\\\\\",\\\\n   \\\\\\\"selected\\\\\\\": true,\\\\n   \\\\\\\"accessRole\\\\\\\": \\\\\\\"owner\\\\\\\",\\\\n   \\\\\\\"defaultReminders\\\\\\\": [],\\\\n   \\\\\\\"primary\\\\\\\": true,\\\\n   \\\\\\\"conferenceProperties\\\\\\\": {\\\\n    \\\\\\\"allowedConferenceSolutionTypes\\\\\\\": [\\\\n     \\\\\\\"hangoutsMeet\\\\\\\"\\\\n    ]\\\\n   }\\\\n  },\\\\n  {\\\\n   \\\\\\\"kind\\\\\\\": \\\\\\\"calendar#calendarListEntry\\\\\\\",\\\\n   \\\\\\\"etag\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"1526819780704000\\\\\\\\\\\\\\\"\\\\\\\",\\\\n   \\\\\\\"id\\\\\\\": \\\\\\\"en.usa#holiday@group.v.calendar.google.com\\\\\\\",\\\\n   \\\\\\\"summary\\\\\\\": \\\\\\\"Holidays in United States\\\\\\\",\\\\n   \\\\\\\"description\\\\\\\": \\\\\\\"Holidays and Observances in United States\\\\\\\",\\\\n   \\\\\\\"timeZone\\\\\\\": \\\\\\\"America/New_York\\\\\\\",\\\\n   \\\\\\\"colorId\\\\\\\": \\\\\\\"8\\\\\\\",\\\\n   \\\\\\\"backgroundColor\\\\\\\": \\\\\\\"#16a765\\\\\\\",\\\\n   \\\\\\\"foregroundColor\\\\\\\": \\\\\\\"#000000\\\\\\\",\\\\n   \\\\\\\"selected\\\\\\\": true,\\\\n   \\\\\\\"accessRole\\\\\\\": \\\\\\\"reader\\\\\\\",\\\\n   \\\\\\\"defaultReminders\\\\\\\": [],\\\\n   \\\\\\\"conferenceProperties\\\\\\\": {\\\\n    \\\\\\\"allowedConferenceSolutionTypes\\\\\\\": [\\\\n     \\\\\\\"hangoutsMeet\\\\\\\"\\\\n    ]\\\\n   }\\\\n  },\\\\n  {\\\\n   \\\\\\\"kind\\\\\\\": \\\\\\\"calendar#calendarListEntry\\\\\\\",\\\\n   \\\\\\\"etag\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"1553144207959000\\\\\\\\\\\\\\\"\\\\\\\",\\\\n   \\\\\\\"id\\\\\\\": \\\\\\\"addressbook#contacts@group.v.calendar.google.com\\\\\\\",\\\\n   \\\\\\\"summary\\\\\\\": \\\\\\\"Birthdays\\\\\\\",\\\\n   \\\\\\\"description\\\\\\\": \\\\\\\"Displays birthdays, anniversaries, and other event dates of people in Google Contacts.\\\\\\\",\\\\n   \\\\\\\"timeZone\\\\\\\": \\\\\\\"America/New_York\\\\\\\",\\\\n   \\\\\\\"colorId\\\\\\\": \\\\\\\"13\\\\\\\",\\\\n   \\\\\\\"backgroundColor\\\\\\\": \\\\\\\"#92e1c0\\\\\\\",\\\\n   \\\\\\\"foregroundColor\\\\\\\": \\\\\\\"#000000\\\\\\\",\\\\n   \\\\\\\"selected\\\\\\\": true,\\\\n   \\\\\\\"accessRole\\\\\\\": \\\\\\\"reader\\\\\\\",\\\\n   \\\\\\\"defaultReminders\\\\\\\": [],\\\\n   \\\\\\\"conferenceProperties\\\\\\\": {\\\\n    \\\\\\\"allowedConferenceSolutionTypes\\\\\\\": [\\\\n     \\\\\\\"hangoutsMeet\\\\\\\"\\\\n    ]\\\\n   }\\\\n  }\\\\n ]\\\\n}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}},\"plugin_api.AXc.body.items\":{\"caption\":\"GOOGL - List All Calendars body item\",\"fields\":{\"_p_kind\":{\"ret_value\":\"text\",\"caption\":\"kind\",\"sample_value\":\"calendar#calendarListEntry\",\"path\":[\"kind\"]},\"_p_etag\":{\"ret_value\":\"text\",\"caption\":\"etag\",\"sample_value\":\"\\\"1526819779553000\\\"\",\"path\":[\"etag\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"id\"]},\"_p_summary\":{\"ret_value\":\"text\",\"caption\":\"summary\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"summary\"]},\"_p_timeZone\":{\"ret_value\":\"text\",\"caption\":\"timeZone\",\"sample_value\":\"America/New_York\",\"path\":[\"timeZone\"]},\"_p_colorId\":{\"ret_value\":\"text\",\"caption\":\"colorId\",\"sample_value\":\"17\",\"path\":[\"colorId\"]},\"_p_backgroundColor\":{\"ret_value\":\"text\",\"caption\":\"backgroundColor\",\"sample_value\":\"#9a9cff\",\"path\":[\"backgroundColor\"]},\"_p_foregroundColor\":{\"ret_value\":\"text\",\"caption\":\"foregroundColor\",\"sample_value\":\"#000000\",\"path\":[\"foregroundColor\"]},\"_p_selected\":{\"ret_value\":\"boolean\",\"caption\":\"selected\",\"sample_value\":true,\"path\":[\"selected\"]},\"_p_accessRole\":{\"ret_value\":\"text\",\"caption\":\"accessRole\",\"sample_value\":\"owner\",\"path\":[\"accessRole\"]},\"_p_primary\":{\"ret_value\":\"boolean\",\"caption\":\"primary\",\"sample_value\":true,\"path\":[\"primary\"]},\"_p_conferenceProperties.allowedConferenceSolutionTypes\":{\"ret_value\":\"list.text\",\"caption\":\"conferenceProperties allowedConferenceSolutionTypes\",\"sample_value\":\"hangoutsMeet\",\"path\":[\"conferenceProperties\",\"allowedConferenceSolutionTypes\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"Holidays and Observances in United States\",\"path\":[\"description\"]}}}}",
+            "url": "https://www.googleapis.com/calendar/v3/users/me/calendarList",
+            "wrap_error": true
+        },
+        "AXe": {
+            "headers": {
+                "AXf": {
+                    "key": "Authorization",
+                    "optional": false,
+                    "private": true,
+                    "value": "Bearer ya29.A0ARrdaM9Hb4mg-Nd9B0iWo3AcvTil99bBKLhMEZ0Pjrap7wWUOl5lNbQutqm-5RGAVCkt3P7Y3200MWoSY8fF0UFlhBjEdu5n_V_FYOL2YvmLcfydEGEeuhzuPRxjZBzHOZOUDd-4QjFfoKE9Nf_nNuNmHyuP"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "GOOGL - Get Profile Info",
+            "publish_as": "data",
+            "rank": 11,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AXe",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXe\":{\"caption\":\"GOOGL - Get Profile Info\",\"fields\":{\"_p_body.id\":{\"ret_value\":\"text\",\"caption\":\"body id\",\"sample_value\":\"115645704045466931179\",\"path\":[\"body\",\"id\"]},\"_p_body.email\":{\"ret_value\":\"text\",\"caption\":\"body email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"email\"]},\"_p_body.verified_email\":{\"ret_value\":\"boolean\",\"caption\":\"body verified_email\",\"sample_value\":true,\"path\":[\"body\",\"verified_email\"]},\"_p_body.name\":{\"ret_value\":\"text\",\"caption\":\"body name\",\"sample_value\":\"Jared Gibb\",\"path\":[\"body\",\"name\"]},\"_p_body.given_name\":{\"ret_value\":\"text\",\"caption\":\"body given_name\",\"sample_value\":\"Jared\",\"path\":[\"body\",\"given_name\"]},\"_p_body.family_name\":{\"ret_value\":\"text\",\"caption\":\"body family_name\",\"sample_value\":\"Gibb\",\"path\":[\"body\",\"family_name\"]},\"_p_body.picture\":{\"ret_value\":\"text\",\"caption\":\"body picture\",\"sample_value\":\"https://lh3.googleusercontent.com/a-/AOh14GiPCEmmAHeNCb8UbaeywWe8F6l5iAQ2GwhNte38QA=s96-c\",\"path\":[\"body\",\"picture\"]},\"_p_body.locale\":{\"ret_value\":\"text\",\"caption\":\"body locale\",\"sample_value\":\"en-GB\",\"path\":[\"body\",\"locale\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n  \\\\\\\"id\\\\\\\": \\\\\\\"115645704045466931179\\\\\\\",\\\\n  \\\\\\\"email\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n  \\\\\\\"verified_email\\\\\\\": true,\\\\n  \\\\\\\"name\\\\\\\": \\\\\\\"Jared Gibb\\\\\\\",\\\\n  \\\\\\\"given_name\\\\\\\": \\\\\\\"Jared\\\\\\\",\\\\n  \\\\\\\"family_name\\\\\\\": \\\\\\\"Gibb\\\\\\\",\\\\n  \\\\\\\"picture\\\\\\\": \\\\\\\"https://lh3.googleusercontent.com/a-/AOh14GiPCEmmAHeNCb8UbaeywWe8F6l5iAQ2GwhNte38QA=s96-c\\\\\\\",\\\\n  \\\\\\\"locale\\\\\\\": \\\\\\\"en-GB\\\\\\\"\\\\n}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/oauth2/v1/userinfo?alt=json",
+            "wrap_error": true
+        },
+        "AXh": {
+            "headers": {
+                "AXi": {
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer ya29.a0AfH6SMBwxbhlAca12y4JcgLxDgDFLbp34EPZoIcHcCSRhZaSVRI1y3Mtr8jk7-okyrQN_FGjUHC-u5PM_vu8gZpD4mmk3hWKSDFT0PxWGC08PSYq8nQzhkSMKvZjFyjgeIrXmr9i64T7tLMnx6B5ql9Xoo1D"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "GOOGL - List Calendar Colors",
+            "publish_as": "data",
+            "rank": 15,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AXh",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXh\":{\"caption\":\"List Calendar Color\",\"fields\":{\"_p_body.kind\":{\"ret_value\":\"text\",\"caption\":\"body kind\",\"sample_value\":\"calendar#colors\",\"path\":[\"body\",\"kind\"]},\"_p_body.updated\":{\"ret_value\":\"text\",\"caption\":\"body updated\",\"sample_value\":\"2012-02-14T00:00:00.000Z\",\"path\":[\"body\",\"updated\"]},\"_p_body.calendar.1.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 1 background\",\"sample_value\":\"#ac725e\",\"path\":[\"body\",\"calendar\",\"1\",\"background\"]},\"_p_body.calendar.1.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 1 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"1\",\"foreground\"]},\"_p_body.calendar.2.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 2 background\",\"sample_value\":\"#d06b64\",\"path\":[\"body\",\"calendar\",\"2\",\"background\"]},\"_p_body.calendar.2.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 2 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"2\",\"foreground\"]},\"_p_body.calendar.3.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 3 background\",\"sample_value\":\"#f83a22\",\"path\":[\"body\",\"calendar\",\"3\",\"background\"]},\"_p_body.calendar.3.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 3 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"3\",\"foreground\"]},\"_p_body.calendar.4.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 4 background\",\"sample_value\":\"#fa573c\",\"path\":[\"body\",\"calendar\",\"4\",\"background\"]},\"_p_body.calendar.4.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 4 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"4\",\"foreground\"]},\"_p_body.calendar.5.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 5 background\",\"sample_value\":\"#ff7537\",\"path\":[\"body\",\"calendar\",\"5\",\"background\"]},\"_p_body.calendar.5.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 5 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"5\",\"foreground\"]},\"_p_body.calendar.6.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 6 background\",\"sample_value\":\"#ffad46\",\"path\":[\"body\",\"calendar\",\"6\",\"background\"]},\"_p_body.calendar.6.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 6 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"6\",\"foreground\"]},\"_p_body.calendar.7.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 7 background\",\"sample_value\":\"#42d692\",\"path\":[\"body\",\"calendar\",\"7\",\"background\"]},\"_p_body.calendar.7.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 7 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"7\",\"foreground\"]},\"_p_body.calendar.8.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 8 background\",\"sample_value\":\"#16a765\",\"path\":[\"body\",\"calendar\",\"8\",\"background\"]},\"_p_body.calendar.8.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 8 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"8\",\"foreground\"]},\"_p_body.calendar.9.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 9 background\",\"sample_value\":\"#7bd148\",\"path\":[\"body\",\"calendar\",\"9\",\"background\"]},\"_p_body.calendar.9.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 9 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"9\",\"foreground\"]},\"_p_body.calendar.10.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 10 background\",\"sample_value\":\"#b3dc6c\",\"path\":[\"body\",\"calendar\",\"10\",\"background\"]},\"_p_body.calendar.10.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 10 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"10\",\"foreground\"]},\"_p_body.calendar.11.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 11 background\",\"sample_value\":\"#fbe983\",\"path\":[\"body\",\"calendar\",\"11\",\"background\"]},\"_p_body.calendar.11.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 11 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"11\",\"foreground\"]},\"_p_body.calendar.12.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 12 background\",\"sample_value\":\"#fad165\",\"path\":[\"body\",\"calendar\",\"12\",\"background\"]},\"_p_body.calendar.12.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 12 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"12\",\"foreground\"]},\"_p_body.calendar.13.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 13 background\",\"sample_value\":\"#92e1c0\",\"path\":[\"body\",\"calendar\",\"13\",\"background\"]},\"_p_body.calendar.13.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 13 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"13\",\"foreground\"]},\"_p_body.calendar.14.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 14 background\",\"sample_value\":\"#9fe1e7\",\"path\":[\"body\",\"calendar\",\"14\",\"background\"]},\"_p_body.calendar.14.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 14 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"14\",\"foreground\"]},\"_p_body.calendar.15.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 15 background\",\"sample_value\":\"#9fc6e7\",\"path\":[\"body\",\"calendar\",\"15\",\"background\"]},\"_p_body.calendar.15.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 15 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"15\",\"foreground\"]},\"_p_body.calendar.16.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 16 background\",\"sample_value\":\"#4986e7\",\"path\":[\"body\",\"calendar\",\"16\",\"background\"]},\"_p_body.calendar.16.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 16 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"16\",\"foreground\"]},\"_p_body.calendar.17.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 17 background\",\"sample_value\":\"#9a9cff\",\"path\":[\"body\",\"calendar\",\"17\",\"background\"]},\"_p_body.calendar.17.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 17 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"17\",\"foreground\"]},\"_p_body.calendar.18.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 18 background\",\"sample_value\":\"#b99aff\",\"path\":[\"body\",\"calendar\",\"18\",\"background\"]},\"_p_body.calendar.18.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 18 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"18\",\"foreground\"]},\"_p_body.calendar.19.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 19 background\",\"sample_value\":\"#c2c2c2\",\"path\":[\"body\",\"calendar\",\"19\",\"background\"]},\"_p_body.calendar.19.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 19 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"19\",\"foreground\"]},\"_p_body.calendar.20.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 20 background\",\"sample_value\":\"#cabdbf\",\"path\":[\"body\",\"calendar\",\"20\",\"background\"]},\"_p_body.calendar.20.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 20 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"20\",\"foreground\"]},\"_p_body.calendar.21.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 21 background\",\"sample_value\":\"#cca6ac\",\"path\":[\"body\",\"calendar\",\"21\",\"background\"]},\"_p_body.calendar.21.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 21 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"21\",\"foreground\"]},\"_p_body.calendar.22.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 22 background\",\"sample_value\":\"#f691b2\",\"path\":[\"body\",\"calendar\",\"22\",\"background\"]},\"_p_body.calendar.22.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 22 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"22\",\"foreground\"]},\"_p_body.calendar.23.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 23 background\",\"sample_value\":\"#cd74e6\",\"path\":[\"body\",\"calendar\",\"23\",\"background\"]},\"_p_body.calendar.23.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 23 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"23\",\"foreground\"]},\"_p_body.calendar.24.background\":{\"ret_value\":\"text\",\"caption\":\"body calendar 24 background\",\"sample_value\":\"#a47ae2\",\"path\":[\"body\",\"calendar\",\"24\",\"background\"]},\"_p_body.calendar.24.foreground\":{\"ret_value\":\"text\",\"caption\":\"body calendar 24 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"calendar\",\"24\",\"foreground\"]},\"_p_body.event.1.background\":{\"ret_value\":\"text\",\"caption\":\"body event 1 background\",\"sample_value\":\"#a4bdfc\",\"path\":[\"body\",\"event\",\"1\",\"background\"]},\"_p_body.event.1.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 1 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"1\",\"foreground\"]},\"_p_body.event.2.background\":{\"ret_value\":\"text\",\"caption\":\"body event 2 background\",\"sample_value\":\"#7ae7bf\",\"path\":[\"body\",\"event\",\"2\",\"background\"]},\"_p_body.event.2.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 2 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"2\",\"foreground\"]},\"_p_body.event.3.background\":{\"ret_value\":\"text\",\"caption\":\"body event 3 background\",\"sample_value\":\"#dbadff\",\"path\":[\"body\",\"event\",\"3\",\"background\"]},\"_p_body.event.3.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 3 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"3\",\"foreground\"]},\"_p_body.event.4.background\":{\"ret_value\":\"text\",\"caption\":\"body event 4 background\",\"sample_value\":\"#ff887c\",\"path\":[\"body\",\"event\",\"4\",\"background\"]},\"_p_body.event.4.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 4 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"4\",\"foreground\"]},\"_p_body.event.5.background\":{\"ret_value\":\"text\",\"caption\":\"body event 5 background\",\"sample_value\":\"#fbd75b\",\"path\":[\"body\",\"event\",\"5\",\"background\"]},\"_p_body.event.5.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 5 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"5\",\"foreground\"]},\"_p_body.event.6.background\":{\"ret_value\":\"text\",\"caption\":\"body event 6 background\",\"sample_value\":\"#ffb878\",\"path\":[\"body\",\"event\",\"6\",\"background\"]},\"_p_body.event.6.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 6 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"6\",\"foreground\"]},\"_p_body.event.7.background\":{\"ret_value\":\"text\",\"caption\":\"body event 7 background\",\"sample_value\":\"#46d6db\",\"path\":[\"body\",\"event\",\"7\",\"background\"]},\"_p_body.event.7.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 7 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"7\",\"foreground\"]},\"_p_body.event.8.background\":{\"ret_value\":\"text\",\"caption\":\"body event 8 background\",\"sample_value\":\"#e1e1e1\",\"path\":[\"body\",\"event\",\"8\",\"background\"]},\"_p_body.event.8.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 8 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"8\",\"foreground\"]},\"_p_body.event.9.background\":{\"ret_value\":\"text\",\"caption\":\"body event 9 background\",\"sample_value\":\"#5484ed\",\"path\":[\"body\",\"event\",\"9\",\"background\"]},\"_p_body.event.9.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 9 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"9\",\"foreground\"]},\"_p_body.event.10.background\":{\"ret_value\":\"text\",\"caption\":\"body event 10 background\",\"sample_value\":\"#51b749\",\"path\":[\"body\",\"event\",\"10\",\"background\"]},\"_p_body.event.10.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 10 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"10\",\"foreground\"]},\"_p_body.event.11.background\":{\"ret_value\":\"text\",\"caption\":\"body event 11 background\",\"sample_value\":\"#dc2127\",\"path\":[\"body\",\"event\",\"11\",\"background\"]},\"_p_body.event.11.foreground\":{\"ret_value\":\"text\",\"caption\":\"body event 11 foreground\",\"sample_value\":\"#1d1d1d\",\"path\":[\"body\",\"event\",\"11\",\"foreground\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n \\\\\\\"kind\\\\\\\": \\\\\\\"calendar#colors\\\\\\\",\\\\n \\\\\\\"updated\\\\\\\": \\\\\\\"2012-02-14T00:00:00.000Z\\\\\\\",\\\\n \\\\\\\"calendar\\\\\\\": {\\\\n  \\\\\\\"1\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#ac725e\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"2\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#d06b64\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"3\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#f83a22\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"4\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#fa573c\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"5\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#ff7537\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"6\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#ffad46\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"7\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#42d692\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"8\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#16a765\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"9\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#7bd148\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"10\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#b3dc6c\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"11\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#fbe983\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"12\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#fad165\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"13\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#92e1c0\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"14\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#9fe1e7\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"15\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#9fc6e7\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"16\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#4986e7\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"17\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#9a9cff\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"18\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#b99aff\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"19\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#c2c2c2\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"20\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#cabdbf\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"21\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#cca6ac\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"22\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#f691b2\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"23\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#cd74e6\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"24\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#a47ae2\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  }\\\\n },\\\\n \\\\\\\"event\\\\\\\": {\\\\n  \\\\\\\"1\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#a4bdfc\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"2\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#7ae7bf\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"3\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#dbadff\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"4\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#ff887c\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"5\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#fbd75b\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"6\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#ffb878\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"7\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#46d6db\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"8\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#e1e1e1\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"9\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#5484ed\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"10\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#51b749\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  },\\\\n  \\\\\\\"11\\\\\\\": {\\\\n   \\\\\\\"background\\\\\\\": \\\\\\\"#dc2127\\\\\\\",\\\\n   \\\\\\\"foreground\\\\\\\": \\\\\\\"#1d1d1d\\\\\\\"\\\\n  }\\\\n }\\\\n}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/calendar/v3/colors/",
+            "wrap_error": true
+        },
+        "AXj": {
+            "body": "{\n  \"summary\": \"<Event_Title>\",\n  \"location\": \"<location>\",\n  \"description\": \"<Event_Body>\",\n  \"start\": {\n    \"dateTime\": \"<start_date>\",\n    \"timeZone\": \"<time_zone>\"\n  },\n  \"end\": {\n    \"dateTime\": \"<end_date>\",\n    \"timeZone\": \"<time_zone>\"\n  },\n  \"attendees\": [<attendees>]\n}",
+            "body_params": {
+                "AXm": {
+                    "key": "location",
+                    "private": true,
+                    "value": "Kalamazoo mi"
+                },
+                "AXo": {
+                    "doc": "extended ISO format",
+                    "key": "start_date",
+                    "private": true,
+                    "value": "2021-05-28T11:00:00-07:00"
+                },
+                "AXp": {
+                    "key": "time_zone",
+                    "private": true,
+                    "value": "America/Detroit"
+                },
+                "AXq": {
+                    "key": "end_date",
+                    "private": true,
+                    "value": "2021-05-28T19:00:00-07:00"
+                },
+                "AXr": {
+                    "doc": "attendees in this format: {\"email\": \"joeattendee1@gmail.com\"},{\"email\": \"joeattendee1@gmail.com\"},{\"email\": \"joeattendee1@gmail.com\"},{\"email\":\"joeattendee2@gmail.com\"}",
+                    "key": "attendees",
+                    "private": true,
+                    "value": ""
+                },
+                "Aps": {
+                    "key": "Event_Title",
+                    "private": true,
+                    "value": "Title of The Event"
+                },
+                "AqS": {
+                    "key": "Event_Body",
+                    "private": true,
+                    "value": "The insides of the event"
+                }
+            },
+            "headers": {
+                "AXs": {
+                    "doc": "",
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer ya29.a0AfH6SMDPOtZaQW5DNy3h05rSTgv_VYRx3f2J0pqGK5lEVX8VOEwWZBZNrKuxXjTVHcpWbbjqh63Ggv0kfJrndJvUx1HoZ8aAwNWXiWx7yhOXAC0gtRTV85fWq_LJJrWL11aZkTx7jd1E-PvQypQvSoKGucFM"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "GOOGL - Create Calendar Event",
+            "params": {
+                "ApM": {
+                    "key": "sendUpdates",
+                    "optional": false,
+                    "private": true,
+                    "querystring": true,
+                    "value": "all"
+                }
+            },
+            "publish_as": "action",
+            "rank": 16,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AXj",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXj\":{\"caption\":\"Create Calendar Event\",\"fields\":{\"_p_body.kind\":{\"ret_value\":\"text\",\"caption\":\"body kind\",\"sample_value\":\"calendar#event\",\"path\":[\"body\",\"kind\"]},\"_p_body.etag\":{\"ret_value\":\"text\",\"caption\":\"body etag\",\"sample_value\":\"\\\"3244869148662000\\\"\",\"path\":[\"body\",\"etag\"]},\"_p_body.id\":{\"ret_value\":\"text\",\"caption\":\"body id\",\"sample_value\":\"acva7m9q8k829oq1vtkaeg167s\",\"path\":[\"body\",\"id\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"confirmed\",\"path\":[\"body\",\"status\"]},\"_p_body.htmlLink\":{\"ret_value\":\"text\",\"caption\":\"body htmlLink\",\"sample_value\":\"https://www.google.com/calendar/event?eid=YWN2YTdtOXE4azgyOW9xMXZ0a2FlZzE2N3MgamFyZWQuZ2liYkBt\",\"path\":[\"body\",\"htmlLink\"]},\"_p_body.created\":{\"ret_value\":\"text\",\"caption\":\"body created\",\"sample_value\":\"2021-05-31T04:16:14.000Z\",\"path\":[\"body\",\"created\"]},\"_p_body.updated\":{\"ret_value\":\"text\",\"caption\":\"body updated\",\"sample_value\":\"2021-05-31T04:16:14.331Z\",\"path\":[\"body\",\"updated\"]},\"_p_body.summary\":{\"ret_value\":\"text\",\"caption\":\"body summary\",\"sample_value\":\"we gotsa do this\",\"path\":[\"body\",\"summary\"]},\"_p_body.description\":{\"ret_value\":\"text\",\"caption\":\"body description\",\"sample_value\":\"something else here\",\"path\":[\"body\",\"description\"]},\"_p_body.location\":{\"ret_value\":\"text\",\"caption\":\"body location\",\"sample_value\":\"Kalamazoo mi\",\"path\":[\"body\",\"location\"]},\"_p_body.creator.email\":{\"ret_value\":\"text\",\"caption\":\"body creator email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"creator\",\"email\"]},\"_p_body.creator.self\":{\"ret_value\":\"boolean\",\"caption\":\"body creator self\",\"sample_value\":true,\"path\":[\"body\",\"creator\",\"self\"]},\"_p_body.organizer.email\":{\"ret_value\":\"text\",\"caption\":\"body organizer email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"organizer\",\"email\"]},\"_p_body.organizer.self\":{\"ret_value\":\"boolean\",\"caption\":\"body organizer self\",\"sample_value\":true,\"path\":[\"body\",\"organizer\",\"self\"]},\"_p_body.start.dateTime\":{\"ret_value\":\"text\",\"caption\":\"body start dateTime\",\"sample_value\":\"2021-05-28T14:00:00-04:00\",\"path\":[\"body\",\"start\",\"dateTime\"]},\"_p_body.start.timeZone\":{\"ret_value\":\"text\",\"caption\":\"body start timeZone\",\"sample_value\":\"America/Detroit\",\"path\":[\"body\",\"start\",\"timeZone\"]},\"_p_body.end.dateTime\":{\"ret_value\":\"text\",\"caption\":\"body end dateTime\",\"sample_value\":\"2021-05-28T22:00:00-04:00\",\"path\":[\"body\",\"end\",\"dateTime\"]},\"_p_body.end.timeZone\":{\"ret_value\":\"text\",\"caption\":\"body end timeZone\",\"sample_value\":\"America/Detroit\",\"path\":[\"body\",\"end\",\"timeZone\"]},\"_p_body.iCalUID\":{\"ret_value\":\"text\",\"caption\":\"body iCalUID\",\"sample_value\":\"acva7m9q8k829oq1vtkaeg167s@google.com\",\"path\":[\"body\",\"iCalUID\"]},\"_p_body.sequence\":{\"ret_value\":\"number\",\"caption\":\"body sequence\",\"sample_value\":0,\"path\":[\"body\",\"sequence\"]},\"_p_body.reminders.useDefault\":{\"ret_value\":\"boolean\",\"caption\":\"body reminders useDefault\",\"sample_value\":true,\"path\":[\"body\",\"reminders\",\"useDefault\"]},\"_p_body.eventType\":{\"ret_value\":\"text\",\"caption\":\"body eventType\",\"sample_value\":\"default\",\"path\":[\"body\",\"eventType\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n \\\\\\\"kind\\\\\\\": \\\\\\\"calendar#event\\\\\\\",\\\\n \\\\\\\"etag\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"3244869148662000\\\\\\\\\\\\\\\"\\\\\\\",\\\\n \\\\\\\"id\\\\\\\": \\\\\\\"acva7m9q8k829oq1vtkaeg167s\\\\\\\",\\\\n \\\\\\\"status\\\\\\\": \\\\\\\"confirmed\\\\\\\",\\\\n \\\\\\\"htmlLink\\\\\\\": \\\\\\\"https://www.google.com/calendar/event?eid=YWN2YTdtOXE4azgyOW9xMXZ0a2FlZzE2N3MgamFyZWQuZ2liYkBt\\\\\\\",\\\\n \\\\\\\"created\\\\\\\": \\\\\\\"2021-05-31T04:16:14.000Z\\\\\\\",\\\\n \\\\\\\"updated\\\\\\\": \\\\\\\"2021-05-31T04:16:14.331Z\\\\\\\",\\\\n \\\\\\\"summary\\\\\\\": \\\\\\\"we gotsa do this\\\\\\\",\\\\n \\\\\\\"description\\\\\\\": \\\\\\\"something else here\\\\\\\",\\\\n \\\\\\\"location\\\\\\\": \\\\\\\"Kalamazoo mi\\\\\\\",\\\\n \\\\\\\"creator\\\\\\\": {\\\\n  \\\\\\\"email\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n  \\\\\\\"self\\\\\\\": true\\\\n },\\\\n \\\\\\\"organizer\\\\\\\": {\\\\n  \\\\\\\"email\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n  \\\\\\\"self\\\\\\\": true\\\\n },\\\\n \\\\\\\"start\\\\\\\": {\\\\n  \\\\\\\"dateTime\\\\\\\": \\\\\\\"2021-05-28T14:00:00-04:00\\\\\\\",\\\\n  \\\\\\\"timeZone\\\\\\\": \\\\\\\"America/Detroit\\\\\\\"\\\\n },\\\\n \\\\\\\"end\\\\\\\": {\\\\n  \\\\\\\"dateTime\\\\\\\": \\\\\\\"2021-05-28T22:00:00-04:00\\\\\\\",\\\\n  \\\\\\\"timeZone\\\\\\\": \\\\\\\"America/Detroit\\\\\\\"\\\\n },\\\\n \\\\\\\"iCalUID\\\\\\\": \\\\\\\"acva7m9q8k829oq1vtkaeg167s@google.com\\\\\\\",\\\\n \\\\\\\"sequence\\\\\\\": 0,\\\\n \\\\\\\"reminders\\\\\\\": {\\\\n  \\\\\\\"useDefault\\\\\\\": true\\\\n },\\\\n \\\\\\\"eventType\\\\\\\": \\\\\\\"default\\\\\\\"\\\\n}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/calendar/v3/calendars/primary/events?sendUpdates=[sendUpdates]",
+            "url_params": {
+                "Apf": {
+                    "doc": "Whether to send notifications about the creation of the new event. Note that some emails might still be sent. The default is false.\n\nAcceptable values are:\n\"all\": Notifications are sent to all guests.\n\"externalOnly\": Notifications are sent to non-Google Calendar guests only.\n\"none\": No notifications are sent. For calendar migration tasks, consider using the Events.import method instead.",
+                    "key": "sendUpdates",
+                    "private": true,
+                    "value": "all"
+                }
+            },
+            "wrap_error": true
+        },
+        "AXu": {
+            "data_type": "empty",
+            "headers": {
+                "AXv": {
+                    "doc": "ms5paas6rqbh165pbevnal0gcg",
+                    "key": "authorization",
+                    "private": true,
+                    "value": "Bearer ya29.a0AfH6SMDPOtZaQW5DNy3h05rSTgv_VYRx3f2J0pqGK5lEVX8VOEwWZBZNrKuxXjTVHcpWbbjqh63Ggv0kfJrndJvUx1HoZ8aAwNWXiWx7yhOXAC0gtRTV85fWq_LJJrWL11aZkTx7jd1E-PvQypQvSoKGucFM"
+                }
+            },
+            "initialized": true,
+            "method": "delete_method",
+            "name": "GOOGL - Delete Calendar Event",
+            "publish_as": "action",
+            "rank": 19,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AXu",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXu\":{\"caption\":\"Delete Calendar Event\",\"fields\":{\"_p_body\":{\"ret_value\":\"text\",\"caption\":\"body\",\"sample_value\":null,\"path\":[\"body\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":204,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"No Content\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/calendar/v3/calendars/primary/events/[event_id]",
+            "url_params": {
+                "AXw": {
+                    "key": "event_id",
+                    "private": true,
+                    "value": "acva7m9q8k829oq1vtkaeg167s"
+                }
+            },
+            "wrap_error": true
+        },
+        "AXx": {
+            "body_type": "json",
+            "initialized": true,
+            "method": "post",
+            "name": "GOOG - Get Access Token",
+            "params": {
+                "AXy": {
+                    "key": "code",
+                    "querystring": true,
+                    "value": "4/0AX4XfWjzH1x96SrQhT5lkXV_-LAwv6YQQS2Vs0-fgbB8bNjrmyAu2L32sF4c6f29Y8CcPA"
+                },
+                "AXz": {
+                    "key": "client_id",
+                    "querystring": true,
+                    "value": "275811177095-debb8hf8i9qsun0k31bfr34sf5kgdm3l.apps.googleusercontent.com",
+                    "visibility": "public"
+                },
+                "AYA": {
+                    "key": "client_secret",
+                    "querystring": true,
+                    "value": "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",
+                    "visibility": "public"
+                },
+                "AYB": {
+                    "key": "redirect_uri",
+                    "querystring": true,
+                    "value": "https://app.codelessconsultant.com/token_catcher"
+                },
+                "AYC": {
+                    "key": "grant_type",
+                    "querystring": true,
+                    "value": "authorization_code",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "action",
+            "rank": 9,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AXx",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXx\":{\"caption\":\"GOOG - Get Access Token\",\"fields\":{\"_p_body.access_token\":{\"ret_value\":\"text\",\"caption\":\"body access_token\",\"sample_value\":\"ya29.a0ARrdaM-Zp24_d0UbLb8YlIb8saRn3LGOmujdBx3RiQ8Zs-25XsfMsa9iNpo4TKIGHExiD7lRqbxqw21HKCEHZiIt9kdbDnrVNYnNrjOvHBZp79p_PKmGWTd1rzSfHaLie0aKUn9-eIk9u78ru47rZcMmlmLs\",\"path\":[\"body\",\"access_token\"]},\"_p_body.expires_in\":{\"ret_value\":\"number\",\"caption\":\"body expires_in\",\"sample_value\":3598,\"path\":[\"body\",\"expires_in\"]},\"_p_body.refresh_token\":{\"ret_value\":\"text\",\"caption\":\"body refresh_token\",\"sample_value\":\"1//06C3i6R0JgZVACgYIARAAGAYSNwF-L9IrPEEt_sB415dQuDDpkDdxAIRwQWWrCMXG931bckbeD2iV1c5S0NUqtnm-Wh--ApcVELU\",\"path\":[\"body\",\"refresh_token\"]},\"_p_body.scope\":{\"ret_value\":\"text\",\"caption\":\"body scope\",\"sample_value\":\"openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar\",\"path\":[\"body\",\"scope\"]},\"_p_body.token_type\":{\"ret_value\":\"text\",\"caption\":\"body token_type\",\"sample_value\":\"Bearer\",\"path\":[\"body\",\"token_type\"]},\"_p_body.id_token\":{\"ret_value\":\"text\",\"caption\":\"body id_token\",\"sample_value\":\"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzcyNjE5ZDA5MzVhMjkwYzQxYzNmMDEwMTY3MTM4Njg1ZjdlNTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNzU4MTExNzcwOTUtZGViYjhoZjhpOXFzdW4wazMxYmZyMzRzZjVrZ2RtM2wuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNzU4MTExNzcwOTUtZGViYjhoZjhpOXFzdW4wazMxYmZyMzRzZjVrZ2RtM2wuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU2NDU3MDQwNDU0NjY5MzExNzkiLCJlbWFpbCI6ImphcmVkLmdpYmJAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJXbkc2Q1dJVlVNTkpTQVVTbnplUmlnIiwibmFtZSI6IkphcmVkIEdpYmIiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lQQ0VtbUFIZU5DYjhVYmFleXdXZThGNmw1aUFRMkd3aE50ZTM4UUE9czk2LWMiLCJnaXZlbl9uYW1lIjoiSmFyZWQiLCJmYW1pbHlfbmFtZSI6IkdpYmIiLCJsb2NhbGUiOiJlbi1HQiIsImlhdCI6MTYzNjY4ODc1MSwiZXhwIjoxNjM2NjkyMzUxfQ.cItGlSDs7Pm0GpFtK9mzCvWJo2LGF-eCLga-ZkHJqO2a-6_HUav1JJAQHCBivi1CasNYjCYIf1nPIBabIDEWysArXxEMT8t_fTlFTeeoi83NOjCALXFuU_R-R4jhpb7y1oGsvOpNTZ-nVZd015hURWNgb5KtSEILlpLlQAacouoLufcufeWADVsw4yRjjg92syrUY-YC2DEu87pwDWOOWRp2TYQ9dM3zqU7Sdwt--rMHvZAMzG5T3dvnBO_OnWN3zC3ELRN4PwbpmS_sKNf3r2y3C77LbVa-7By4I6Pif0IL5un13IsTTuZoElN6Y1DbHEQf3WyAJOfcRO6a-ilbKw\",\"path\":[\"body\",\"id_token\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n  \\\\\\\"access_token\\\\\\\": \\\\\\\"ya29.a0ARrdaM-Zp24_d0UbLb8YlIb8saRn3LGOmujdBx3RiQ8Zs-25XsfMsa9iNpo4TKIGHExiD7lRqbxqw21HKCEHZiIt9kdbDnrVNYnNrjOvHBZp79p_PKmGWTd1rzSfHaLie0aKUn9-eIk9u78ru47rZcMmlmLs\\\\\\\",\\\\n  \\\\\\\"expires_in\\\\\\\": 3598,\\\\n  \\\\\\\"refresh_token\\\\\\\": \\\\\\\"1//06C3i6R0JgZVACgYIARAAGAYSNwF-L9IrPEEt_sB415dQuDDpkDdxAIRwQWWrCMXG931bckbeD2iV1c5S0NUqtnm-Wh--ApcVELU\\\\\\\",\\\\n  \\\\\\\"scope\\\\\\\": \\\\\\\"openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar\\\\\\\",\\\\n  \\\\\\\"token_type\\\\\\\": \\\\\\\"Bearer\\\\\\\",\\\\n  \\\\\\\"id_token\\\\\\\": \\\\\\\"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzcyNjE5ZDA5MzVhMjkwYzQxYzNmMDEwMTY3MTM4Njg1ZjdlNTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNzU4MTExNzcwOTUtZGViYjhoZjhpOXFzdW4wazMxYmZyMzRzZjVrZ2RtM2wuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNzU4MTExNzcwOTUtZGViYjhoZjhpOXFzdW4wazMxYmZyMzRzZjVrZ2RtM2wuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU2NDU3MDQwNDU0NjY5MzExNzkiLCJlbWFpbCI6ImphcmVkLmdpYmJAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJXbkc2Q1dJVlVNTkpTQVVTbnplUmlnIiwibmFtZSI6IkphcmVkIEdpYmIiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lQQ0VtbUFIZU5DYjhVYmFleXdXZThGNmw1aUFRMkd3aE50ZTM4UUE9czk2LWMiLCJnaXZlbl9uYW1lIjoiSmFyZWQiLCJmYW1pbHlfbmFtZSI6IkdpYmIiLCJsb2NhbGUiOiJlbi1HQiIsImlhdCI6MTYzNjY4ODc1MSwiZXhwIjoxNjM2NjkyMzUxfQ.cItGlSDs7Pm0GpFtK9mzCvWJo2LGF-eCLga-ZkHJqO2a-6_HUav1JJAQHCBivi1CasNYjCYIf1nPIBabIDEWysArXxEMT8t_fTlFTeeoi83NOjCALXFuU_R-R4jhpb7y1oGsvOpNTZ-nVZd015hURWNgb5KtSEILlpLlQAacouoLufcufeWADVsw4yRjjg92syrUY-YC2DEu87pwDWOOWRp2TYQ9dM3zqU7Sdwt--rMHvZAMzG5T3dvnBO_OnWN3zC3ELRN4PwbpmS_sKNf3r2y3C77LbVa-7By4I6Pif0IL5un13IsTTuZoElN6Y1DbHEQf3WyAJOfcRO6a-ilbKw\\\\\\\"\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/oauth2/v4/token",
+            "wrap_error": true
+        },
+        "AYE": {
+            "initialized": true,
+            "method": "post",
+            "name": "GOOGL - Refresh Token",
+            "params": {
+                "AYF": {
+                    "key": "refresh_token",
+                    "querystring": true,
+                    "value": "1//06xj0A3YNPZqMCgYIARAAGAYSNwF-L9IrCwSH_RMiNCt8lvaHH3nGWezNrxbs-Ou-w5COrzvR1gKPYEz77A_rP3uQEF-2eGyH6gg"
+                },
+                "AYG": {
+                    "key": "client_id",
+                    "querystring": true,
+                    "visibility": "secret"
+                },
+                "AYH": {
+                    "key": "client_secret",
+                    "querystring": true,
+                    "visibility": "secret"
+                },
+                "AYI": {
+                    "key": "grant_type",
+                    "querystring": true,
+                    "value": "refresh_token"
+                }
+            },
+            "publish_as": "action",
+            "rank": 10,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AYE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AYE\":{\"caption\":\"Refresh Token\",\"fields\":{\"_p_access_token\":{\"ret_value\":\"text\",\"caption\":\"access_token\",\"sample_value\":\"ya29.a0AfH6SMD6hkV2GbSK150s0GmMXr_xSL9n3CcCjf6SbTtO_a2Gz60Fkt5SZMC0DZEhsqGir6_kwhi58yCLsklEwdonfg8lcr2RkHHopIUV5v14SRuilSfQA8xhjlzuDOw2PxPyse7M-me-r1HcvAPYxwGJpEq6\",\"path\":[\"access_token\"]},\"_p_expires_in\":{\"ret_value\":\"number\",\"caption\":\"expires_in\",\"sample_value\":3599,\"path\":[\"expires_in\"]},\"_p_scope\":{\"ret_value\":\"text\",\"caption\":\"scope\",\"sample_value\":\"https://www.googleapis.com/auth/calendar\",\"path\":[\"scope\"]},\"_p_token_type\":{\"ret_value\":\"text\",\"caption\":\"token_type\",\"sample_value\":\"Bearer\",\"path\":[\"token_type\"]}}}}",
+            "url": "https://www.googleapis.com/oauth2/v4/token"
+        },
+        "AaP": {
+            "0": "A",
+            "1": "a",
+            "2": "O",
+            "initialized": true,
+            "method": "get",
+            "name": "FulCal - Selected TimeFrame Data",
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AaP",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AaP\":{\"caption\":\"Selected TimeFrame Data\",\"fields\":{\"_p_Start Time\":{\"ret_value\":\"date\",\"caption\":\"Start Time\",\"sample_value\":23424234234,\"path\":[\"Start Time\"]},\"_p_End Time\":{\"ret_value\":\"date\",\"caption\":\"End Time\",\"sample_value\":234242344,\"path\":[\"End Time\"]},\"_p_Resource ID\":{\"ret_value\":\"text\",\"caption\":\"Resource ID\",\"sample_value\":\"asfaf\",\"path\":[\"Resource ID\"]}}}}",
+            "url": "https://api.thecatapi.com/v1/images/search"
+        },
+        "Aac": {
+            "0": "A",
+            "1": "a",
+            "2": "b",
+            "initialized": true,
+            "method": "get",
+            "name": "FulCal - Calendar Data",
+            "publish_as": "data",
+            "rank": 4,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.Aac",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.Aac\":{\"caption\":\"Calendar Data\",\"fields\":{\"_p_Start of Range\":{\"ret_value\":\"date\",\"caption\":\"Start of Range\",\"sample_value\":3345634563456,\"path\":[\"Start of Range\"]},\"_p_End of Range\":{\"ret_value\":\"date\",\"caption\":\"End of Range\",\"sample_value\":345634563456,\"path\":[\"End of Range\"]},\"_p_Current Calendar View\":{\"ret_value\":\"text\",\"caption\":\"Current Calendar View\",\"sample_value\":\"\",\"path\":[\"Current Calendar View\"]},\"_p_Event Array\":{\"ret_value\":\"text\",\"caption\":\"Event Array\",\"sample_value\":\"\",\"path\":[\"Event Array\"]}}}}",
+            "url": "https://api.thecatapi.com/v1/images/search"
+        },
+        "Aaz": {
+            "0": "A",
+            "1": "a",
+            "2": "y",
+            "doc_link": "",
+            "initialized": true,
+            "method": "get",
+            "name": "DatePicker Event Info",
+            "publish_as": "data",
+            "rank": 8,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.Aaz",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.Aaz\":{\"caption\":\"DatePicker Event Info\",\"fields\":{\"_p_Start\":{\"ret_value\":\"date\",\"caption\":\"Start\",\"sample_value\":234234234,\"path\":[\"Start\"]},\"_p_End\":{\"ret_value\":\"date\",\"caption\":\"End\",\"sample_value\":2342342342,\"path\":[\"End\"]},\"_p_Title\":{\"ret_value\":\"text\",\"caption\":\"Title\",\"sample_value\":\"\",\"path\":[\"Title\"]}}}}",
+            "url": "https://api.thecatapi.com/v1/images/search"
+        },
+        "AbT": {
+            "0": "A",
+            "1": "b",
+            "2": "S",
+            "doc_link": "",
+            "initialized": true,
+            "method": "get",
+            "name": "TSG - List All Slots",
+            "publish_as": "data",
+            "rank": 6,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AbT",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AbT\":{\"caption\":\"TSG - List All Slot\",\"fields\":{\"_p_Point of Origin DateTime\":{\"ret_value\":\"date\",\"caption\":\"Point of Origin DateTime\",\"sample_value\":234234234,\"path\":[\"Point of Origin DateTime\"]},\"_p_Point of View DateTime\":{\"ret_value\":\"date\",\"caption\":\"Point of View DateTime\",\"sample_value\":23423423,\"path\":[\"Point of View DateTime\"]},\"_p_Point of Origin TimeZone ID\":{\"ret_value\":\"text\",\"caption\":\"Point of Origin TimeZone ID\",\"sample_value\":\"\",\"path\":[\"Point of Origin TimeZone ID\"]},\"_p_Point of View TimeZone ID\":{\"ret_value\":\"text\",\"caption\":\"Point of View TimeZone ID\",\"sample_value\":\"\",\"path\":[\"Point of View TimeZone ID\"]}}}}",
+            "url": "https://api.thecatapi.com/v1/images/search"
+        },
+        "Aba": {
+            "initialized": true,
+            "method": "get",
+            "name": "TSG - Slotted Time Intervals",
+            "publish_as": "data",
+            "rank": 7,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.Aba",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.Aba\":{\"caption\":\"TSG - Slotted Time Interval\",\"fields\":{\"_p_Point of Origin TimeSlot\":{\"ret_value\":\"dateinterval\",\"caption\":\"Point of Origin TimeSlot\",\"sample_value\":345345345,\"path\":[\"Point of Origin TimeSlot\"]},\"_p_Point of View TimeSlot\":{\"ret_value\":\"list.date\",\"caption\":\"Point of View TimeSlot\",\"sample_value\":456456456,\"path\":[\"Point of View TimeSlot\"]},\"_p_Point of Origin TimeZone ID\":{\"ret_value\":\"text\",\"caption\":\"Point of Origin TimeZone ID\",\"sample_value\":\"\",\"path\":[\"Point of Origin TimeZone ID\"]},\"_p_Point of View TimeZone ID\":{\"ret_value\":\"text\",\"caption\":\"Point of View TimeZone ID\",\"sample_value\":\"\",\"path\":[\"Point of View TimeZone ID\"]}}}}",
+            "url": "https://api.thecatapi.com/v1/images/search"
+        },
+        "AfT": {
+            "0": "A",
+            "1": "f",
+            "2": "S",
+            "initialized": true,
+            "method": "get",
+            "name": "Daily Time Slot List",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AfT",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AfT\":{\"caption\":\"Daily Time Slot List\",\"fields\":{\"_p_Day\":{\"ret_value\":\"text\",\"caption\":\"Day\",\"sample_value\":\"\",\"path\":[\"Day\"]},\"_p_Start Time\":{\"ret_value\":\"date\",\"caption\":\"Start Time\",\"sample_value\":2342343234,\"path\":[\"Start Time\"]},\"_p_End Time\":{\"ret_value\":\"date\",\"caption\":\"End Time\",\"sample_value\":23423423423,\"path\":[\"End Time\"]}}}}",
+            "url": "https://jus4tests.bubbleapps.io/version-test/api/1.1/obj/Record"
+        },
+        "AgZ": {
+            "headers": {
+                "Agb": {
+                    "doc": "Bearer + <access_token>",
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer EwBoA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAATikUkaJkyKApdyhUvuQo5FREThm0SkdNRwDbHDT+FzsdlNpdMusQodsRpJ+xfLLmRgO3CLJqOL8tqxLtKLNV914IEZn350MIbxajzgXvuiWjbBoUzNiA1K7QQq4cNX2ts1w7AqZwQl9HwYUJgXvIqk2jP5v01OqaZJ1c1IB901J4XNME1ul5loAIVT8mMnvbb8PSjzDDntqUNkuktiIveZskGtXDQrZRkjG+0ibhcRcK50xovu95RHT8h0qqiZtUnVfiP3fSvRsMTWAKI72bL9WT+VAW3bxjQKk038eMZkMNns4dFfPVsx8ZINwXyAheqOBEuSTRgqJVeQdnx2KqBYDZgAACLP3oxfOIQrSOAJgDH9yJNi+tTDcAjDD72N9uh3RHqdmKSaRA9fMDUJgDMeiPzMHQP+U7p5lS3tzLknC3v7CCs4CMQHBjjSzZ0Q34aHLBnVsRRKfyaVoBQ1QEEDGHft3DsE5XE6aYOY3JHyVjgT0ZmXb0ez1MWigO7MCOdSa648bN199j+YRFSAMkRdq+2atszQ618jzwOp4Z/uKGT76itLrEYdueq93yHE90jB5Q7fOijCQLuMQTGz+O1goinHkMdXFZlXqsZ4faQ9yaeZeYK2aZiarhACngmwmIR9F0Y3BrexVCbmUGXsE+FFwxfk4gTtvQgCO8tG9zN+BayfKZnwSZquJHxtKuYstBoxrK/fZanyDnagiR00S5Y21hgedKPTNSEo7mSGCAAk1d2p6UxapH4g89NFXqv7a0/Z6JwRqUMZ9HfGpekLlJIXY/xlp+kPhMgSEKsylfl53kevrdvtaSRterI7eeX3fRLMEDVLWEkiDWwTUrJ8X4gZX0r3Fw8070piQEP9Ob1kYR+P7ppvEurw8sGYIiGOjYvZGLxIz6wjgoAD5qATMMxi55cIyfEj6Ec2+Q5CL5lG4Uwa/d+FuX1WcD33YgUTJruisr6wzQBF+ifdeYpptmLJ7z3EFtHgCpaDpNKxPAJj1AypYI3U0O1gm5DSC5xutJThkQKdmnfHdv8cCuRfW6WCkxl/u4b1oQ3JAsaSmzav2RVZVtZx3JFIyOVU/CaSrZwLAKhbECjmpLvKMskgRTShkvuYilNNmeAI="
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "MICROSOFT - Get Primary Calendar",
+            "publish_as": "data",
+            "rank": 23,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AgZ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AgZ\":{\"caption\":\"MICROSOFT - Get Primary Calendar\",\"fields\":{\"_p_@odata__dot__context\":{\"ret_value\":\"text\",\"caption\":\"@odata.context\",\"sample_value\":\"https://graph.microsoft.com/v1.0/$metadata#users('outlook_651D73F646C045AA%40outlook.com')/calendar/$entity\",\"path\":[\"@odata.context\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg_EsAAAIBBgAAAFPsEk9V2FxNpP2UIAIg_EsAAACZkIXTAAAA\",\"path\":[\"id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Calendar\",\"path\":[\"name\"]},\"_p_color\":{\"ret_value\":\"text\",\"caption\":\"color\",\"sample_value\":\"auto\",\"path\":[\"color\"]},\"_p_hexColor\":{\"ret_value\":\"text\",\"caption\":\"hexColor\",\"sample_value\":\"\",\"path\":[\"hexColor\"]},\"_p_isDefaultCalendar\":{\"ret_value\":\"boolean\",\"caption\":\"isDefaultCalendar\",\"sample_value\":true,\"path\":[\"isDefaultCalendar\"]},\"_p_changeKey\":{\"ret_value\":\"text\",\"caption\":\"changeKey\",\"sample_value\":\"U+wST1XYXE2k/ZQgAiD4SwAAmaAcTw==\",\"path\":[\"changeKey\"]},\"_p_canShare\":{\"ret_value\":\"boolean\",\"caption\":\"canShare\",\"sample_value\":true,\"path\":[\"canShare\"]},\"_p_canViewPrivateItems\":{\"ret_value\":\"boolean\",\"caption\":\"canViewPrivateItems\",\"sample_value\":true,\"path\":[\"canViewPrivateItems\"]},\"_p_canEdit\":{\"ret_value\":\"boolean\",\"caption\":\"canEdit\",\"sample_value\":true,\"path\":[\"canEdit\"]},\"_p_allowedOnlineMeetingProviders\":{\"ret_value\":\"list.text\",\"caption\":\"allowedOnlineMeetingProviders\",\"sample_value\":\"skypeForConsumer\",\"path\":[\"allowedOnlineMeetingProviders\"]},\"_p_defaultOnlineMeetingProvider\":{\"ret_value\":\"text\",\"caption\":\"defaultOnlineMeetingProvider\",\"sample_value\":\"skypeForConsumer\",\"path\":[\"defaultOnlineMeetingProvider\"]},\"_p_isTallyingResponses\":{\"ret_value\":\"boolean\",\"caption\":\"isTallyingResponses\",\"sample_value\":true,\"path\":[\"isTallyingResponses\"]},\"_p_isRemovable\":{\"ret_value\":\"boolean\",\"caption\":\"isRemovable\",\"sample_value\":false,\"path\":[\"isRemovable\"]},\"_p_owner.name\":{\"ret_value\":\"text\",\"caption\":\"owner name\",\"sample_value\":\"jared gibb\",\"path\":[\"owner\",\"name\"]},\"_p_owner.address\":{\"ret_value\":\"text\",\"caption\":\"owner address\",\"sample_value\":\"outlook_651D73F646C045AA@outlook.com\",\"path\":[\"owner\",\"address\"]}}}}",
+            "url": "https://graph.microsoft.com/v1.0/me/calendar"
+        },
+        "Agc": {
+            "body": "{\"grant_type\":\"refersh_token\",",
+            "body_type": "form_data",
+            "data_type": "JSON",
+            "headers": {
+                "Agp": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/x-www-form-urlencoded"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "MICROSOFT - Refresh Token",
+            "params": {
+                "Agq": {
+                    "key": "client_id",
+                    "private": true,
+                    "querystring": true,
+                    "value": "630710e3-769f-4305-bba7-dea5153f713c"
+                },
+                "Agr": {
+                    "key": "scope",
+                    "private": true,
+                    "querystring": true,
+                    "value": "https://graph.microsoft.com/.default offline_access"
+                },
+                "Ags": {
+                    "key": "refresh_token",
+                    "private": true,
+                    "querystring": true,
+                    "value": "M.R3_BAY.-CZRoajM9YRCgXRVAcmZkzgk9Nwqz*FoxUIP962ED4x7vrDZ9fDPL80c0fc0gcihhJbgEGKN081jBOn7idxTt68P*2W3gnA9I3HaQ8KSI9JZxIpdHCXf2Ntpu2Fc!6LspYrYLzpBXOkvTziWbzUWvOh9dC2oi4eNrWHj1QO1erL3u6UsVOpDPtDUNzqtpNQdjJElOeLV7vTpTvUUwENM0jg2HAZGKbKZrzkktNBRuBCNSB!E!VKN!NPLGlbXPjPgWdg3GxcRHinawK1i*9j1UnfOlG7HCqDPDATta9PZzuaDGiwdjxxLVT27bMg8MrOmbk2t!5WzvWYjGvt2QqLkXbGQ$"
+                },
+                "Agu": {
+                    "key": "grant_type",
+                    "private": true,
+                    "querystring": true,
+                    "value": "refresh_token"
+                },
+                "Agv": {
+                    "key": "client_secret",
+                    "private": true,
+                    "querystring": true,
+                    "value": "Kf17Q~yTdJnY5M0kxBMlGcE51uXF9HH6jQSH4"
+                }
+            },
+            "publish_as": "data",
+            "rank": 21,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.Agc",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.Agc\":{\"caption\":\"MICROSOFT - Refresh Token\",\"fields\":{\"_p_token_type\":{\"ret_value\":\"text\",\"caption\":\"token_type\",\"sample_value\":\"Bearer\",\"path\":[\"token_type\"]},\"_p_scope\":{\"ret_value\":\"text\",\"caption\":\"scope\",\"sample_value\":\"https://graph.microsoft.com/.default https://graph.microsoft.com/User.Read https://graph.microsoft.com/Calendars.Read\",\"path\":[\"scope\"]},\"_p_expires_in\":{\"ret_value\":\"number\",\"caption\":\"expires_in\",\"sample_value\":3600,\"path\":[\"expires_in\"]},\"_p_ext_expires_in\":{\"ret_value\":\"number\",\"caption\":\"ext_expires_in\",\"sample_value\":3600,\"path\":[\"ext_expires_in\"]},\"_p_access_token\":{\"ret_value\":\"text\",\"caption\":\"access_token\",\"sample_value\":\"EwBoA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAATikUkaJkyKApdyhUvuQo5FREThm0SkdNRwDbHDT+FzsdlNpdMusQodsRpJ+xfLLmRgO3CLJqOL8tqxLtKLNV914IEZn350MIbxajzgXvuiWjbBoUzNiA1K7QQq4cNX2ts1w7AqZwQl9HwYUJgXvIqk2jP5v01OqaZJ1c1IB901J4XNME1ul5loAIVT8mMnvbb8PSjzDDntqUNkuktiIveZskGtXDQrZRkjG+0ibhcRcK50xovu95RHT8h0qqiZtUnVfiP3fSvRsMTWAKI72bL9WT+VAW3bxjQKk038eMZkMNns4dFfPVsx8ZINwXyAheqOBEuSTRgqJVeQdnx2KqBYDZgAACLP3oxfOIQrSOAJgDH9yJNi+tTDcAjDD72N9uh3RHqdmKSaRA9fMDUJgDMeiPzMHQP+U7p5lS3tzLknC3v7CCs4CMQHBjjSzZ0Q34aHLBnVsRRKfyaVoBQ1QEEDGHft3DsE5XE6aYOY3JHyVjgT0ZmXb0ez1MWigO7MCOdSa648bN199j+YRFSAMkRdq+2atszQ618jzwOp4Z/uKGT76itLrEYdueq93yHE90jB5Q7fOijCQLuMQTGz+O1goinHkMdXFZlXqsZ4faQ9yaeZeYK2aZiarhACngmwmIR9F0Y3BrexVCbmUGXsE+FFwxfk4gTtvQgCO8tG9zN+BayfKZnwSZquJHxtKuYstBoxrK/fZanyDnagiR00S5Y21hgedKPTNSEo7mSGCAAk1d2p6UxapH4g89NFXqv7a0/Z6JwRqUMZ9HfGpekLlJIXY/xlp+kPhMgSEKsylfl53kevrdvtaSRterI7eeX3fRLMEDVLWEkiDWwTUrJ8X4gZX0r3Fw8070piQEP9Ob1kYR+P7ppvEurw8sGYIiGOjYvZGLxIz6wjgoAD5qATMMxi55cIyfEj6Ec2+Q5CL5lG4Uwa/d+FuX1WcD33YgUTJruisr6wzQBF+ifdeYpptmLJ7z3EFtHgCpaDpNKxPAJj1AypYI3U0O1gm5DSC5xutJThkQKdmnfHdv8cCuRfW6WCkxl/u4b1oQ3JAsaSmzav2RVZVtZx3JFIyOVU/CaSrZwLAKhbECjmpLvKMskgRTShkvuYilNNmeAI=\",\"path\":[\"access_token\"]},\"_p_refresh_token\":{\"ret_value\":\"text\",\"caption\":\"refresh_token\",\"sample_value\":\"M.R3_BAY.-CUlAKPTwzE4MMjhZMb4xPjOMkEQ7!UHbDukXnyw3lq!H7qCWMKz1PgsgYGOK69RHB8EbsxqcQBeKp*iDKgWHPhhkypEeEHsbXCqvt3*h0H2gdPN7jPwCTEs4x9Oqrn9cRNCUkL*lEnBhqEu1D5NFE4DdcFZg0ZX8uOXI2bbORNTfaoPT1JIjjIoJs9uf4ZPJMufmsLeW9jscnQP6Qkn0nCXaOcvz7I!R8CX1xnomkyAcFb023CwTHydkA8*BUgJA*NkZnb*RtYgrXz3LWLGxzDc8CoR7Vb3v7!TmgT*D9hJjRiEF81LVNWUvKLlJhUmWwPsedKEAF*9k1piQj2AxCjI$\",\"path\":[\"refresh_token\"]}}}}",
+            "url": "https://login.microsoftonline.com/[tenant]/oauth2/v2.0/token",
+            "url_params": {
+                "Ahw": {
+                    "key": "tenant",
+                    "private": true,
+                    "value": "common"
+                }
+            }
+        },
+        "Agw": {
+            "body_type": "form_data",
+            "get_headers": false,
+            "headers": {
+                "AhK": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/x-www-form-urlencoded",
+                    "visibility": "public"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "MICROSOFT - Get Token ",
+            "params": {
+                "AhG": {
+                    "key": "client_id",
+                    "private": true,
+                    "value": "630710e3-769f-4305-bba7-dea5153f713c",
+                    "visibility": "public"
+                },
+                "AhH": {
+                    "doc": "https://graph.microsoft.com/.default offline_access\n\nthis is likely the scope you'll want to access other users data when they are offline. if you dont want offline access to date, remove that scope to not receive refresh tokens. \n\nyou will have wanted to request and approve other scopes during the initial authentication\n",
+                    "key": "scope",
+                    "private": true,
+                    "value": "https://graph.microsoft.com/.default offline_access",
+                    "visibility": "public"
+                },
+                "AhI": {
+                    "key": "grant_type",
+                    "private": true,
+                    "value": "authorization_code",
+                    "visibility": "public"
+                },
+                "Ahc": {
+                    "key": "client_secret",
+                    "private": true,
+                    "value": "Kf17Q~yTdJnY5M0kxBMlGcE51uXF9HH6jQSH4"
+                },
+                "Ahd": {
+                    "key": "code",
+                    "private": true,
+                    "value": "M.R3_BAY.0ce43401-27ba-01c9-2dec-c4aa4d940529"
+                },
+                "Ahq": {
+                    "key": "redirect_uri",
+                    "private": true,
+                    "value": "https://outlooktester.bubbleapps.io/version-test"
+                }
+            },
+            "publish_as": "action",
+            "rank": 20,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.Agw",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.Agw\":{\"caption\":\"MICROSOFT - Get Token \",\"fields\":{\"_p_body.token_type\":{\"ret_value\":\"text\",\"caption\":\"body token_type\",\"sample_value\":\"Bearer\",\"path\":[\"body\",\"token_type\"]},\"_p_body.scope\":{\"ret_value\":\"text\",\"caption\":\"body scope\",\"sample_value\":\"https://graph.microsoft.com/.default https://graph.microsoft.com/User.Read https://graph.microsoft.com/Calendars.Read\",\"path\":[\"body\",\"scope\"]},\"_p_body.expires_in\":{\"ret_value\":\"number\",\"caption\":\"body expires_in\",\"sample_value\":3600,\"path\":[\"body\",\"expires_in\"]},\"_p_body.ext_expires_in\":{\"ret_value\":\"number\",\"caption\":\"body ext_expires_in\",\"sample_value\":3600,\"path\":[\"body\",\"ext_expires_in\"]},\"_p_body.access_token\":{\"ret_value\":\"text\",\"caption\":\"body access_token\",\"sample_value\":\"EwBwA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAAU4HT881k1KPEKomIVRxrni2SjtlgEErJPXHqoVbZxW/vB2xXzPhwtR7E6hXTzv8CY07458QCgZPCWWbNoDmz1SAsN/UKwjiRbbjUxu0gplp1lpHhSpV9w638Eee5ALAeeflmI8od4n+Z3D+NoZh1TzXN+0WUciwrunxav+eYSJ1r/96pb7MuS/qXTIHlcGFxL3pz5612k/FLXUpOJR0fenkjmu8+m/jLcEc1Xrs1aFtthuhL8vuYUZZ7ZqqAPYXyJ/l7zFBqHSOZcIGXhuTwGN6dYE0tj1ddaeiIJfXiQfG81EXA+hNWpCcA9MveBvK9EcJaUaYZwUhMx/lj5Wdj44DZgAACB7BYmSX3Rj6QALIj190tBUZKf6XeuEigRPQ/bB2Ifzm022m6cTMflRTX+N0PMQqcXEwhgwjOW36tsOIaK3/y4VjoAm4fQhnl2vm8sv2Pbw3FW3NY8qiIULNehDtYVj0+TD4JwTWHe/wTXhyfKFLYKWmdWaJQ7yZpekiIdyKMhC+ahRpwBdW/WBlj1txD5VmPhUD8HqvC1HMtQLLE+pzwaRW75YUkQDkNqYkJDO7IfYnMhEenywyeyU9XtPGw27CW8OOrAZnMMRJlfP2UoEETjXLt2TZIrPYLSy/T/kXQ/brTCN10FhPsYG6Nm7hsJA2N1yhUB8ppz+glOcNjZcdsvrcs9dXY3rCwn0ru2i0YeLOWsgjGMCFPyr9yGiZnOyVWJ2owSCdeHofgEyncZ5tpLV4gPUR9k6BPcf/+pzCBzYgBfdCxSWiFKleucWxdFibYJINF285jeCl59fz+x/pxQ5XxgI1O58LYKP3OXtxEz4II2cI0NVoJn/69nGRQ5NcpOUBIlVGN+TVGHvYZqwC1BYQglthwR4UX/JlkW/86tMJjZl6Q3oq6jq7vDXOF7QutyfuPLCFJAG4ye3sbSRx3w9O2zkQb16+P7snT4p2Rna8Hl9MThU0DgcuMnbAPfF+fKS1IYjkgXIct2Kpn6zMgEHYTgRGrZwV6AsFXrOAAOP4jNzNAfE/AWhhUMNGN6Pz2WntwWmpJfHoEwH9qL6EQXMlG63Df3+cZ6yVsCpvFMnbXdREF2AoFbYkQOo6uUQDHJKClLE6QYsYrHt4Ag==\",\"path\":[\"body\",\"access_token\"]},\"_p_body.refresh_token\":{\"ret_value\":\"text\",\"caption\":\"body refresh_token\",\"sample_value\":\"M.R3_BAY.-CZRoajM9YRCgXRVAcmZkzgk9Nwqz*FoxUIP962ED4x7vrDZ9fDPL80c0fc0gcihhJbgEGKN081jBOn7idxTt68P*2W3gnA9I3HaQ8KSI9JZxIpdHCXf2Ntpu2Fc!6LspYrYLzpBXOkvTziWbzUWvOh9dC2oi4eNrWHj1QO1erL3u6UsVOpDPtDUNzqtpNQdjJElOeLV7vTpTvUUwENM0jg2HAZGKbKZrzkktNBRuBCNSB!E!VKN!NPLGlbXPjPgWdg3GxcRHinawK1i*9j1UnfOlG7HCqDPDATta9PZzuaDGiwdjxxLVT27bMg8MrOmbk2t!5WzvWYjGvt2QqLkXbGQ$\",\"path\":[\"body\",\"refresh_token\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"token_type\\\\\\\":\\\\\\\"Bearer\\\\\\\",\\\\\\\"scope\\\\\\\":\\\\\\\"https://graph.microsoft.com/.default https://graph.microsoft.com/User.Read https://graph.microsoft.com/Calendars.Read\\\\\\\",\\\\\\\"expires_in\\\\\\\":3600,\\\\\\\"ext_expires_in\\\\\\\":3600,\\\\\\\"access_token\\\\\\\":\\\\\\\"EwBwA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAAU4HT881k1KPEKomIVRxrni2SjtlgEErJPXHqoVbZxW/vB2xXzPhwtR7E6hXTzv8CY07458QCgZPCWWbNoDmz1SAsN/UKwjiRbbjUxu0gplp1lpHhSpV9w638Eee5ALAeeflmI8od4n+Z3D+NoZh1TzXN+0WUciwrunxav+eYSJ1r/96pb7MuS/qXTIHlcGFxL3pz5612k/FLXUpOJR0fenkjmu8+m/jLcEc1Xrs1aFtthuhL8vuYUZZ7ZqqAPYXyJ/l7zFBqHSOZcIGXhuTwGN6dYE0tj1ddaeiIJfXiQfG81EXA+hNWpCcA9MveBvK9EcJaUaYZwUhMx/lj5Wdj44DZgAACB7BYmSX3Rj6QALIj190tBUZKf6XeuEigRPQ/bB2Ifzm022m6cTMflRTX+N0PMQqcXEwhgwjOW36tsOIaK3/y4VjoAm4fQhnl2vm8sv2Pbw3FW3NY8qiIULNehDtYVj0+TD4JwTWHe/wTXhyfKFLYKWmdWaJQ7yZpekiIdyKMhC+ahRpwBdW/WBlj1txD5VmPhUD8HqvC1HMtQLLE+pzwaRW75YUkQDkNqYkJDO7IfYnMhEenywyeyU9XtPGw27CW8OOrAZnMMRJlfP2UoEETjXLt2TZIrPYLSy/T/kXQ/brTCN10FhPsYG6Nm7hsJA2N1yhUB8ppz+glOcNjZcdsvrcs9dXY3rCwn0ru2i0YeLOWsgjGMCFPyr9yGiZnOyVWJ2owSCdeHofgEyncZ5tpLV4gPUR9k6BPcf/+pzCBzYgBfdCxSWiFKleucWxdFibYJINF285jeCl59fz+x/pxQ5XxgI1O58LYKP3OXtxEz4II2cI0NVoJn/69nGRQ5NcpOUBIlVGN+TVGHvYZqwC1BYQglthwR4UX/JlkW/86tMJjZl6Q3oq6jq7vDXOF7QutyfuPLCFJAG4ye3sbSRx3w9O2zkQb16+P7snT4p2Rna8Hl9MThU0DgcuMnbAPfF+fKS1IYjkgXIct2Kpn6zMgEHYTgRGrZwV6AsFXrOAAOP4jNzNAfE/AWhhUMNGN6Pz2WntwWmpJfHoEwH9qL6EQXMlG63Df3+cZ6yVsCpvFMnbXdREF2AoFbYkQOo6uUQDHJKClLE6QYsYrHt4Ag==\\\\\\\",\\\\\\\"refresh_token\\\\\\\":\\\\\\\"M.R3_BAY.-CZRoajM9YRCgXRVAcmZkzgk9Nwqz*FoxUIP962ED4x7vrDZ9fDPL80c0fc0gcihhJbgEGKN081jBOn7idxTt68P*2W3gnA9I3HaQ8KSI9JZxIpdHCXf2Ntpu2Fc!6LspYrYLzpBXOkvTziWbzUWvOh9dC2oi4eNrWHj1QO1erL3u6UsVOpDPtDUNzqtpNQdjJElOeLV7vTpTvUUwENM0jg2HAZGKbKZrzkktNBRuBCNSB!E!VKN!NPLGlbXPjPgWdg3GxcRHinawK1i*9j1UnfOlG7HCqDPDATta9PZzuaDGiwdjxxLVT27bMg8MrOmbk2t!5WzvWYjGvt2QqLkXbGQ$\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://login.microsoftonline.com/[tenant]/oauth2/v2.0/token",
+            "url_params": {
+                "Ahp": {
+                    "doc": "",
+                    "key": "tenant",
+                    "private": true,
+                    "value": "common"
+                }
+            },
+            "wrap_error": true
+        },
+        "Ahs": {
+            "0": "A",
+            "1": "h",
+            "2": "r",
+            "body_type": "form_data",
+            "get_headers": false,
+            "headers": {
+                "AhK": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "public"
+                },
+                "Ahy": {
+                    "doc": "Bearer + <Access_Token>",
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer EwBoA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAATikUkaJkyKApdyhUvuQo5FREThm0SkdNRwDbHDT+FzsdlNpdMusQodsRpJ+xfLLmRgO3CLJqOL8tqxLtKLNV914IEZn350MIbxajzgXvuiWjbBoUzNiA1K7QQq4cNX2ts1w7AqZwQl9HwYUJgXvIqk2jP5v01OqaZJ1c1IB901J4XNME1ul5loAIVT8mMnvbb8PSjzDDntqUNkuktiIveZskGtXDQrZRkjG+0ibhcRcK50xovu95RHT8h0qqiZtUnVfiP3fSvRsMTWAKI72bL9WT+VAW3bxjQKk038eMZkMNns4dFfPVsx8ZINwXyAheqOBEuSTRgqJVeQdnx2KqBYDZgAACLP3oxfOIQrSOAJgDH9yJNi+tTDcAjDD72N9uh3RHqdmKSaRA9fMDUJgDMeiPzMHQP+U7p5lS3tzLknC3v7CCs4CMQHBjjSzZ0Q34aHLBnVsRRKfyaVoBQ1QEEDGHft3DsE5XE6aYOY3JHyVjgT0ZmXb0ez1MWigO7MCOdSa648bN199j+YRFSAMkRdq+2atszQ618jzwOp4Z/uKGT76itLrEYdueq93yHE90jB5Q7fOijCQLuMQTGz+O1goinHkMdXFZlXqsZ4faQ9yaeZeYK2aZiarhACngmwmIR9F0Y3BrexVCbmUGXsE+FFwxfk4gTtvQgCO8tG9zN+BayfKZnwSZquJHxtKuYstBoxrK/fZanyDnagiR00S5Y21hgedKPTNSEo7mSGCAAk1d2p6UxapH4g89NFXqv7a0/Z6JwRqUMZ9HfGpekLlJIXY/xlp+kPhMgSEKsylfl53kevrdvtaSRterI7eeX3fRLMEDVLWEkiDWwTUrJ8X4gZX0r3Fw8070piQEP9Ob1kYR+P7ppvEurw8sGYIiGOjYvZGLxIz6wjgoAD5qATMMxi55cIyfEj6Ec2+Q5CL5lG4Uwa/d+FuX1WcD33YgUTJruisr6wzQBF+ifdeYpptmLJ7z3EFtHgCpaDpNKxPAJj1AypYI3U0O1gm5DSC5xutJThkQKdmnfHdv8cCuRfW6WCkxl/u4b1oQ3JAsaSmzav2RVZVtZx3JFIyOVU/CaSrZwLAKhbECjmpLvKMskgRTShkvuYilNNmeAI="
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "MICROSOFT - Get Profile",
+            "publish_as": "action",
+            "rank": 22,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.Ahs",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.Ahs\":{\"caption\":\"MICROSOFT - Get Profile\",\"fields\":{\"_p_body.@odata__dot__context\":{\"ret_value\":\"text\",\"caption\":\"body @odata.context\",\"sample_value\":\"https://graph.microsoft.com/v1.0/$metadata#users/$entity\",\"path\":[\"body\",\"@odata.context\"]},\"_p_body.displayName\":{\"ret_value\":\"text\",\"caption\":\"body displayName\",\"sample_value\":\"jared gibb\",\"path\":[\"body\",\"displayName\"]},\"_p_body.surname\":{\"ret_value\":\"text\",\"caption\":\"body surname\",\"sample_value\":\"gibb\",\"path\":[\"body\",\"surname\"]},\"_p_body.givenName\":{\"ret_value\":\"text\",\"caption\":\"body givenName\",\"sample_value\":\"jared\",\"path\":[\"body\",\"givenName\"]},\"_p_body.id\":{\"ret_value\":\"text\",\"caption\":\"body id\",\"sample_value\":\"651d73f646c045aa\",\"path\":[\"body\",\"id\"]},\"_p_body.userPrincipalName\":{\"ret_value\":\"text\",\"caption\":\"body userPrincipalName\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"userPrincipalName\"]},\"_p_body.jobTitle\":{\"ret_value\":\"text\",\"caption\":\"body jobTitle\",\"sample_value\":null,\"path\":[\"body\",\"jobTitle\"]},\"_p_body.mail\":{\"ret_value\":\"text\",\"caption\":\"body mail\",\"sample_value\":null,\"path\":[\"body\",\"mail\"]},\"_p_body.mobilePhone\":{\"ret_value\":\"text\",\"caption\":\"body mobilePhone\",\"sample_value\":null,\"path\":[\"body\",\"mobilePhone\"]},\"_p_body.officeLocation\":{\"ret_value\":\"text\",\"caption\":\"body officeLocation\",\"sample_value\":null,\"path\":[\"body\",\"officeLocation\"]},\"_p_body.preferredLanguage\":{\"ret_value\":\"text\",\"caption\":\"body preferredLanguage\",\"sample_value\":null,\"path\":[\"body\",\"preferredLanguage\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"@odata.context\\\\\\\":\\\\\\\"https://graph.microsoft.com/v1.0/$metadata#users/$entity\\\\\\\",\\\\\\\"displayName\\\\\\\":\\\\\\\"jared gibb\\\\\\\",\\\\\\\"surname\\\\\\\":\\\\\\\"gibb\\\\\\\",\\\\\\\"givenName\\\\\\\":\\\\\\\"jared\\\\\\\",\\\\\\\"id\\\\\\\":\\\\\\\"651d73f646c045aa\\\\\\\",\\\\\\\"userPrincipalName\\\\\\\":\\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\\\\"businessPhones\\\\\\\":[],\\\\\\\"jobTitle\\\\\\\":null,\\\\\\\"mail\\\\\\\":null,\\\\\\\"mobilePhone\\\\\\\":null,\\\\\\\"officeLocation\\\\\\\":null,\\\\\\\"preferredLanguage\\\\\\\":null}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://graph.microsoft.com/v1.0/me",
+            "wrap_error": true
+        },
+        "AiC": {
+            "0": "A",
+            "1": "i",
+            "2": "B",
+            "headers": {
+                "Agb": {
+                    "doc": "Bearer + <access_token>",
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer EwBoA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAATikUkaJkyKApdyhUvuQo5FREThm0SkdNRwDbHDT+FzsdlNpdMusQodsRpJ+xfLLmRgO3CLJqOL8tqxLtKLNV914IEZn350MIbxajzgXvuiWjbBoUzNiA1K7QQq4cNX2ts1w7AqZwQl9HwYUJgXvIqk2jP5v01OqaZJ1c1IB901J4XNME1ul5loAIVT8mMnvbb8PSjzDDntqUNkuktiIveZskGtXDQrZRkjG+0ibhcRcK50xovu95RHT8h0qqiZtUnVfiP3fSvRsMTWAKI72bL9WT+VAW3bxjQKk038eMZkMNns4dFfPVsx8ZINwXyAheqOBEuSTRgqJVeQdnx2KqBYDZgAACLP3oxfOIQrSOAJgDH9yJNi+tTDcAjDD72N9uh3RHqdmKSaRA9fMDUJgDMeiPzMHQP+U7p5lS3tzLknC3v7CCs4CMQHBjjSzZ0Q34aHLBnVsRRKfyaVoBQ1QEEDGHft3DsE5XE6aYOY3JHyVjgT0ZmXb0ez1MWigO7MCOdSa648bN199j+YRFSAMkRdq+2atszQ618jzwOp4Z/uKGT76itLrEYdueq93yHE90jB5Q7fOijCQLuMQTGz+O1goinHkMdXFZlXqsZ4faQ9yaeZeYK2aZiarhACngmwmIR9F0Y3BrexVCbmUGXsE+FFwxfk4gTtvQgCO8tG9zN+BayfKZnwSZquJHxtKuYstBoxrK/fZanyDnagiR00S5Y21hgedKPTNSEo7mSGCAAk1d2p6UxapH4g89NFXqv7a0/Z6JwRqUMZ9HfGpekLlJIXY/xlp+kPhMgSEKsylfl53kevrdvtaSRterI7eeX3fRLMEDVLWEkiDWwTUrJ8X4gZX0r3Fw8070piQEP9Ob1kYR+P7ppvEurw8sGYIiGOjYvZGLxIz6wjgoAD5qATMMxi55cIyfEj6Ec2+Q5CL5lG4Uwa/d+FuX1WcD33YgUTJruisr6wzQBF+ifdeYpptmLJ7z3EFtHgCpaDpNKxPAJj1AypYI3U0O1gm5DSC5xutJThkQKdmnfHdv8cCuRfW6WCkxl/u4b1oQ3JAsaSmzav2RVZVtZx3JFIyOVU/CaSrZwLAKhbECjmpLvKMskgRTShkvuYilNNmeAI="
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "MICROSOFT - List Primary Calendar Events",
+            "params": {
+                "AiJ": {
+                    "doc": "should be formatted in extended ISO\nlike this: \n2021-09-19T19:49:12.937Z",
+                    "key": "startdatetime",
+                    "private": true,
+                    "value": "2021-09-19T19:49:12.937Z"
+                },
+                "AiK": {
+                    "key": "enddatetime",
+                    "private": true,
+                    "value": "2021-09-26T19:49:12.937Z"
+                },
+                "AiL": {
+                    "key": "$select",
+                    "private": true,
+                    "value": "subject,body,bodyPreview,organizer,attendees,start,end,location"
+                }
+            },
+            "publish_as": "data",
+            "rank": 24,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AiC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AiC\":{\"caption\":\"MICROSOFT - List Primary Calendar Event\",\"fields\":{\"_p_@odata__dot__context\":{\"ret_value\":\"text\",\"caption\":\"@odata.context\",\"sample_value\":\"https://graph.microsoft.com/v1.0/$metadata#users('outlook_651D73F646C045AA%40outlook.com')/calendar/events(subject,body,bodyPreview,organizer,attendees,start,end,location)\",\"path\":[\"@odata.context\"]},\"_p_value\":{\"ret_value\":\"list.api.1637689640773x255337177092194300.plugin_api.AiC.value\",\"caption\":\"value\",\"path\":[\"value\"]}}},\"plugin_api.AiC.value\":{\"caption\":\"MICROSOFT - List Primary Calendar Events value\",\"fields\":{\"_p_@odata__dot__etag\":{\"ret_value\":\"text\",\"caption\":\"@odata.etag\",\"sample_value\":\"W/\\\"U+wST1XYXE2k/ZQgAiD4SwAFdbNFEw==\\\"\",\"path\":[\"@odata.etag\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg_EsAAAIBDQAAAFPsEk9V2FxNpP2UIAIg_EsABXV_0ywAAAA=\",\"path\":[\"id\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"asdfasdf\",\"path\":[\"subject\"]},\"_p_bodyPreview\":{\"ret_value\":\"text\",\"caption\":\"bodyPreview\",\"sample_value\":\"\",\"path\":[\"bodyPreview\"]},\"_p_body.contentType\":{\"ret_value\":\"text\",\"caption\":\"body contentType\",\"sample_value\":\"html\",\"path\":[\"body\",\"contentType\"]},\"_p_body.content\":{\"ret_value\":\"text\",\"caption\":\"body content\",\"sample_value\":\"\",\"path\":[\"body\",\"content\"]},\"_p_start.dateTime\":{\"ret_value\":\"text\",\"caption\":\"start dateTime\",\"sample_value\":\"2021-09-17T02:00:00.0000000\",\"path\":[\"start\",\"dateTime\"]},\"_p_start.timeZone\":{\"ret_value\":\"text\",\"caption\":\"start timeZone\",\"sample_value\":\"UTC\",\"path\":[\"start\",\"timeZone\"]},\"_p_end.dateTime\":{\"ret_value\":\"text\",\"caption\":\"end dateTime\",\"sample_value\":\"2021-09-17T02:30:00.0000000\",\"path\":[\"end\",\"dateTime\"]},\"_p_end.timeZone\":{\"ret_value\":\"text\",\"caption\":\"end timeZone\",\"sample_value\":\"UTC\",\"path\":[\"end\",\"timeZone\"]},\"_p_location.displayName\":{\"ret_value\":\"text\",\"caption\":\"location displayName\",\"sample_value\":\"\",\"path\":[\"location\",\"displayName\"]},\"_p_location.locationType\":{\"ret_value\":\"text\",\"caption\":\"location locationType\",\"sample_value\":\"default\",\"path\":[\"location\",\"locationType\"]},\"_p_location.uniqueIdType\":{\"ret_value\":\"text\",\"caption\":\"location uniqueIdType\",\"sample_value\":\"unknown\",\"path\":[\"location\",\"uniqueIdType\"]},\"_p_organizer.emailAddress.name\":{\"ret_value\":\"text\",\"caption\":\"organizer emailAddress name\",\"sample_value\":\"jared gibb\",\"path\":[\"organizer\",\"emailAddress\",\"name\"]},\"_p_organizer.emailAddress.address\":{\"ret_value\":\"text\",\"caption\":\"organizer emailAddress address\",\"sample_value\":\"outlook_651D73F646C045AA@outlook.com\",\"path\":[\"organizer\",\"emailAddress\",\"address\"]}}}}",
+            "url": "https://graph.microsoft.com/v1.0/me/calendar/events?"
+        },
+        "AiE": {
+            "0": "A",
+            "1": "i",
+            "2": "D",
+            "headers": {
+                "Agb": {
+                    "doc": "Bearer + <access_token>",
+                    "key": "Authorization",
+                    "private": true,
+                    "value": "Bearer EwBoA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAATikUkaJkyKApdyhUvuQo5FREThm0SkdNRwDbHDT+FzsdlNpdMusQodsRpJ+xfLLmRgO3CLJqOL8tqxLtKLNV914IEZn350MIbxajzgXvuiWjbBoUzNiA1K7QQq4cNX2ts1w7AqZwQl9HwYUJgXvIqk2jP5v01OqaZJ1c1IB901J4XNME1ul5loAIVT8mMnvbb8PSjzDDntqUNkuktiIveZskGtXDQrZRkjG+0ibhcRcK50xovu95RHT8h0qqiZtUnVfiP3fSvRsMTWAKI72bL9WT+VAW3bxjQKk038eMZkMNns4dFfPVsx8ZINwXyAheqOBEuSTRgqJVeQdnx2KqBYDZgAACLP3oxfOIQrSOAJgDH9yJNi+tTDcAjDD72N9uh3RHqdmKSaRA9fMDUJgDMeiPzMHQP+U7p5lS3tzLknC3v7CCs4CMQHBjjSzZ0Q34aHLBnVsRRKfyaVoBQ1QEEDGHft3DsE5XE6aYOY3JHyVjgT0ZmXb0ez1MWigO7MCOdSa648bN199j+YRFSAMkRdq+2atszQ618jzwOp4Z/uKGT76itLrEYdueq93yHE90jB5Q7fOijCQLuMQTGz+O1goinHkMdXFZlXqsZ4faQ9yaeZeYK2aZiarhACngmwmIR9F0Y3BrexVCbmUGXsE+FFwxfk4gTtvQgCO8tG9zN+BayfKZnwSZquJHxtKuYstBoxrK/fZanyDnagiR00S5Y21hgedKPTNSEo7mSGCAAk1d2p6UxapH4g89NFXqv7a0/Z6JwRqUMZ9HfGpekLlJIXY/xlp+kPhMgSEKsylfl53kevrdvtaSRterI7eeX3fRLMEDVLWEkiDWwTUrJ8X4gZX0r3Fw8070piQEP9Ob1kYR+P7ppvEurw8sGYIiGOjYvZGLxIz6wjgoAD5qATMMxi55cIyfEj6Ec2+Q5CL5lG4Uwa/d+FuX1WcD33YgUTJruisr6wzQBF+ifdeYpptmLJ7z3EFtHgCpaDpNKxPAJj1AypYI3U0O1gm5DSC5xutJThkQKdmnfHdv8cCuRfW6WCkxl/u4b1oQ3JAsaSmzav2RVZVtZx3JFIyOVU/CaSrZwLAKhbECjmpLvKMskgRTShkvuYilNNmeAI="
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "MICROSOFT - List Specific Calendar Events (copy)",
+            "publish_as": "data",
+            "rank": 25,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AiE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AiE\":{\"caption\":\"MICROSOFT - List Specific Calendar Events (copy)\",\"fields\":{\"_p_@odata__dot__context\":{\"ret_value\":\"text\",\"caption\":\"@odata.context\",\"sample_value\":\"https://graph.microsoft.com/v1.0/$metadata#users('outlook_651D73F646C045AA%40outlook.com')/calendars('AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg_EsAAAIBBgAAAFPsEk9V2FxNpP2UIAIg_EsAAACZkIXTAAAA')/events\",\"path\":[\"@odata.context\"]},\"_p_value\":{\"ret_value\":\"list.api.1637689640773x255337177092194300.plugin_api.AiE.value\",\"caption\":\"value\",\"path\":[\"value\"]}}},\"plugin_api.AiE.value\":{\"caption\":\"MICROSOFT - List Specific Calendar Events (copy) value\",\"fields\":{\"_p_@odata__dot__etag\":{\"ret_value\":\"text\",\"caption\":\"@odata.etag\",\"sample_value\":\"W/\\\"U+wST1XYXE2k/ZQgAiD4SwAFdbNFEw==\\\"\",\"path\":[\"@odata.etag\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg_EsAAAIBDQAAAFPsEk9V2FxNpP2UIAIg_EsABXV_0ywAAAA=\",\"path\":[\"id\"]},\"_p_createdDateTime\":{\"ret_value\":\"text\",\"caption\":\"createdDateTime\",\"sample_value\":\"2021-09-17T01:25:42.5530105Z\",\"path\":[\"createdDateTime\"]},\"_p_lastModifiedDateTime\":{\"ret_value\":\"text\",\"caption\":\"lastModifiedDateTime\",\"sample_value\":\"2021-09-17T01:27:44.4418814Z\",\"path\":[\"lastModifiedDateTime\"]},\"_p_changeKey\":{\"ret_value\":\"text\",\"caption\":\"changeKey\",\"sample_value\":\"U+wST1XYXE2k/ZQgAiD4SwAFdbNFEw==\",\"path\":[\"changeKey\"]},\"_p_transactionId\":{\"ret_value\":\"text\",\"caption\":\"transactionId\",\"sample_value\":\"9c01544a-e604-12a9-8643-5ccfeacc56be\",\"path\":[\"transactionId\"]},\"_p_originalStartTimeZone\":{\"ret_value\":\"text\",\"caption\":\"originalStartTimeZone\",\"sample_value\":\"US Eastern Standard Time\",\"path\":[\"originalStartTimeZone\"]},\"_p_originalEndTimeZone\":{\"ret_value\":\"text\",\"caption\":\"originalEndTimeZone\",\"sample_value\":\"US Eastern Standard Time\",\"path\":[\"originalEndTimeZone\"]},\"_p_iCalUId\":{\"ret_value\":\"text\",\"caption\":\"iCalUId\",\"sample_value\":\"040000008200E00074C5B7101A82E0080000000078E567EE62ABD7010000000000000000100000006432019F7D06AA478969F33A0EFAF938\",\"path\":[\"iCalUId\"]},\"_p_reminderMinutesBeforeStart\":{\"ret_value\":\"number\",\"caption\":\"reminderMinutesBeforeStart\",\"sample_value\":15,\"path\":[\"reminderMinutesBeforeStart\"]},\"_p_isReminderOn\":{\"ret_value\":\"boolean\",\"caption\":\"isReminderOn\",\"sample_value\":true,\"path\":[\"isReminderOn\"]},\"_p_hasAttachments\":{\"ret_value\":\"boolean\",\"caption\":\"hasAttachments\",\"sample_value\":false,\"path\":[\"hasAttachments\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"asdfasdf\",\"path\":[\"subject\"]},\"_p_bodyPreview\":{\"ret_value\":\"text\",\"caption\":\"bodyPreview\",\"sample_value\":\"\",\"path\":[\"bodyPreview\"]},\"_p_importance\":{\"ret_value\":\"text\",\"caption\":\"importance\",\"sample_value\":\"normal\",\"path\":[\"importance\"]},\"_p_sensitivity\":{\"ret_value\":\"text\",\"caption\":\"sensitivity\",\"sample_value\":\"normal\",\"path\":[\"sensitivity\"]},\"_p_isAllDay\":{\"ret_value\":\"boolean\",\"caption\":\"isAllDay\",\"sample_value\":false,\"path\":[\"isAllDay\"]},\"_p_isCancelled\":{\"ret_value\":\"boolean\",\"caption\":\"isCancelled\",\"sample_value\":false,\"path\":[\"isCancelled\"]},\"_p_isOrganizer\":{\"ret_value\":\"boolean\",\"caption\":\"isOrganizer\",\"sample_value\":true,\"path\":[\"isOrganizer\"]},\"_p_responseRequested\":{\"ret_value\":\"boolean\",\"caption\":\"responseRequested\",\"sample_value\":true,\"path\":[\"responseRequested\"]},\"_p_seriesMasterId\":{\"ret_value\":\"text\",\"caption\":\"seriesMasterId\",\"sample_value\":null,\"path\":[\"seriesMasterId\"]},\"_p_showAs\":{\"ret_value\":\"text\",\"caption\":\"showAs\",\"sample_value\":\"busy\",\"path\":[\"showAs\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"singleInstance\",\"path\":[\"type\"]},\"_p_webLink\":{\"ret_value\":\"text\",\"caption\":\"webLink\",\"sample_value\":\"https://outlook.live.com/owa/?itemid=AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg%2BEsAAAIBDQAAAFPsEk9V2FxNpP2UIAIg%2BEsABXV%2B0ywAAAA%3D&exvsurl=1&path=/calendar/item\",\"path\":[\"webLink\"]},\"_p_onlineMeetingUrl\":{\"ret_value\":\"text\",\"caption\":\"onlineMeetingUrl\",\"sample_value\":null,\"path\":[\"onlineMeetingUrl\"]},\"_p_isOnlineMeeting\":{\"ret_value\":\"boolean\",\"caption\":\"isOnlineMeeting\",\"sample_value\":false,\"path\":[\"isOnlineMeeting\"]},\"_p_onlineMeetingProvider\":{\"ret_value\":\"text\",\"caption\":\"onlineMeetingProvider\",\"sample_value\":\"unknown\",\"path\":[\"onlineMeetingProvider\"]},\"_p_allowNewTimeProposals\":{\"ret_value\":\"boolean\",\"caption\":\"allowNewTimeProposals\",\"sample_value\":true,\"path\":[\"allowNewTimeProposals\"]},\"_p_occurrenceId\":{\"ret_value\":\"text\",\"caption\":\"occurrenceId\",\"sample_value\":null,\"path\":[\"occurrenceId\"]},\"_p_isDraft\":{\"ret_value\":\"boolean\",\"caption\":\"isDraft\",\"sample_value\":false,\"path\":[\"isDraft\"]},\"_p_hideAttendees\":{\"ret_value\":\"boolean\",\"caption\":\"hideAttendees\",\"sample_value\":false,\"path\":[\"hideAttendees\"]},\"_p_responseStatus.response\":{\"ret_value\":\"text\",\"caption\":\"responseStatus response\",\"sample_value\":\"organizer\",\"path\":[\"responseStatus\",\"response\"]},\"_p_responseStatus.time\":{\"ret_value\":\"text\",\"caption\":\"responseStatus time\",\"sample_value\":\"0001-01-01T00:00:00Z\",\"path\":[\"responseStatus\",\"time\"]},\"_p_body.contentType\":{\"ret_value\":\"text\",\"caption\":\"body contentType\",\"sample_value\":\"html\",\"path\":[\"body\",\"contentType\"]},\"_p_body.content\":{\"ret_value\":\"text\",\"caption\":\"body content\",\"sample_value\":\"\",\"path\":[\"body\",\"content\"]},\"_p_start.dateTime\":{\"ret_value\":\"text\",\"caption\":\"start dateTime\",\"sample_value\":\"2021-09-17T02:00:00.0000000\",\"path\":[\"start\",\"dateTime\"]},\"_p_start.timeZone\":{\"ret_value\":\"text\",\"caption\":\"start timeZone\",\"sample_value\":\"UTC\",\"path\":[\"start\",\"timeZone\"]},\"_p_end.dateTime\":{\"ret_value\":\"text\",\"caption\":\"end dateTime\",\"sample_value\":\"2021-09-17T02:30:00.0000000\",\"path\":[\"end\",\"dateTime\"]},\"_p_end.timeZone\":{\"ret_value\":\"text\",\"caption\":\"end timeZone\",\"sample_value\":\"UTC\",\"path\":[\"end\",\"timeZone\"]},\"_p_location.displayName\":{\"ret_value\":\"text\",\"caption\":\"location displayName\",\"sample_value\":\"\",\"path\":[\"location\",\"displayName\"]},\"_p_location.locationType\":{\"ret_value\":\"text\",\"caption\":\"location locationType\",\"sample_value\":\"default\",\"path\":[\"location\",\"locationType\"]},\"_p_location.uniqueIdType\":{\"ret_value\":\"text\",\"caption\":\"location uniqueIdType\",\"sample_value\":\"unknown\",\"path\":[\"location\",\"uniqueIdType\"]},\"_p_recurrence\":{\"ret_value\":\"text\",\"caption\":\"recurrence\",\"sample_value\":null,\"path\":[\"recurrence\"]},\"_p_organizer.emailAddress.name\":{\"ret_value\":\"text\",\"caption\":\"organizer emailAddress name\",\"sample_value\":\"jared gibb\",\"path\":[\"organizer\",\"emailAddress\",\"name\"]},\"_p_organizer.emailAddress.address\":{\"ret_value\":\"text\",\"caption\":\"organizer emailAddress address\",\"sample_value\":\"outlook_651D73F646C045AA@outlook.com\",\"path\":[\"organizer\",\"emailAddress\",\"address\"]},\"_p_onlineMeeting\":{\"ret_value\":\"text\",\"caption\":\"onlineMeeting\",\"sample_value\":null,\"path\":[\"onlineMeeting\"]},\"_p_calendar@odata__dot__associationLink\":{\"ret_value\":\"text\",\"caption\":\"calendar@odata.associationLink\",\"sample_value\":\"https://graph.microsoft.com/v1.0/users('outlook_651D73F646C045AA@outlook.com')/calendars('AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg_EsAAAIBBgAAAFPsEk9V2FxNpP2UIAIg_EsAAACZkIXTAAAA')/$ref\",\"path\":[\"calendar@odata.associationLink\"]},\"_p_calendar@odata__dot__navigationLink\":{\"ret_value\":\"text\",\"caption\":\"calendar@odata.navigationLink\",\"sample_value\":\"https://graph.microsoft.com/v1.0/users('outlook_651D73F646C045AA@outlook.com')/calendars('AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg_EsAAAIBBgAAAFPsEk9V2FxNpP2UIAIg_EsAAACZkIXTAAAA')\",\"path\":[\"calendar@odata.navigationLink\"]}}}}",
+            "url": "https://graph.microsoft.com/v1.0/me/calendars/[calendar_id]/events",
+            "url_params": {
+                "AiG": {
+                    "key": "calendar_id",
+                    "private": true,
+                    "value": "AQMkADAwATM3ZmYAZS05MjgzLWQ0MDAALTAwAi0wMAoARgAAA2nvq97o70JHrFqJJ7RVTvMHAFPsEk9V2FxNpP2UIAIg_EsAAAIBBgAAAFPsEk9V2FxNpP2UIAIg_EsAAACZkIXTAAAA"
+                }
+            }
+        },
+        "AqW": {
+            "0": "A",
+            "1": "q",
+            "2": "V",
+            "headers": {
+                "AXf": {
+                    "key": "Authorization",
+                    "optional": false,
+                    "private": true,
+                    "value": "Bearer ya29.A0ARrdaM9Hb4mg-Nd9B0iWo3AcvTil99bBKLhMEZ0Pjrap7wWUOl5lNbQutqm-5RGAVCkt3P7Y3200MWoSY8fF0UFlhBjEdu5n_V_FYOL2YvmLcfydEGEeuhzuPRxjZBzHOZOUDd-4QjFfoKE9Nf_nNuNmHyuP"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "GOOGL - Get Profile Info (data)",
+            "publish_as": "data",
+            "rank": 14,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AqW",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AqW\":{\"caption\":\"GOOGL - Get Profile Info (data)\",\"fields\":{\"_p_body.id\":{\"ret_value\":\"text\",\"caption\":\"body id\",\"sample_value\":\"115645704045466931179\",\"path\":[\"body\",\"id\"]},\"_p_body.email\":{\"ret_value\":\"text\",\"caption\":\"body email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"email\"]},\"_p_body.verified_email\":{\"ret_value\":\"boolean\",\"caption\":\"body verified_email\",\"sample_value\":true,\"path\":[\"body\",\"verified_email\"]},\"_p_body.name\":{\"ret_value\":\"text\",\"caption\":\"body name\",\"sample_value\":\"Jared Gibb\",\"path\":[\"body\",\"name\"]},\"_p_body.given_name\":{\"ret_value\":\"text\",\"caption\":\"body given_name\",\"sample_value\":\"Jared\",\"path\":[\"body\",\"given_name\"]},\"_p_body.family_name\":{\"ret_value\":\"text\",\"caption\":\"body family_name\",\"sample_value\":\"Gibb\",\"path\":[\"body\",\"family_name\"]},\"_p_body.picture\":{\"ret_value\":\"text\",\"caption\":\"body picture\",\"sample_value\":\"https://lh3.googleusercontent.com/a-/AOh14GiPCEmmAHeNCb8UbaeywWe8F6l5iAQ2GwhNte38QA=s96-c\",\"path\":[\"body\",\"picture\"]},\"_p_body.locale\":{\"ret_value\":\"text\",\"caption\":\"body locale\",\"sample_value\":\"en-GB\",\"path\":[\"body\",\"locale\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n  \\\\\\\"id\\\\\\\": \\\\\\\"115645704045466931179\\\\\\\",\\\\n  \\\\\\\"email\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n  \\\\\\\"verified_email\\\\\\\": true,\\\\n  \\\\\\\"name\\\\\\\": \\\\\\\"Jared Gibb\\\\\\\",\\\\n  \\\\\\\"given_name\\\\\\\": \\\\\\\"Jared\\\\\\\",\\\\n  \\\\\\\"family_name\\\\\\\": \\\\\\\"Gibb\\\\\\\",\\\\n  \\\\\\\"picture\\\\\\\": \\\\\\\"https://lh3.googleusercontent.com/a-/AOh14GiPCEmmAHeNCb8UbaeywWe8F6l5iAQ2GwhNte38QA=s96-c\\\\\\\",\\\\n  \\\\\\\"locale\\\\\\\": \\\\\\\"en-GB\\\\\\\"\\\\n}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/oauth2/v1/userinfo?alt=json",
+            "wrap_error": true
+        },
+        "AqY": {
+            "0": "A",
+            "1": "q",
+            "2": "X",
+            "headers": {
+                "AXf": {
+                    "key": "Authorization",
+                    "optional": false,
+                    "private": true,
+                    "value": "Bearer ya29.A0ARrdaM9Hb4mg-Nd9B0iWo3AcvTil99bBKLhMEZ0Pjrap7wWUOl5lNbQutqm-5RGAVCkt3P7Y3200MWoSY8fF0UFlhBjEdu5n_V_FYOL2YvmLcfydEGEeuhzuPRxjZBzHOZOUDd-4QjFfoKE9Nf_nNuNmHyuP"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "GOOGL - Get Profile Info action",
+            "publish_as": "action",
+            "rank": 13,
+            "ret_value": "api.1637689640773x255337177092194300.plugin_api.AqY",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AqY\":{\"caption\":\"GOOGL - Get Profile Info action\",\"fields\":{\"_p_body.id\":{\"ret_value\":\"text\",\"caption\":\"body id\",\"sample_value\":\"115645704045466931179\",\"path\":[\"body\",\"id\"]},\"_p_body.email\":{\"ret_value\":\"text\",\"caption\":\"body email\",\"sample_value\":\"jared.gibb@gmail.com\",\"path\":[\"body\",\"email\"]},\"_p_body.verified_email\":{\"ret_value\":\"boolean\",\"caption\":\"body verified_email\",\"sample_value\":true,\"path\":[\"body\",\"verified_email\"]},\"_p_body.name\":{\"ret_value\":\"text\",\"caption\":\"body name\",\"sample_value\":\"Jared Gibb\",\"path\":[\"body\",\"name\"]},\"_p_body.given_name\":{\"ret_value\":\"text\",\"caption\":\"body given_name\",\"sample_value\":\"Jared\",\"path\":[\"body\",\"given_name\"]},\"_p_body.family_name\":{\"ret_value\":\"text\",\"caption\":\"body family_name\",\"sample_value\":\"Gibb\",\"path\":[\"body\",\"family_name\"]},\"_p_body.picture\":{\"ret_value\":\"text\",\"caption\":\"body picture\",\"sample_value\":\"https://lh3.googleusercontent.com/a-/AOh14GiPCEmmAHeNCb8UbaeywWe8F6l5iAQ2GwhNte38QA=s96-c\",\"path\":[\"body\",\"picture\"]},\"_p_body.locale\":{\"ret_value\":\"text\",\"caption\":\"body locale\",\"sample_value\":\"en-GB\",\"path\":[\"body\",\"locale\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n  \\\\\\\"id\\\\\\\": \\\\\\\"115645704045466931179\\\\\\\",\\\\n  \\\\\\\"email\\\\\\\": \\\\\\\"jared.gibb@gmail.com\\\\\\\",\\\\n  \\\\\\\"verified_email\\\\\\\": true,\\\\n  \\\\\\\"name\\\\\\\": \\\\\\\"Jared Gibb\\\\\\\",\\\\n  \\\\\\\"given_name\\\\\\\": \\\\\\\"Jared\\\\\\\",\\\\n  \\\\\\\"family_name\\\\\\\": \\\\\\\"Gibb\\\\\\\",\\\\n  \\\\\\\"picture\\\\\\\": \\\\\\\"https://lh3.googleusercontent.com/a-/AOh14GiPCEmmAHeNCb8UbaeywWe8F6l5iAQ2GwhNte38QA=s96-c\\\\\\\",\\\\n  \\\\\\\"locale\\\\\\\": \\\\\\\"en-GB\\\\\\\"\\\\n}\\\\n\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://www.googleapis.com/oauth2/v1/userinfo?alt=json",
+            "wrap_error": true
+        }
+    },
+    "generate_token_from_code_uri": "https://oauth2.googleapis.com/token",
+    "header_key": "Authorization: Bearer",
+    "human": "Full Calendar - ",
+    "oauth_user_data_call": "https://www.googleapis.com/oauth2/v1/userinfo?alt=json",
+    "scope": "https://www.googleapis.com/auth/calendar profile email ",
+    "token_data_type": false,
+    "token_param_name": "access_token"
+}

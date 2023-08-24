@@ -1,0 +1,40 @@
+{
+    "category": "plugins",
+    "display": "Authenticate with Google (gmail)",
+    "fields": {
+        "AYX": {
+            "caption": "Requested Scopes",
+            "default_val": "https://www.googleapis.com/auth/calendar%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile",
+            "doc": "separate scopes with %20 instead of a comma. ",
+            "editor": "DynamicValue",
+            "name": "scopes",
+            "rank": 0,
+            "value": "text"
+        },
+        "AYY": {
+            "caption": "Client ID",
+            "default_val": "932006d7-9fa6-44cb-9075-722da9dea3e0",
+            "editor": "DynamicValue",
+            "name": "clientid",
+            "rank": 1,
+            "value": "text"
+        },
+        "AYZ": {
+            "caption": "Redirect URL",
+            "default_val": "https://poop123.bubbleapps.io/version-test/temp_catch_token?debug_mode=true",
+            "editor": "DynamicValue",
+            "name": "redirecturi",
+            "rank": 2,
+            "value": "text"
+        },
+        "AqT": {
+            "caption": "state",
+            "default_val": "google",
+            "editor": "DynamicValue",
+            "name": "state",
+            "rank": 3,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

@@ -1,0 +1,211 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 15,
+        "width": 15
+    },
+    "display": "BAFC - Output Elegant Timeslot Lister",
+    "fields": {
+        "Aex": {
+            "caption": "Sunday 1",
+            "editor": "DynamicValue",
+            "name": "sunday_1",
+            "optional": true,
+            "rank": 0,
+            "value": "date_range"
+        },
+        "Aey": {
+            "caption": "Sunday 2",
+            "editor": "DynamicValue",
+            "name": "sunday_2",
+            "optional": true,
+            "rank": 1,
+            "value": "date_range"
+        },
+        "Aez": {
+            "caption": "Sunday 3",
+            "editor": "DynamicValue",
+            "name": "sunday_3",
+            "optional": true,
+            "rank": 2,
+            "value": "date_range"
+        },
+        "AfA": {
+            "caption": "Monday 1",
+            "editor": "DynamicValue",
+            "name": "monday_1",
+            "optional": true,
+            "rank": 3,
+            "value": "date_range"
+        },
+        "AfB": {
+            "caption": "Monday 2",
+            "editor": "DynamicValue",
+            "name": "monday_2",
+            "optional": true,
+            "rank": 4,
+            "value": "date_range"
+        },
+        "AfC": {
+            "caption": "Monday 3",
+            "editor": "DynamicValue",
+            "name": "monday_3",
+            "optional": true,
+            "rank": 5,
+            "value": "date_range"
+        },
+        "AfD": {
+            "caption": "Tuesday 1",
+            "editor": "DynamicValue",
+            "name": "tuesday_1",
+            "optional": true,
+            "rank": 6,
+            "value": "date_range"
+        },
+        "AfE": {
+            "caption": "Tuesday 2",
+            "editor": "DynamicValue",
+            "name": "tuesday_2",
+            "optional": true,
+            "rank": 7,
+            "value": "date_range"
+        },
+        "AfF": {
+            "caption": "Tuesday 3",
+            "editor": "DynamicValue",
+            "name": "tuesday_3",
+            "optional": true,
+            "rank": 8,
+            "value": "date_range"
+        },
+        "AfG": {
+            "caption": "Wednesday 1",
+            "editor": "DynamicValue",
+            "name": "wednesday_1",
+            "optional": true,
+            "rank": 9,
+            "value": "date_range"
+        },
+        "AfH": {
+            "caption": "Wednesday 2",
+            "editor": "DynamicValue",
+            "name": "wednesday_2",
+            "optional": true,
+            "rank": 10,
+            "value": "date_range"
+        },
+        "AfI": {
+            "caption": "Wednesday 3",
+            "editor": "DynamicValue",
+            "name": "wednesday_3",
+            "optional": true,
+            "rank": 11,
+            "value": "date_range"
+        },
+        "AfJ": {
+            "caption": "Thursday 1",
+            "editor": "DynamicValue",
+            "name": "thursday_1",
+            "optional": true,
+            "rank": 12,
+            "value": "date_range"
+        },
+        "AfK": {
+            "caption": "Thursday 2",
+            "editor": "DynamicValue",
+            "name": "thursday_2",
+            "optional": true,
+            "rank": 13,
+            "value": "date_range"
+        },
+        "AfL": {
+            "caption": "Thursday 3",
+            "editor": "DynamicValue",
+            "name": "thursday_3",
+            "optional": true,
+            "rank": 14,
+            "value": "date_range"
+        },
+        "AfM": {
+            "caption": "Friday 1",
+            "editor": "DynamicValue",
+            "name": "friday_1",
+            "optional": true,
+            "rank": 15,
+            "value": "date_range"
+        },
+        "AfN": {
+            "caption": "Friday 2",
+            "editor": "DynamicValue",
+            "name": "friday_2",
+            "optional": true,
+            "rank": 16,
+            "value": "date_range"
+        },
+        "AfO": {
+            "caption": "Friday 3",
+            "editor": "DynamicValue",
+            "name": "friday_3",
+            "optional": true,
+            "rank": 17,
+            "value": "date_range"
+        },
+        "AfP": {
+            "caption": "Saturday 1",
+            "editor": "DynamicValue",
+            "name": "saturday_1",
+            "optional": true,
+            "rank": 18,
+            "value": "date_range"
+        },
+        "AfQ": {
+            "caption": "Saturday 2",
+            "editor": "DynamicValue",
+            "name": "saturday_2",
+            "optional": true,
+            "rank": 19,
+            "value": "date_range"
+        },
+        "AfR": {
+            "caption": "Saturday 3",
+            "editor": "DynamicValue",
+            "name": "saturday_3",
+            "optional": true,
+            "rank": 20,
+            "value": "date_range"
+        },
+        "AfU": {
+            "caption": "Daily Time Slot List",
+            "doc": "set as Daily Time Slot List",
+            "editor": "custom_type",
+            "name": "daily_time_slot_list",
+            "rank": 21
+        }
+    },
+    "icon": "ion-ios-list-outline",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AfV": {
+            "caption": "Day Time List",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "day_time_list",
+            "value": "custom_data_AfU"
+        },
+        "AoW": {
+            "caption": "daysOfWeek",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "daysofweek",
+            "value": "text"
+        }
+    }
+}

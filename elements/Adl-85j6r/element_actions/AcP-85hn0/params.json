@@ -1,0 +1,4 @@
+{
+    "caption": "clear picker",
+    "doc": "This clears the picker from any selected date. After calling this function the value of the picker will be empty (null)"
+}

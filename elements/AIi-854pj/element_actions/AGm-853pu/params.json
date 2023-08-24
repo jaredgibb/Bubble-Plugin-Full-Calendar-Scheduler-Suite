@@ -1,0 +1,12 @@
+{
+    "caption": "BAFC - Delete Single Event",
+    "fields": {
+        "AGn": {
+            "caption": "Event ID",
+            "editor": "DynamicValue",
+            "name": "id",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

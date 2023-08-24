@@ -1,0 +1,12 @@
+{
+    "caption": "BAFC - Allow/Disallow Overlapping Events",
+    "fields": {
+        "AVE": {
+            "caption": "truefalse",
+            "editor": "DynamicValue",
+            "name": "truefalse",
+            "rank": 0,
+            "value": "boolean"
+        }
+    }
+}

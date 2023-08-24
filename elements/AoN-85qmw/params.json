@@ -1,0 +1,83 @@
+{
+    "add_is_visible": true,
+    "autobinding_value": "number_range",
+    "category": "input forms",
+    "default_dim": {
+        "height": 15,
+        "width": 15
+    },
+    "display": "BAFC - Time Range Maker",
+    "fields": {
+        "AoF": {
+            "caption": "Range 1 Start Time",
+            "editor": "DynamicValue",
+            "name": "starttime",
+            "optional": true,
+            "rank": 0,
+            "value": "date"
+        },
+        "AoG": {
+            "caption": "Range 1 End Time",
+            "editor": "DynamicValue",
+            "name": "endtime",
+            "optional": true,
+            "rank": 1,
+            "value": "date"
+        },
+        "AoH": {
+            "caption": "-------------------------------------------------",
+            "editor": "Label",
+            "name": "-------------------------------------------------",
+            "rank": 2
+        },
+        "AoI": {
+            "caption": "Range 2 Start Time",
+            "editor": "DynamicValue",
+            "name": "range_2_start_time",
+            "optional": true,
+            "rank": 3,
+            "value": "date"
+        },
+        "AoJ": {
+            "caption": "Range 2 End Time",
+            "editor": "DynamicValue",
+            "name": "range_2_end_time",
+            "optional": true,
+            "rank": 4,
+            "value": "date"
+        }
+    },
+    "icon": "ion-speedometer",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AoK": {
+            "caption": "Single Time Range",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "timerange",
+            "value": "number_range"
+        },
+        "AoL": {
+            "caption": "Numeric Range List",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "time_range_list",
+            "value": "number_range"
+        },
+        "AoM": {
+            "caption": "Time Range List",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "realtimerangelist",
+            "value": "date_range"
+        }
+    },
+    "support_autobinding": true
+}

@@ -1,0 +1,4 @@
+{
+    "caption": "got to previous view",
+    "doc": "Renders previous month, year or decade, depending on current view."
+}
